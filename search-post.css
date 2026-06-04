@@ -1,0 +1,309 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#main {
+    width: clamp(75%, 600px, 1000px);
+}
+
+#tit-search-posts, #tit-search-topics {
+    border-bottom: 2px solid rgba(var(--clr-0), 1);
+}
+
+.search-post.row1 {
+    display: flex;
+    border-bottom: 2px solid rgba(var(--clr-acnt), 0.3);
+}
+
+.postbody {
+    width: 79%;
+    padding: 3vmin;
+    border-right: 2px solid rgba(var(--clr-acnt), 0.3);
+    display: block;
+}
+
+.tit-topics {
+    margin-bottom: 1.5vmin;
+}
+
+div.postprofile {
+    width: 21%;
+    padding: 3vmin;
+    font-size: var(--txt-size-3);
+    text-transform: uppercase;
+    letter-spacing: 0.4vmin;
+    display: flex !important;
+    flex-direction: column;
+}
+
+.postprofile div {
+    margin-bottom: 0.5vmin;
+    text-align: left;
+}
+
+a.tit-topics-posts {
+    font-size: var(--txt-size-1);
+    text-transform: uppercase;
+    font-family: var(--txt-2);
+    letter-spacing: 0.2vmin;
+}
+
+.search-author {
+    font-size: var(--txt-size-7);
+    text-transform: uppercase;
+    letter-spacing: 0.2vmin;
+}
+
+.search-author a span strong {
+    color: rgba(var(--clr-0), 1) !important;
+    font-weight: 400;
+transition: all ease-in-out 250ms;
+}
+
+.search-author a:hover span strong {
+    font-weight: 700;
+transition: all ease-in-out 250ms;
+}
+
+.tema-pag-bottom {
+    height: 4vmin;
+  border-top: 2px solid rgba(var(--clr-0), 1);
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    letter-spacing: 0.2vmin;
+    font-size: var(--txt-size-3);
+    text-transform: uppercase;
+}
+
+table.forumline {
+  background-color: rgba(var(--clr-10), 0.9);
+  outline: 1px solid rgba(var(--clr-0), 1);
+  padding: 1.5vmin 2vmin 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table.forumline td.row1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vmin;
+}
+
+table.forumline input.bginput {
+  margin-right: 1vmin;
+}
+
+p.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+p.pagination a {
+  font-weight: 400;
+}
+
+p.pagination span {
+    display: flex;
+    font-size: 0;
+}
+
+p.pagination span strong,
+p.pagination span a {
+  width: 3vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    font-size: var(--txt-size-3);
+    background-color: rgba(var(--clr-0), 0.1);
+    border: 1px solid rgba(var(--clr-0), 0.5);
+    padding: 0.1vmin 0.5vmin 0.2vmin 0.7vmin;
+    margin: 0 0.2vmin;
+    transition: all 250ms ease-in-out;
+}
+
+.pagination span strong {
+    background-color: rgba(var(--clr-acnt), 0.4) !important;
+    color: rgba(var(--clr-0), 1) !important;
+}
+
+p.pagination span a:hover {
+  color: var(--clr-txt);
+  background-color: rgba(var(--clr-acnt), 0.4);
+  border: 1px solid rgba(var(--clr-acnt), 1);
+  transition: all 250ms ease-in-out;
+}
+
+a.pag-img.right:before,
+a.pag-img.left:before {
+    content: "\F231";
+    font-family: bootstrap-icons !important;
+}
+
+a.pag-img.left:before {
+    content: "\F22D" !important;
+}
+
+blockquote, dl.codebox {
+    background-color: rgba(var(--clr-acnt), 0.05);
+    padding: 1.5vmin;
+}
+
+blockquote cite, dl.codebox dt {
+    display: block;
+    font-size: var(--txt-size-7);
+    color: rgba(var(--clr-acnt), 0.7);
+    margin-bottom: 1.5vmin;
+    position: relative;
+}
+
+span.selectCode {
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    cursor: pointer;
+}
+
+dl.codebox code {
+    font-family: var(--txt);
+    font-size: var(--txt-size-3);
+    font-style: italic;
+}
+
+dt.spoiler_title {
+    margin-bottom: 0vmin !important;
+}
+
+.spoiler_content.hidden {
+    margin-top: 1.5vmin;
+}
+
+img.img-dados {
+  display: none;
+}
+
+.img-dados2 {
+  max-width: 80%;
+}
+
+.dadotext {
+   width: 100%;
+    font-size: var(--txt-size-1);
+    height: 8vmin;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 1vmin;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2vmin;
+    margin: 3vmin 0 0 !important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.dadotext.mensual {
+    margin-bottom: 5vmin;
+}
+
+.dadotext:last-child {
+    margin-bottom: 0;
+}
+
+.dadotext.mensual:last-child {
+    margin-bottom: 2vmin;
+}
+
+.dadotext span {
+  width: 100%;
+    position: absolute;
+    font-size: var(--txt-size-6);
+    opacity: 0.2;
+    font-weight: 900;
+    text-align: center;
+}
+
+.dadotext.mensual span2 {
+    width: 160%;
+    position: absolute;
+    margin-top: 7vmin;
+    font-size: var(--txt-size-7);
+    line-height: 2vmin;
+    text-align: center;
+}
+
+.dadotext.mensual.medalla span2 {
+    margin-top: 5vmin;
+}
+
+.table_reg {
+    display: flex;
+}
+
+.table_reg tbody {
+    width: 100%;
+}
+
+.table_reg .fila {
+    width: 100% !important;
+    text-transform: uppercase;
+    margin-top: 3vmin !important;
+}
+
+.table_reg .celdaDato.inGroup {
+    width: 100% !important;
+    display: block;
+    margin-top: 1vmin;
+}
+
+@media screen and (max-width: 999px) {
+.search-post.row1 {
+    flex-direction: column-reverse;
+    border-bottom: 2px solid rgba(var(--clr-1), 1);
+}
+
+.postbody {
+    width: 100%;
+    border-right: none;
+    border-top: 2px solid rgba(var(--clr-acnt), 0.3);
+    font-size: var(--txt-size-3);
+}
+
+.tit-topics {
+    margin-bottom: 3vmin;
+}
+
+.search-author {
+    font-size: clamp(0.7rem, 0.8vmax, 0.8rem);
+    text-align: left;
+    letter-spacing: 0.4vmin;
+}
+
+.postprofile {
+    width: 100% !important;
+    flex-direction: row !important;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3vmin;
+}
+
+.postprofile div {
+    margin: 0;
+    text-align: center;
+}
+}

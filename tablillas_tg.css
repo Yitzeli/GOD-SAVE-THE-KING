@@ -1,0 +1,121 @@
+.gal-tg {
+    width: clamp(395px, 90%, 800px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    border: 3px solid rgba(var(--clr-0), 0.3);
+    padding: 7%;
+}
+
+.img-tg img {
+    width: 100%;
+}
+
+.gsdk-galeria-cont {
+width: 100%;
+    height: 40vmin;
+    margin-top: -4vmin;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1vmin;
+    row-gap: 1vmin;
+position: relative;
+}
+
+.gsdk-galeria-cont br {
+    display: none;
+}
+
+.gsdk-galeria-cont::-webkit-scrollbar {
+  width: 2px;
+}
+
+.gsdk-galeria-cont::-webkit-scrollbar-track {
+  background: rgba(var(--clr-10), 0);
+}
+
+.gsdk-galeria-cont::-webkit-scrollbar-thumb {
+  background: rgba(var(--clr-acnt), 0.2);
+}
+
+.img-c {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.img-w {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  cursor: pointer;
+  transition: transform ease-in-out 300ms;
+}
+
+.img-w img {
+  display: none;
+}
+
+.img-c {
+  transition: width ease 400ms, height ease 350ms,
+  left cubic-bezier(0.4, 0, 0.2, 1) 420ms,
+  top cubic-bezier(0.4, 0, 0.2, 1) 420ms;
+}
+
+.img-c:hover .img-w {
+  transform: scale(1.2);
+  transition: transform cubic-bezier(0.4, 0, 0.2, 1) 450ms;
+}
+
+.img-c.active {
+  width: 70% !important;
+  height: 70% !important;
+  opacity: 0;
+  left: 50% !important;
+  top: 5vmin !important;
+  position: absolute;
+  z-index: 2;
+  transform: translateX(-50%);
+  transition: all ease-in-out 420ms;
+}
+
+.img-c.active:hover .img-w {
+  transform: scale(1);
+}
+
+.img-c.postactive {
+  left: 50% !important;
+  top: 5vmin !important;
+  opacity: 0;
+  position: absolute;
+  z-index: 2;
+  transition: all ease-in-out 420ms;
+}
+
+.img-c.active.positioned {
+  opacity: 1;
+  left: 50% !important;
+  top: 5vmin !important;
+  transition-delay: 50ms;
+  box-shadow: 5px 5px 10px rgba(var(--clr-10), 0.4);
+  transition: all ease-in-out 420ms;
+}
+
+@media screen and (max-width: 999px) {
+
+  .gsdk-galeria-cont {
+    height: 35vmin;
+grid-template-columns: repeat(2, 1fr);
+  }
+
+  .img-c.active,
+  .img-c.postactive,
+  .img-c.active.positioned  {
+    top: 4vmin !important;
+  }
+}

@@ -1,0 +1,213 @@
+fieldset {
+    position: relative;
+}
+
+fieldset:before {
+    content: "";
+    width: 2px;
+    height: calc(86% - 3px);
+    position: absolute;
+    display: block;
+    background: rgba(var(--clr-acnt), 0.3);
+    left: 50%;
+}
+
+fieldset.fields1.left.fld_connexion::before {
+    height: calc(70% - 3px);
+}
+
+fieldset.fields1.left.fld_connexion {
+    border-top: 1px solid rgba(var(--clr-0), 1);
+}
+
+fieldset.fields2:before {
+display: none;
+}
+
+fieldset.fields2 {
+display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 0 6vmin;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: var(--txt-size-7);
+}
+
+fieldset.fields2 dt {
+    margin: 3vmin auto 0;
+}
+
+input.button2[value="REINICIAR"] {
+    margin-left: 1.5vmin;
+}
+
+form#frmAgreement h2.u {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--txt-1);
+    font-size: var(--txt-size-5);
+    margin: 6vmin 0 3vmin;
+    text-transform: uppercase;
+    border-bottom: 1px solid rgba(var(--clr-0), 1);
+}
+
+form#frmAgreement .inner p {
+    text-align: justify;
+    margin-bottom: 1.5vmin;
+}
+
+form#frmAgreement u {
+    text-decoration: underline;
+}
+
+span[style="color:red"] {
+    color: rgba(var(--clr-acnt), 1) !important;
+}
+
+form#frmAgreement .inner p.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input.button1.cgu-buttons {
+    margin: 3vmin 0 9vmin;
+}
+
+form#ucp .panel .inner p {
+    text-align: center;
+    border-bottom: 1px solid rgba(var(--clr-0), 1);
+    font-size: var(--txt-size-3);
+    text-transform: uppercase;
+    padding-bottom: 0.5vmin;
+}
+
+form#ucp dl, fieldset.fields1.left.fld_connexion dl {
+display: flex !important;
+    justify-content: space-between !important;
+    align-items: start !important;
+flex-wrap: wrap;
+    margin: 3vmin auto !important;
+    text-transform: uppercase;
+    font-size: var(--txt-size-7);
+    position: relative !important;
+}
+
+form#ucp dl:nth-child(5), fieldset.fields1.left.fld_connexion dl:nth-child(3), fieldset.fields1.left.fld_connexion dl:nth-child(4) {
+    width: 100%;
+    justify-content: center !important;
+    font-size: var(--txt-size-3);
+    padding: 3vmin 0 0 !important;
+    margin: 5vmin 0 0 !important;
+   border-top: 1px solid rgba(var(--clr-0), 1);
+}
+
+fieldset.fields1.left.fld_connexion dl:nth-child(4) {
+    border-top: none;
+    margin: 0 !important;
+}
+
+form#ucp dl:nth-child(5) dt, fieldset.fields1.left.fld_connexion dl:nth-child(4) dt {
+display: none;
+}
+
+form#ucp dl:nth-child(5) dd, fieldset.fields1.left.fld_connexion dl:nth-child(4) dd {
+        width: auto;
+    display: flex !important;
+    padding: 0;
+}
+
+fieldset.fields1.left.fld_connexion dd + dd {
+    position: relative;
+    left: 50%;
+}
+
+input#wantsnews {
+    margin: 0 0.5rem 0 0;
+}
+
+form#ucp dt, fieldset.fields1.left.fld_connexion dt {
+    width: 50%;
+    text-align: right;
+    padding-right: 5.5vmin;
+    display: flex;
+    justify-content: end;
+    align-items: start;
+}
+
+form#ucp dt label, fieldset.fields1.left.fld_connexion dt label {
+    letter-spacing: 0.1vmin;
+}
+
+form#ucp dd, fieldset.fields1.left.fld_connexion dd {
+    width: 50%;
+    padding-left: 6vmin;
+}
+
+fieldset.fields1.left.fld_connexion dd a {
+    margin-top: 1.5vmin;
+    display: block;
+}
+
+label[for="autologin"] {
+    display: flex!important;
+    justify-content: center;
+    align-items: center;
+}
+
+input#autologin {
+    margin-right: 0.5rem;
+}
+
+.social_btn {
+    display: none;
+}
+
+a[href="/register"] {
+    margin: 0 0 6vmin;
+    display: block;
+}
+
+div#pwd_bad, div#pwd_middle, div#pwd_good {
+    display: none;
+}
+
+input[type="password"],
+input#email,
+input#username_reg,
+fieldset.fields1.left.fld_connexion input#username {
+    width: 60%;
+}
+
+fieldset.fields2 input[type="password"] {
+    width: 100%;
+    padding: 0.1rem 0.5rem;
+}
+
+@media screen and (max-width: 999px) {
+@media screen and (max-aspect-ratio: 6 / 7) {
+input:-internal-autofill-selected {
+    width: 100%;
+}
+
+fieldset.fields1.left.fld_connexion dd a {
+    font-size: var(--txt-size-3);
+}
+
+fieldset.fields1.left.fld_connexion dl:nth-child(3) dd {
+    width: 100%;
+}
+
+dd input {
+    width: 100% !important;
+}
+
+input#wantsnews {
+    width: 2vmin !important;
+    margin: 0 1rem 0 0;
+}
+}
+}

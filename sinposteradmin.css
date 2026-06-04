@@ -1,0 +1,47 @@
+.noposter .postprofile,
+.noposter .post-datos,
+.noposter .fa_like_div,
+.noposterreg .postprofile,
+.noposterreg .post-poster,
+.noposterreg .signature_div,
+.noposterreg .fa_like_div {
+  display: none;
+}
+
+.noposterreg .post-datos {
+  justify-content: end;
+}
+
+.noposter .postmsj,
+.noposterreg .postmsj {
+  height: 100%;
+}
+
+.noposter .post-content,
+.noposterreg .post-content {
+  width: 100%;
+  border: 2px solid rgba(var(--clr-0), 1);
+  padding: 3vmin;
+  left: 0;
+}
+
+.noposter .gsdk-post,
+.noposterreg .gsdk-post,
+.gsdk-post-reg-ext.no-posterreg,
+.gsdk-post-reg.no-posterreg,
+.gsdk-post-afi.no-poster {
+  margin: 6% auto;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .noposterreg .post-datos {
+      height: 50px;
+      top: 0px;
+    }
+
+    .noposterreg .post-content {
+      margin-top: 50px;
+    }
+  }
+}

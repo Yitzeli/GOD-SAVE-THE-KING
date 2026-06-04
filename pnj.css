@@ -1,0 +1,86 @@
+.pnj-ley {
+  --clr-acnt: 179, 129, 179 !important;
+}
+
+.pnj-ciu {
+  --clr-acnt: 141, 176, 187 !important;
+}
+
+.pnj-serv {
+  --clr-acnt: 144, 198, 149 !important;
+}
+
+.pnj-cel {
+  --clr-acnt: 245, 215, 110 !important;
+}
+
+.pnj-cri {
+  --clr-acnt: 210, 77, 87 !important;
+}
+
+.post-pnj .postprofile-fields,
+.post-pnj .poster-avatar img {
+    display: none !important;
+}
+
+.post-pnj .poster-postprofile:hover > .poster-avatar a img {
+    filter: blur(0) !important;
+    transform: scale(1) !important;
+}
+
+.post-pnj .poster-postprofile:hover > .poster-avatar a:after,
+.post-pnj .poster-avatar img {
+    opacity: 0 !important;
+}
+
+.post-pnj .post-poster-rank,
+.post-pnj .post-poster-name a span strong {
+    font-size: 0 !important;
+}
+
+.post-pnj .post-poster-rank:after {
+    content: "PERSONAJE NO JUGABLE" !important;
+    font-size: var(--txt-size-3) !important;
+}
+
+.post-pnj .post-poster-name a span strong:after {
+    content: "";
+    font-size: var(--txt-size-8) !important;
+font-weight: 600 !important;
+}
+
+.post-pnj .poster-avatar a {
+    background-image: url('https://via.placeholder.com/250x400');
+    position: absolute !important;
+    top: 0;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    width: 248px;
+    height: 398px;
+}
+
+@media screen and (max-width: 999px) {
+.post-pnj .poster-avatar a {
+    width: 20vmax;
+    height: 32vmax;
+}
+}
+
+@media screen and (max-width: 999px) {
+@media screen and (max-aspect-ratio: 6 / 7) {
+.post-pnj .poster-avatar a {
+    width: 200px !important;
+    height: 300px !important;
+}
+
+.post-pnj .post-datos {
+    height: 297px;
+    top: -297px;
+    padding: 7vmin 3vmin;
+    border-right: 2px solid rgba(var(--clr-0), 1);
+    border-bottom: 2px solid rgba(var(--clr-0), 1);
+    justify-content: space-between;
+}
+}
+}

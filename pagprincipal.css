@@ -1,0 +1,1310 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.table-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--txt-1);
+  font-size: var(--txt-size-5);
+  margin: 12vmin 0 6vmin;
+}
+
+.forabg.\<h2\>MULTIVERSE\<\/h2\> {
+  padding-bottom: 6vmin;
+  border-bottom: 2px solid rgba(var(--clr-0), 1);
+}
+
+.forabg.\<h2\>WELCOME.TO.LONDON\<\/h2\> .inner .table-title {
+  margin: 15vmin 0 6vmin;
+  border-top: 2px solid rgba(var(--clr-0), 1);
+  border-bottom: 2px solid rgba(var(--clr-0), 1);
+  padding: 1vmin 0;
+}
+
+.forabg.\<h2\>WIDER.WORLD\<\/h2\> .inner .table-title,
+.forabg.\<h2\>MULTIVERSE\<\/h2\> .inner .table-title {
+  margin: 3vmin 0;
+}
+
+.foro-info,
+.lastpost,
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row:nth-child(4):before {
+  display: none !important;
+}
+
+.foro-info.CITY.OF.LONDON,
+.foro-info.CITY.OF.WESTMINSTER,
+.foro-info.KENSINGTON.Y.CHELSEA,
+.foro-info.CAMDEN,
+.foro-info.GREENWICH,
+.foro-info.DAGENHAM,
+.foro-info.UNITED.KINGDOM,
+.foro-info.WORLD,
+.foro-info.ALTERNATIVE.UNIVERSE,
+.lastpost.CITY.OF.LONDON,
+.lastpost.CITY.OF.WESTMINSTER,
+.lastpost.KENSINGTON.Y.CHELSEA,
+.lastpost.CAMDEN,
+.lastpost.GREENWICH,
+.lastpost.DAGENHAM,
+.lastpost.UNITED.KINGDOM,
+.lastpost.WORLD,
+.lastpost.ALTERNATIVE.UNIVERSE {
+  display: flex !important;
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\>,
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\>,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: start;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> {
+  flex-direction: column;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> {
+  height: 27vmin;
+  margin-bottom: 31vmin;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\>,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\>,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> {
+  height: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: strech;
+  position: relative;
+  flex-wrap: wrap;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\>,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\>,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> {
+  flex-direction: column;
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> {
+  justify-content: space-evenly;
+  margin-right: -4vmin;
+  margin-bottom: 23vmin;
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row {
+  width: 100%;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row {
+  width: 100%;
+  height: 30vmin;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .row,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .row {
+  width: 50%;
+  height: 100%;
+  position: relative;
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .row {
+  width: 30%;
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .row:nth-child(4),
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .row:nth-child(5) {
+  margin: 22vmin 0 14vmin;
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row + .row {
+  margin-top: 4vmax;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row + .row {
+  margin-top: 4vmin;
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row + .row:before,
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row:before,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  margin: -2vmax 0 0;
+  position: absolute;
+  display: block;
+  background: rgba(var(--clr-1), 1);
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row:before,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+  background: rgba(var(--clr-acnt), 0.3);
+  margin: -34vmin 0 0;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row,
+    .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row,
+    .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row {
+      height: 16vmax;
+    }
+
+    .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row,
+    .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row,
+    .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row + .row {
+      margin-top: 2vmax;
+    }
+
+    .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row:before,
+    .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+      display: block !important;
+      margin: -18vmax 0 0;
+    }
+
+    .foro-tit.GREENWICH {
+      background-position: center center !important;
+    }
+  }
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .foro-tit {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  position: relative;
+  background-color: rgba(var(--clr-acnt), 0.5);
+  background-blend-mode: color-burn;
+  transition: all ease-in-out 500ms;
+}
+
+.usergroup-cel .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit,
+.usergroup-cel .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit,
+.usergroup-cel .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit {
+    background-blend-mode: luminosity !important;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit:hover {
+  background-color: rgba(var(--clr-4), 0.5);
+  transition: all ease-in-out 500ms;
+}
+
+.foro-tit.CITY.OF.LONDON {
+  background-image: url(https://i.imgur.com/8JYzOyv.png);
+  background-position: center -12vmin !important;
+}
+
+.foro-tit.CITY.OF.WESTMINSTER {
+  background-image: url(https://i.imgur.com/wU7hu6B.png);
+  background-position: center -13vmin !important;
+}
+
+.foro-tit.KENSINGTON.Y.CHELSEA {
+  background-image: url(https://i.imgur.com/X8Smb6n.png);
+  background-position: center !important;
+}
+
+.foro-tit.CAMDEN {
+  background-image: url(https://i.imgur.com/Xr00BM2.png);
+  background-position: center !important;
+}
+
+.foro-tit.GREENWICH {
+  background-image: url(https://i.imgur.com/Gmy9md7.png);
+  background-position: -18vmin center;
+}
+
+.foro-tit.DAGENHAM {
+  background-image: url(https://i.imgur.com/mJl8PrQ.png);
+  background-position: center !important;
+}
+
+.foro-tit.UNITED.KINGDOM {
+  background-image: url(https://i.imgur.com/XAjHonN.png);
+  background-position: center -7vmin !important;
+}
+
+.foro-tit.WORLD {
+  background-image: url(https://i.imgur.com/pDQ7e23.png);
+  background-position: center bottom !important;
+}
+
+.foro-tit.ALTERNATIVE.UNIVERSE {
+  background-image: url(https://i.imgur.com/QhpLXoK.png);
+  background-position: center bottom !important;
+}
+
+@media screen and (min-width: 1000px) {
+  .foro-tit.CITY.OF.LONDON {
+    background-position: -2vmin center !important;
+  }
+
+  .foro-tit.CITY.OF.WESTMINSTER {
+    background-position: -30vmin center !important;
+  }
+
+  .foro-tit.KENSINGTON.Y.CHELSEA {
+    background-position: -38vmin center !important;
+  }
+
+  .foro-tit.UNITED.KINGDOM {
+    background-position: center top !important;
+  }
+
+  .foro-tit.WORLD {
+    background-position: center bottom !important;
+  }
+
+  .foro-tit.ALTERNATIVE.UNIVERSE {
+    background-position: center bottom !important;
+  }
+}
+
+.foro-tit.ALTERNATIVE.UNIVERSE .foro-deg1 {
+  height: 50% !important;
+}
+
+.foro-deg1,
+.foro-deg2 {
+  position: absolute;
+  width: 100%;
+  height: 50%;
+  background: rgba(0, 0, 0, 0);
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.7) 0%,
+    rgba(0, 0, 0, 0) 100%
+  );
+}
+
+.foro-deg2 {
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0) 0%,
+    rgba(0, 0, 0, 0.7) 90%
+  );
+  bottom: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .foro-deg1,
+  .foro-deg2 {
+    height: 30%;
+  }
+}
+
+.topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .forumtitle {
+  width: 100%;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-2);
+  text-align: center;
+  margin-bottom: 2vmax;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .forumtitle {
+  width: 100%;
+  height: 17vmin;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  letter-spacing: 0.2vmin;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  text-shadow: 2px 2px 4px rgba(var(--clr-10), 0.9);
+  left: -3vmin;
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .forumtitle {
+  font-size: var(--txt-size-3);
+  left: -5vmin;
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> div:nth-child(2) .forumtitle {
+  padding: 0 20% 0 0;
+  left: 0;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\>:hover .forumtitle,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\>:hover .forumtitle,
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .forumtitle:hover,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .forumtitle:hover {
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .forumtitle {
+  width: 75%;
+  position: relative;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-4);
+  text-align: center;
+  line-height: 100%;
+  top: 4vmin;
+  z-index: 1;
+}
+
+a.forumtitle:hover {
+  color: rgba(var(--clr-0), 1);
+  letter-spacing: 0.4vmin;
+}
+
+.foro-info.CITY.OF.LONDON,
+.foro-info.CITY.OF.WESTMINSTER,
+.foro-info.KENSINGTON.Y.CHELSEA,
+.foro-info.CAMDEN,
+.foro-info.GREENWICH,
+.foro-info.DAGENHAM,
+.foro-info.UNITED.KINGDOM,
+.foro-info.WORLD,
+.foro-info.ALTERNATIVE.UNIVERSE {
+  width: 100%;
+  position: relative;
+  top: 2vmin;
+  flex-direction: row;
+  justify-content: center;
+  text-transform: uppercase;
+  letter-spacing: 0.3vmin;
+  font-size: var(--txt-size-3);
+}
+
+.topics,
+.posts,
+dfn {
+  width: fit-content;
+}
+
+.posts:before {
+  content: "-";
+  margin: 0 1vmin;
+  position: relative;
+  display: inline;
+}
+
+.lastpost.CITY.OF.LONDON,
+.lastpost.CITY.OF.WESTMINSTER,
+.lastpost.KENSINGTON.Y.CHELSEA,
+.lastpost.CAMDEN,
+.lastpost.GREENWICH,
+.lastpost.DAGENHAM,
+.lastpost.UNITED.KINGDOM,
+.lastpost.WORLD,
+.lastpost.ALTERNATIVE.UNIVERSE {
+  width: 100%;
+  position: absolute;
+  bottom: 4vmin;
+  font-size: var(--txt-size-3);
+  margin-left: 6vmin;
+  justify-content: center;
+}
+
+.lastpost.CITY.OF.LONDON span,
+.lastpost.CITY.OF.WESTMINSTER span,
+.lastpost.KENSINGTON.Y.CHELSEA span,
+.lastpost.CAMDEN span,
+.lastpost.GREENWICH span,
+.lastpost.DAGENHAM span,
+.lastpost.UNITED.KINGDOM span,
+.lastpost.WORLD span,
+.lastpost.ALTERNATIVE.UNIVERSE span,
+.lastpost.CITY.OF.LONDON span strong,
+.lastpost.CITY.OF.WESTMINSTER span strong,
+.lastpost.KENSINGTON.Y.CHELSEA span strong,
+.lastpost.CAMDEN span strong,
+.lastpost.GREENWICH span strong,
+.lastpost.DAGENHAM span strong,
+.lastpost.UNITED.KINGDOM span strong,
+.lastpost.WORLD span strong,
+.lastpost.ALTERNATIVE.UNIVERSE span strong {
+  color: rgba(var(--clr-0), 1) !important;
+  text-transform: uppercase;
+  font-size: 80%;
+  letter-spacing: 0.1vmin;
+}
+
+.lastpost.CITY.OF.LONDON a,
+.lastpost.CITY.OF.WESTMINSTER a,
+.lastpost.KENSINGTON.Y.CHELSEA a,
+.lastpost.CAMDEN a,
+.lastpost.GREENWICH a,
+.lastpost.DAGENHAM a,
+.lastpost.CITY.OF.LONDON a span,
+.lastpost.CITY.OF.WESTMINSTER a span,
+.lastpost.KENSINGTON.Y.CHELSEA a span,
+.lastpost.CAMDEN a span,
+.lastpost.GREENWICH a span,
+.lastpost.DAGENHAM a span,
+.lastpost.UNITED.KINGDOM a,
+.lastpost.WORLD a,
+.lastpost.ALTERNATIVE.UNIVERSE a,
+.lastpost.UNITED.KINGDOM a span,
+.lastpost.WORLD a span,
+.lastpost.ALTERNATIVE.UNIVERSE a span,
+.lastpost.CITY.OF.LONDON span strong,
+.lastpost.CITY.OF.WESTMINSTER span strong,
+.lastpost.KENSINGTON.Y.CHELSEA span strong,
+.lastpost.CAMDEN span strong,
+.lastpost.GREENWICH span strong,
+.lastpost.DAGENHAM span strong,
+.lastpost.UNITED.KINGDOM span strong,
+.lastpost.WORLD span strong,
+.lastpost.ALTERNATIVE.UNIVERSE span strong {
+  color: rgba(var(--clr-0), 1) !important;
+  font-size: var(--txt-size-3);
+}
+
+.lastpost.CITY.OF.LONDON a span,
+.lastpost.CITY.OF.WESTMINSTER a span,
+.lastpost.KENSINGTON.Y.CHELSEA a span,
+.lastpost.CAMDEN a span,
+.lastpost.GREENWICH a span,
+.lastpost.DAGENHAM a span,
+.lastpost.CITY.OF.LONDON a span strong,
+.lastpost.CITY.OF.WESTMINSTER a span strong,
+.lastpost.KENSINGTON.Y.CHELSEA a span strong,
+.lastpost.CAMDEN a span strong,
+.lastpost.GREENWICH a span strong,
+.lastpost.DAGENHAM a span strong,
+.lastpost.UNITED.KINGDOM a span,
+.lastpost.WORLD a span,
+.lastpost.ALTERNATIVE.UNIVERSE a span,
+.lastpost.UNITED.KINGDOM a span strong,
+.lastpost.WORLD a span strong,
+.lastpost.ALTERNATIVE.UNIVERSE a span strong {
+  color: rgba(var(--clr-0), 1) !important;
+  font-weight: 400 !important;
+  letter-spacing: 0.4vmin;
+  font-size: var(--txt-size-3);
+}
+
+a.last-post-icon {
+  width: 3.5vmin;
+  height: 3.5vmin;
+  padding: 0.1vmin 0 0 0.2vmin !important;
+  background-color: rgba(var(--clr-10), 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid rgba(var(--clr-0), 1);
+  font-size: var(--txt-size-2) !important;
+  position: absolute;
+  bottom: 20%;
+  margin-left: -6vmin;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+  z-index: 8;
+}
+
+a.last-post-icon:before {
+  content: "\f470";
+  font-family: bootstrap-icons !important;
+}
+
+a.last-post-icon:hover {
+  background-color: rgba(var(--clr-acnt), 0.5);
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.foro-desc {
+  font-size: var(--txt-size-3);
+  line-height: 180%;
+  margin-bottom: 2.5vmax;
+  font-family: var(--txt);
+  text-align: justify;
+}
+
+.foro-amb-links-tit,
+.foro-anun-links-tit,
+.foro-com-links-tit {
+  padding: 0.5vmin 1.5vmin 0.5vmin 1.2vmin;
+  background: rgba(var(--clr-0), 0.8);
+  color: rgba(var(--clr-10), 1);
+  border-radius: 3vmax;
+  font-size: var(--txt-size-3);
+  font-weight: 600;
+  font-family: var(--txt);
+  text-align: justify;
+  text-transform: uppercase;
+  letter-spacing: 0.2vmin;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  cursor: pointer;
+}
+
+.foro-links-tit {
+  width: 4vmin;
+  height: 4vmin;
+  background-color: rgba(var(--clr-10), 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 100%;
+  border: 2px solid rgba(var(--clr-0), 1);
+  font-size: var(--txt-size-1);
+  position: absolute;
+  top: 13vmin;
+  cursor: pointer;
+  transition: all ease-in-out 250ms;
+  z-index: 8;
+}
+
+.foro-links-tit:hover {
+  background-color: rgba(var(--clr-acnt), 0.5);
+}
+
+.foro-exp-links-tit,
+.foro-reg-links-tit,
+.foro-busq-links-tit,
+.foro-conex-links-tit {
+  left: 29vmax;
+}
+
+.foro-gal-links-tit {
+  left: 15vmax;
+}
+
+.foro-off-links-tit {
+  left: 18vmax;
+}
+
+.foro-afi-links-tit {
+  left: 17vmax;
+}
+
+.foro-admin-links-tit {
+  left: 19vmax;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .foro-links-tit,
+    a.last-post-icon {
+      font-size: var(--txt-size-7) !important;
+    }
+
+    .foro-exp-links-tit,
+    .foro-reg-links-tit,
+    .foro-busq-links-tit,
+    .foro-conex-links-tit {
+      left: 29vmin;
+    }
+
+    .foro-gal-links-tit {
+      left: 16vmin;
+    }
+
+    .foro-off-links-tit {
+      left: 19vmin;
+    }
+
+    .foro-afi-links-tit {
+      left: 18vmin;
+    }
+
+    .foro-admin-links-tit {
+      left: 18vmin;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .foro-exp-links-tit {
+    left: 12vmax;
+  }
+
+  .foro-reg-links-tit {
+    left: 11.3vmax;
+  }
+
+  .foro-busq-links-tit {
+    left: 11.5vmax;
+  }
+
+  .foro-conex-links-tit {
+    left: 10.8vmax;
+  }
+
+  .foro-gal-links-tit {
+    left: 9vmax;
+  }
+
+  .foro-off-links-tit {
+    left: 17vmax;
+  }
+
+  .foro-afi-links-tit {
+    left: 14.4vmax;
+  }
+
+  .foro-admin-links-tit {
+    left: 15.2vmax;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .foro-off-links-tit {
+    left: 16vmax;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .foro-gal-links-tit {
+    left: 10.5vmax;
+  }
+
+  .foro-off-links-tit {
+    left: 15vmax;
+  }
+}
+
+.foro-docu-tit {
+  width: 60%;
+  color: rgba(var(--clr-acnt), 0.3);
+  font-size: 16vmin;
+  text-align: center;
+  position: absolute;
+  margin-left: 35%;
+  z-index: -1;
+  transition: all ease-in-out 500ms
+}
+
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-docu-tit {
+  margin-left: 15%;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .foro-tit:hover .foro-docu-tit,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-tit:hover .foro-docu-tit {
+  color: rgba(var(--clr-0), 0.6);
+  transition: all ease-in-out 500ms
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .foro-tit:hover .foro-links-tit,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-tit:hover .foro-links-tit {
+  color: var(--clr-txt);
+}
+
+.foro-amb-links,
+.foro-anun-links,
+.foro-com-links,
+.foro-exp-links,
+.foro-reg-links,
+.foro-busq-links,
+.foro-conex-links,
+.foro-gal-links,
+.foro-off-links,
+.foro-afi-links,
+.foro-admin-links {
+  width: 70%;
+  height: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(var(--clr-10), 0.8);
+  align-items: center;
+  text-transform: uppercase;
+  text-align: center;
+  padding: 0;
+  position: absolute;
+  right: 0;
+  bottom: 2.5vmax;
+  overflow: hidden;
+  transition: all ease-in-out 500ms;
+  z-index: 9;
+}
+
+.foro-exp-links,
+.foro-reg-links,
+.foro-busq-links,
+.foro-conex-links {
+  width: 90%;
+}
+
+.foro-gal-links,
+.foro-off-links,
+.foro-afi-links,
+.foro-admin-links {
+  width: 120%;
+  bottom: -9vmin;
+}
+
+.info-links-open,
+.docu-links-open,
+.off-links-open {
+  height: 21vmax;
+  padding: 2vmax 0;
+}
+
+.docu-links-open {
+  height: 18vmax;
+  padding: 2vmax 0;
+  bottom: 14.5vmin;
+}
+
+.off-links-open {
+  height: 8.6vmax;
+}
+
+.foro-amb-links .links-close,
+.foro-anun-links .links-close,
+.foro-com-links .links-close,
+.foro-exp-links .links-close,
+.foro-reg-links .links-close,
+.foro-busq-links .links-close,
+.foro-conex-links .links-close,
+.foro-gal-links .links-close,
+.foro-off-links .links-close,
+.foro-afi-links .links-close,
+.foro-admin-links .links-close {
+  background: rgba(var(--clr-10), 0.5);
+  padding: 1vmax;
+  position: absolute;
+  right: 4px;
+  top: 2px;
+  border-radius: 100%;
+  cursor: pointer;
+  z-index: 5;
+  font-size: var(--txt-size-7);
+}
+
+.links-text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow: auto;
+  padding: 0 1.5vmin;
+  font-size: var(--txt-size-7);
+}
+
+.links-text::-webkit-scrollbar {
+  width: 2px;
+}
+
+.links-text a {
+  font-weight: 400;
+  position: relative;
+  padding: 1vmax 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+}
+
+.links-text a::before {
+  content: "";
+  display: block;
+  width: calc(100% + 2.4vmin);
+  height: 100%;
+  background: rgba(var(--clr-acnt), 0.7);
+  position: absolute;
+  left: -1.2vmin;
+  right: 0;
+  transform: scalex(0);
+  transform-origin: right;
+  transition: transform ease-in-out 500ms;
+  z-index: -1;
+}
+
+.links-text a:hover {
+  color: rgba(var(--clr-0), 1);
+}
+
+.links-text a:hover::before {
+  transform: scalex(1);
+  transform-origin: left;
+}
+
+@media screen and (min-width: 1000px) {
+.links-text a {
+    padding: 0.5vmax 0;
+}
+
+  .topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> {
+    flex-direction: row;
+  }
+
+  .topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> {
+    height: 16vmin;
+    margin-bottom: 0;
+  }
+
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\>,
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\>,
+  .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> {
+    flex-direction: row;
+    height: 120vmin;
+  }
+
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\>,
+  .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> {
+    height: 30vmin;
+  }
+
+  .topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row {
+    width: 30% !important;
+  }
+
+  .topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .row {
+    width: 20%;
+  }
+
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row,
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row,
+  .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row {
+    width: 100%;
+  }
+
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row {
+    width: 31%;
+    height: calc(50% - 2.5vw);
+  }
+
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row {
+    width: 48%;
+  }
+
+  .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row {
+    width: 100%;
+  }
+
+  .topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row + .row {
+    margin-top: 0;
+  }
+
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row,
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row,
+  .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .row + .row {
+    margin-top: 0;
+  }
+
+  .topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .row + .row:before,
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row:before,
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+    width: 2px;
+    height: 100%;
+    margin: 0 0 0 -1.75%;
+  }
+
+  .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .row + .row:before,
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+    height: 40% !important;
+  }
+
+  .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .row + .row:before {
+    margin: 0 0 0 -2.1%;
+  }
+
+  .foro-desc {
+    font-size: var(--txt-size-7);
+    line-height: 2.5vmin;
+    margin: 0 0 3vmin 0;
+  }
+
+  .foro-docu-tit {
+    width: 100%;
+    margin-left: 0 !important;
+  }
+
+  .foro-tit.CITY.OF.LONDON .forumtitle {
+    width: 20vmin !important;
+  }
+
+  .topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .forumtitle {
+    font-size: var(--txt-size-1);
+    left: -11vmin;
+  }
+
+  .topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> div:nth-child(2) .forumtitle {
+    padding: 0 30% 0 0;
+  }
+
+  .topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> div:nth-child(3) .forumtitle {
+    left: -7vmin;
+  }
+
+  .topiclist.forums.\<h2\>INFORMACIÓN\<\/h2\> .forumtitle:hover,
+  a:hover .foro-desc {
+    color: rgba(var(--clr-0), 1);
+  }
+
+  .foro-amb-links,
+  .foro-anun-links,
+  .foro-com-links,
+  .foro-exp-links,
+  .foro-reg-links,
+  .foro-busq-links,
+  .foro-conex-links,
+  .foro-gal-links,
+  .foro-off-links,
+  .foro-afi-links,
+  .foro-admin-links {
+    bottom: 3.2vmin;
+  }
+
+  .foro-gal-links,
+  .foro-off-links,
+  .foro-afi-links,
+  .foro-admin-links {
+    width: 70%;
+    right: 3vmin;
+    bottom: -10vmin;
+  }
+
+  .info-links-open,
+  .docu-links-open,
+  .off-links-open {
+    height: 30vmin;
+  }
+
+  .docu-links-open {
+    height: 27vmin;
+    bottom: 2vmax;
+  }
+
+  .off-links-open {
+    height: 6.3vmax;
+  }
+
+  .foro-amb-links .links-close,
+  .foro-anun-links .links-close,
+  .foro-com-links .links-close,
+  .foro-exp-links .links-close,
+  .foro-reg-links .links-close,
+  .foro-busq-links .links-close,
+  .foro-conex-links .links-close,
+  .foro-gal-links .links-close,
+  .foro-off-links .links-close,
+  .foro-afi-links .links-close,
+  .foro-admin-links .links-close {
+    padding: 0.5vmax;
+  }
+
+  .links-text {
+    font-size: var(--txt-size-3);
+  }
+}
+
+.footer-index {
+  width: calc(100vw - 4px);
+  padding: 6vh 0;
+  background-color: rgba(var(--clr-10), 0.3);
+  color: rgba(var(--clr-0), 0.7);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  position: absolute;
+  left: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-index {
+    height: 50vh;
+    padding: 6vh 0;
+  }
+}
+
+.footer-index a {
+  color: rgba(var(--clr-0), 0.7);
+}
+
+.footer-index a:hover {
+  color: rgba(var(--clr-acnt), 0.8);
+}
+
+.footer-links {
+  width: clamp(75%, 600px, 1000px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+  line-height: 300%;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-links {
+    letter-spacing: 0vh;
+    line-height: 180%;
+  }
+}
+
+.footer-links .linklist {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+ul.linklist li {
+  display: inline;
+}
+
+.footer-links .linklist span {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-links .linklist {
+    flex-direction: row;
+  }
+
+  .footer-links .linklist span {
+    display: inline;
+  }
+}
+
+.footer-afi {
+  width: clamp(75%, 600px, 1000px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 3vh 0 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-afi {
+    height: 25vh;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+  }
+}
+
+.afi-cred,
+.afi-for,
+.afi-ext {
+  width: 100%;
+}
+
+.afi-for {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: stretch;
+}
+
+.afi-ext {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  column-gap: 1vmin;
+  row-gap: 1vmin;
+}
+
+@media screen and (min-width: 1000px) {
+  .afi-cred,
+  .afi-for,
+  .afi-ext {
+    padding: 1vh 2vh;
+  }
+
+  .afi-cred {
+    width: 30vh;
+    height: 25vh;
+    padding: 2vh 0 2vh 2vh;
+  }
+
+  .afi-for {
+    width: 53vh;
+  }
+
+  .afi-ext {
+    width: 24vh;
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  .afi-cred {
+    width: 31vh;
+  }
+
+  .afi-for {
+    width: 59vh;
+  }
+
+  .afi-ext {
+    width: 26vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .afi-cred {
+    width: 34vh;
+  }
+
+  .afi-for {
+    width: 65vh;
+  }
+
+  .afi-ext {
+    width: 29vh;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  .footer-index {
+    height: 55vh;
+  }
+
+  .footer-afi {
+    height: auto;
+  }
+
+  .afi-cred {
+    width: 36vh;
+  }
+
+  .afi-for {
+    width: 63vh;
+  }
+
+  .afi-ext {
+    width: 28vh;
+  }
+}
+
+.afi-mid {
+  width: 100%;
+  height: 2px;
+  background-color: rgba(var(--clr-0), 0.3);
+  margin: 3vh 0;
+}
+
+.afi-cred-text {
+  overflow: auto;
+  font-size: clamp(0.6rem, 0.8vmax, 0.8rem);
+  padding: 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .afi-mid {
+    width: 2px;
+    height: 100%;
+    margin: 0;
+  }
+
+  .afi-cred-text {
+    height: 100%;
+    line-height: 140%;
+    font-size: var(--txt-size-3);
+    padding: 0 2vh 0 0;
+  }
+}
+
+.afi-cred-text::-webkit-scrollbar {
+  width: 2px;
+}
+
+.afi-cred-text::-webkit-scrollbar-thumb {
+  background: rgba(var(--clr-0), 0.2) !important;
+}
+
+.afi-sep {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  column-gap: 1vmin;
+}
+
+.afi-for .afi-sep + .afi-sep {
+  margin: 6vh 0 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .afi-for .afi-sep + .afi-sep {
+    margin: 1vh 0 0;
+  }
+
+  .afi-for .afi-sep + .afi-sep {
+    margin: 1vh 0 0;
+  }
+
+  .afi-img1 {
+    margin: 0 !important;
+  }
+}
+
+.afi-img {
+  width: 6vw;
+  height: 6vw;
+  max-width: 50px;
+  max-height: 50px;
+  background-color: rgba(var(--clr-acnt), 0.3) !important;
+  background-size: cover !important;
+  background-position: center !important;
+  margin: auto
+}
+
+@media screen and (min-width: 1000px) {
+  .afi-img {
+    width: 4vw;
+    height: 4vw;
+  }
+}
+
+.footer-afi-premium {
+  width: clamp(75%, 600px, 1000px);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 6vh 0 0;
+}
+
+@media screen and (min-width: 1000px) {
+  .footer-afi-premium {
+    margin: 0;
+  }
+}
+
+.afi-premium {
+  width: 14vw;
+  height: 5vw;
+  aspect-ratio: 21/9;
+  max-width: 175px;
+  max-height: 50px;
+  background-color: rgba(var(--clr-acnt), 0.3) !important;
+  background-size: cover!important;
+  background-position: center !important;
+}

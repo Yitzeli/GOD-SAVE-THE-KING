@@ -1,0 +1,34 @@
+.postprofile,
+.post-poster,
+.post:before,
+.post:after,
+.postprofile:before,
+.postmsj:before,
+.postmsj:after,
+.post-datos:after,
+.tema-pag-top,
+.tema-pag-bottom,
+.fa_like_div,
+form#quick_reply,
+.signature_div {
+    display: none !important;
+}
+
+.postbody {
+    background: none !important;
+}
+
+.post-datos {
+    height: 5vmin !important;
+    justify-content: end !important;
+    padding: 0 !important;
+}
+
+div#main-content {
+    margin-bottom: 0 !important;
+}
+
+.post-content {
+    background-color: rgba(var(--clr-acnt), 0) !important;
+    border: none !important;
+}

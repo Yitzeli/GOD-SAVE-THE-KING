@@ -1,0 +1,703 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#main {
+  width: 100%;
+}
+
+.profile_view {
+  border-top: 2px solid rgba(var(--clr-0), 1);
+}
+
+p.copyright {
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+}
+
+#field_id10,
+dl#field_id11 dt.perfil-label,
+.field_uneditable img,
+.invisible,
+.ajax-profil_edit img,
+dl#field_id-6 dt.perfil-label,
+dl#field_id-13 dt.perfil-label,
+.left-box.details img,
+.contact-email,
+.perfil-contact form div:nth-child(2),
+dl#field_id12,
+dl#field_id13 {
+  display: none !important;
+}
+
+div#tooltip {
+  display: none;
+}
+
+.profile_view textarea,
+.profile_view input,
+.ajax-profil_edit,
+.ajax-profil_valid {
+  position: absolute;
+  z-index: 99999999 !important;
+  cursor: pointer;
+}
+
+dd.perfil-content.ajax-profil_parent {
+  position: relative;
+}
+
+.ajax-profil_edit {
+  right: -2.5vmin;
+  bottom: 0;
+}
+
+.perfil-contact .ajax-profil_edit {
+  right: -1.5vmin;
+  bottom: -1.5vmin;
+}
+
+.ajax-profil_valid {
+  position: absolute;
+  right: -1vmin;
+  bottom: -0.2vmin;
+  font-size: var(--txt-size-2);
+}
+
+.ajax-profil_edit:before,
+.ajax-profil_valid:before {
+  content: "\F813";
+  font-family: bootstrap-icons !important;
+  background: rgba(var(--clr-10), 1);
+  color: var(--clr-txt);
+  border-radius: 100%;
+  cursor: pointer;
+  padding: 0.4vmin 0.4vmin 0.5vmin 0.5vmin;
+  transition: all ease-in-out 250ms;
+}
+
+.ajax-profil_edit:before {
+  font-size: var(--txt-size-3);
+}
+
+.ajax-profil_valid:before {
+  content: "\F26B";
+}
+
+.ajax-profil_edit:hover:before,
+.ajax-profil_valid:hover:before {
+  color: rgba(var(--clr-acnt), 1);
+  transition: all ease-in-out 250ms;
+}
+
+.field_editable {
+  width: 10vmax;
+}
+
+.profile_view textarea,
+.profile_view input,
+.profile_view select {
+  width: calc(30vmax - 1vmin) !important;
+  height: fit-content;
+  position: absolute;
+  background: rgba(var(--clr-10), 1) !important;
+  bottom: 0;
+  right: 0;
+  font-size: var(--txt-size-7) !important;
+  padding: 1vmin;
+  cursor: text;
+  line-height: inherit;
+}
+
+.profile_view input {
+  width: 100% !important;
+  top: 0;
+  color: var(--clr-txt);
+  border: 1px solid rgba(var(--clr-0), 1);
+}
+
+.perfil-contact input {
+  width: 30vmin !important;
+  top: 1vmin;
+  left: -1vmin;
+}
+
+.perfil-field-content .ajax-profil_valid {
+  position: relative;
+  width: fit-content;
+  margin-left: 85%;
+  bottom: -2.2vmin;
+}
+
+.perfil-contact .ajax-profil_valid {
+  bottom: -3.2vmin;
+  right: 1.2vmin;
+}
+
+.profile_view textarea::-webkit-scrollbar {
+  width: 2px;
+}
+
+.profile_view textarea#profile_field_2_11 {
+  text-align: right;
+}
+
+.perfil-background {
+  width: calc(100vw - 4px);
+  height: 100vh;
+  margin: 0 0 -100vh;
+  position: sticky;
+  left: 0;
+  top: 0;
+  background-image: url(https://i.imgur.com/MC5Y8Vy.png);
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(var(--clr-10), 0.7);
+  background-blend-mode: multiply;
+  filter: blur(2px);
+  z-index: -10;
+}
+
+.perfil-background:before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--clr-10), 1);
+  mix-blend-mode: color;
+}
+
+.perfil-back-acnt {
+  width: calc(100vw - 4px);
+  height: 40vh;
+  margin: 60vh 0 -100vh;
+  position: sticky;
+  left: 0;
+  top: 60vh;
+  border-top: 2px solid rgba(var(--clr-0), 1);
+  background-color: rgba(var(--clr-acnt), 0.25);
+  z-index: -10;
+}
+
+.perfil-view {
+  width: clamp(75%, 600px, 1000px);
+  height: 90vh;
+  border: 2px solid rgba(var(--clr-0), 1);
+  position: absolute;
+  margin: 5vh 12.5%;
+  overflow: hidden;
+}
+
+h1.page-title.perfil-tit {
+  width: 16vmax;
+  position: absolute;
+  left: calc(35vmax + 200px + 3vmin);
+  bottom: 38vh;
+  font-size: 4.5vmax;
+  line-height: 80%;
+  text-align: left;
+  flex-direction: column-reverse;
+  justify-content: start;
+  align-items: start;
+}
+
+.perfil-avatar {
+  position: absolute;
+  margin: calc(23vh - 2px) 0 0 35vmax;
+  z-index: 9;
+}
+
+.perfil-avatar img {
+  max-width: 200px !important;
+  border: 2px solid rgba(var(--clr-0), 1);
+  object-fit: cover;
+  aspect-ratio: 250/400;
+}
+
+.perfil-rango,
+.perfil-ultvisita {
+  width: 20vmax;
+  position: absolute;
+  text-align: right;
+  display: flex;
+  justify-content: end;
+  font-size: var(--txt-size-7);
+  text-transform: uppercase;
+  letter-spacing: 0.3vmin;
+  bottom: 38vh;
+  margin-left: 15vmax;
+  padding: 0 3vmin 0 0;
+}
+
+.perfil-rango {
+  font-weight: 700;
+}
+
+.perfil-ultvisita {
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.6vmin;
+  bottom: 43vh;
+}
+
+.perfil-links {
+  width: 16vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0;
+  text-transform: uppercase;
+  letter-spacing: 0.2vmin;
+  position: absolute;
+  margin: 0 0 0 calc(200px + 3vmin);
+  bottom: 16px;
+}
+
+.perfil-links a {
+  font-size: var(--txt-size-3);
+  font-weight: 400 !important;
+}
+
+.perfil-links a:hover {
+  color: var(--clr-txt);
+  font-weight: 700 !important;
+  letter-spacing: 0.3vmin;
+}
+
+dl#field_id11 {
+  width: 30vmax;
+  position: absolute;
+  margin-left: 5vmax;
+  bottom: 46vh;
+  line-height: 150%;
+  text-align: right;
+  padding: 0 calc(3vmin + 2px) 0 0;
+  font-size: var(--txt-size-7);
+}
+
+dl#field_id-6,
+dl#field_id-13 {
+  font-family: var(--txt);
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+  letter-spacing: 0.4vmin;
+  margin-bottom: 3vmin;
+}
+
+dl#field_id-13 {
+  margin-bottom: -4vmin;
+}
+
+dl#field_id-6 .perfil-content .field_uneditable:after {
+  content: " MENSAJES";
+}
+
+dl#field_id-13 .perfil-content .field_uneditable:after {
+  content: " LIBRAS";
+}
+
+dl#field_id-5 .perfil-content .field_uneditable:after {
+  content: " AÑOS";
+}
+
+dl#field_id-6 dd.perfil-content,
+dl#field_id-13 dd.perfil-content {
+  height: 2vmin;
+  display: flex;
+  align-items: center;
+}
+
+.perfil-field-content {
+  width: 100%;
+  display: flex;
+  position: absolute;
+  justify-content: space-between;
+  align-items: start;
+  margin-top: 1vmin;
+}
+
+.perfil-field-content .perfil-contenido {
+  width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+  letter-spacing: 0.1vmin;
+}
+
+.perfil-field-content .perfil-contenido .perfil-label span {
+  font-size: clamp(0.5rem, 0.7vmax, 0.7rem);
+  text-transform: uppercase;
+  letter-spacing: 0.2vmin;
+  font-weight: 800;
+  text-align: left;
+  color: var(--clr-txt) !important;
+}
+
+dl#field_id-12 .field_editable {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+select#profile_field_4_-12_2,
+select#profile_field_4_-12_1 {
+  position: relative;
+  width: 100% !important;
+  border: 1px solid rgba(var(--clr-0), 1) !important;
+}
+
+input#profile_field_4_-12_0 {
+  position: relative;
+}
+
+dl#field_id-12 .ajax-profil_valid {
+  bottom: 1.5vmin !important;
+}
+
+.perfil-contact {
+  position: absolute;
+  width: 25vmax;
+  margin-left: 10vmax;
+  bottom: 29vh;
+  padding: 0 calc(3vmin + 2px) 0 0;
+  font-size: var(--txt-size-7);
+}
+
+.perfil-contact form {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.perfil-contact form div {
+  width: 20% !important;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-mp:before,
+.contact-exp a:before,
+.contact-baul a:before,
+.contact-tel a:before,
+.contact-tw a:before,
+.contact-tram a:before,
+.contact-pers a:before,
+.contact-neg a:before {
+  font-family: bootstrap-icons !important;
+  font-size: var(--txt-size-1);
+  display: block;
+}
+
+.contact-mp:before {
+  content: "\F249";
+}
+
+.contact-exp a:before {
+  content: "\F8C8";
+}
+
+.contact-baul a:before {
+  content: "\F3D1";
+}
+
+.contact-tel a:before {
+  content: "\F4E2";
+}
+
+.contact-tw a:before {
+  content: "\F437";
+}
+
+.contact-tram a:before {
+  content: "\F52A";
+}
+
+.contact-pers a:before {
+  content: "\F786";
+}
+
+.contact-neg a:before {
+  content: "\F19E";
+}
+
+dl#field_id12 img {
+  display: block !important;
+}
+
+.perfil-med-toggle {
+  background: rgba(var(--clr-10), 1);
+  position: absolute;
+  font-size: var(--txt-size-1);
+  color: rgba(var(--clr-0), 1);
+  padding: 0.3vmin;
+  right: -9px;
+  bottom: -9px;
+  border-radius: 100%;
+  transform: rotate(0deg);
+  transition: all ease-in-out 250ms !important;
+}
+
+.perfil-med-toggle:before {
+  content: "\F4FA";
+  font-family: bootstrap-icons !important;
+}
+
+.med-toggle-open {
+  transform: rotate(45deg);
+}
+
+#perfil-tiendas {
+  width: 100%;
+  height: 23vmin;
+  position: absolute;
+  bottom: -30%;
+  display: flex;
+  justify-content: space-between;
+  transition: all ease-in-out 800ms;
+}
+
+.tiendas-open {
+  bottom: 0 !important;
+}
+
+.perfil-medallas-box,
+.perfil-tienda-box {
+  width: calc(50% - 1px);
+  padding: 1.5vmin 3vmin 3vmin;
+}
+
+.perfil-tienda-box {
+  border-left: 2px solid rgba(var(--clr-0), 0.3);
+}
+
+.perfil-medallas-tit,
+.perfil-tienda-tit {
+  position: relative;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  font-weight: 600;
+  margin: auto;
+  letter-spacing: 0.4vmin;
+  text-align: center;
+}
+
+.perfil-medallas-pj,
+.perfil-tienda-pj {
+  height: 14vmin;
+  overflow: auto;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+td.perfil-medallero,
+td.perfil-tienda {
+  font-size: var(--txt-size-7);
+  text-transform: uppercase;
+  letter-spacing: 0.4vmin;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  flex-wrap: wrap;
+}
+
+td.perfil-medallero img,
+td.perfil-tienda img {
+  height: 6.3vmin;
+  margin: 1vmin;
+}
+
+@media screen and (max-width: 1099px) {
+  .perfil-view {
+    margin: 5vh 8.5vmax;
+  }
+
+  dl#field_id-6,
+  dl#field_id-13,
+  .perfil-links a {
+    font-size: clamp(0.5rem, 0.7vmax, 0.7rem);
+    letter-spacing: 0.3vmin;
+  }
+
+  .perfil-rango,
+  .perfil-ultvisita {
+    width: 33vw;
+    margin-left: 2.5vmax;
+  }
+
+  .perfil-ultvisita {
+    font-size: clamp(0.5rem, 0.7vmax, 0.7rem);
+  }
+
+  .perfil-links {
+    width: 17vmax;
+    margin: 0 0 0 calc(198px + 3vmin);
+  }
+
+  .perfil-links a:hover {
+    letter-spacing: 0.35vmin;
+  }
+
+  dl#field_id11 {
+    padding: 0 calc(2.5vmin + 2px) 0 0;
+  }
+
+  .contact-mp:before,
+  .contact-exp a:before,
+  .contact-baul a:before,
+  .contact-tel a:before,
+  .contact-tw a:before,
+  .contact-tram a:before,
+  .contact-pers a:before,
+  .contact-neg a:before {
+    font-size: var(--txt-size-2);
+  }
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .perfil-view {
+      margin: 5vh 12.5% !important;
+    }
+
+    .perfil-field-content {
+      width: 35%;
+      flex-direction: column;
+      height: 30%;
+      align-items: center;
+      margin-top: 34vmin;
+      border-right: 2px solid rgba(var(--clr-0), 1);
+    }
+
+    .perfil-field-content .perfil-contenido {
+      width: 80%;
+    }
+
+    h1.page-title.perfil-tit {
+      width: 100%;
+      height: 29vmin;
+      left: 0;
+      top: -6vmin;
+      padding: 0 5vmin;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      border-bottom: 2px solid rgba(var(--clr-0), 1);
+    }
+
+    dl#field_id-6,
+    dl#field_id-13,
+    .perfil-links a {
+      font-size: var(--txt-size-3);
+      margin-bottom: 5vmin;
+      letter-spacing: 0.4vmin;
+    }
+
+    dl#field_id-13 {
+      margin-bottom: -5vmin;
+    }
+
+    .perfil-avatar img {
+      width: 135% !important;
+      max-width: 335px !important;
+      aspect-ratio: 1/1;
+    }
+
+    .perfil-avatar {
+      margin: calc(34% - 2px) 0 0 45%;
+    }
+
+    .perfil-rango {
+      right: 4.5%;
+      top: 47%;
+    }
+
+    .perfil-ultvisita {
+      width: 45vw;
+      right: 4%;
+      top: 45%;
+      font-size: var(--txt-size-3);
+    }
+
+    .perfil-links {
+      width: 20vmax;
+      margin: 0 0 -50% 0;
+      text-align: right;
+      bottom: 20%;
+      right: -1%;
+      z-index: 3;
+    }
+
+    span.perfil-topic {
+      margin-bottom: 1vmin;
+    }
+
+    dl#field_id11 {
+      top: 58vh;
+      width: 100%;
+      left: 0;
+      top: 58vh;
+      padding: 0 6vmin;
+      margin-left: 0;
+      text-align: center;
+    }
+
+    .profile_view textarea#profile_field_2_11 {
+      width: 100% !important;
+      height: 25vmin;
+      top: 0;
+    }
+
+    dl#field_id11 .ajax-profil_valid {
+      right: -2vmin;
+      bottom: -2.2vmin;
+    }
+
+    .perfil-contact {
+      width: 100%;
+      left: 0;
+      bottom: 35vh;
+      padding: 3vmin 6vmin;
+      margin-left: 0;
+      border-top: 2px solid rgba(var(--clr-0), 1);
+    }
+
+    div#perfil-tiendas {
+      height: 30vmin;
+      bottom: 0;
+      border-top: 2px solid rgba(var(--clr-0), 1);
+    }
+
+    .perfil-tienda-box {
+      border-left: 2px solid rgba(var(--clr-0), 1);
+    }
+
+    .perfil-medallas-tit,
+    .perfil-tienda-tit {
+      font-size: var(--txt-size-7);
+    }
+
+    .perfil-medallas-pj,
+    .perfil-tienda-pj {
+      height: 20vmin;
+    }
+
+    a#med-toggle {
+      display: none;
+    }
+  }
+}

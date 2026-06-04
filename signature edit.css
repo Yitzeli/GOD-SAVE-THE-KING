@@ -1,0 +1,7 @@
+div#smiley-box {
+    display: none;
+}
+
+div#textarea_content {
+    width: 100% !important;
+}

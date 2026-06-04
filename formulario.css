@@ -1,0 +1,228 @@
+body {
+background: none !important;
+overflow: hidden !important;
+}
+
+input {
+    width: 100%;
+    background: rgba(var(--clr-0), 0.05);
+    border: 1px solid rgba(var(--clr-0), 1);
+}
+
+select {
+    outline: 1px solid rgba(var(--clr-0), 1);
+}
+
+input[type="reset"], input[name="post"] {
+    width: fit-content;
+}
+
+textarea {
+    border: none !important;
+    background: rgba(var(--clr-0), 0.07);
+}
+
+@media screen and (max-width: 999px) {
+@media screen and (max-aspect-ratio: 6 / 7) {
+:root {
+    --txt-size-1: clamp(1rem, 1.2vmax, 1.2rem) !important;
+    --txt-size-2: clamp(0.8rem, 1vmax, 1rem) !important;
+    --txt-size-3: clamp(0.6rem, 0.8vmax, 0.8rem) !important;
+    --txt-size-4: clamp(1.6rem, 2vmax, 2rem) !important;
+    --txt-size-5: clamp(2.4rem, 2.8vmax, 2.8rem) !important;
+    --txt-size-6: clamp(2.8rem, 3vmax, 3rem) !important;
+    --txt-size-7: clamp(0.7rem, 0.9vmax, 0.9rem) !important;
+    --txt-size-8: clamp(1.3rem, 1.5vmax, 1.5rem) !important;
+}
+}
+}
+
+.conteneur_minwidth_IE,
+.header-index-back,
+fieldset:before,
+h2 {
+    display: none !important;
+}
+
+div#form_inner_placeholder,
+div#submit_div,
+table,
+tbody,
+tr {
+    width: 100%;
+}
+
+fieldset.fasf_fieldset_GRUPO_DATPER,
+fieldset.fasf_fieldset_GRUPO_HIST,
+fieldset.fasf_fieldset_GRUPO_DATEXT {
+    margin-top: 20px;
+}
+
+legend.fasf_legend_GRUPO_DATGEN,
+legend.fasf_legend_GRUPO_DATPER,
+legend.fasf_legend_GRUPO_HIST,
+legend.fasf_legend_GRUPO_DATEXT {
+    font-family: var(--txt-1);
+    font-size: clamp(1.9rem, 2.3vmax, 2.3rem);
+    letter-spacing: 0.2vmin;
+    margin: auto;
+    text-transform: uppercase;
+}
+
+
+td:nth-child(1) {
+    width: 41%;
+    text-align: right;
+    text-transform: uppercase;
+    font-size: var(--txt-size-7);
+    display: flex;
+    margin: 10px 0 5px;
+}
+
+td:nth-child(2) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+td:nth-child(1) label {
+    display: flex;
+    justify-content: end;
+    align-items: start;
+    margin-left: 1vmin;
+    font-weight: 600;
+}
+
+td.fasf_td1_Edad.inGroup {
+    font-size: var(--txt-size-3);
+    text-transform: uppercase;
+}
+
+table.fasf_table_GRUPO_DATPER input,
+table.fasf_table_GRUPO_DATPER select,
+input#ImgFicha,
+input#ImgFondo {
+    width: 100%;
+}
+
+input#Edad_dia, input#Edad_mes {
+    width: 12%;
+}
+
+input#Edad_ano {
+    width: 31%;
+}
+
+textarea {
+    width: 100% !important;
+    height: 100px !important;
+    background: none;
+    border: 1px solid rgba(var(--clr-acnt), 1);
+    font-family: var(--txt);
+    font-size: var(--txt-size-2);
+    padding: 2px 7px;
+    color: var(--clr-txt);
+}
+
+fieldset.fasf_fieldset_GRUPO_HIST textarea {
+    height: 200px !important;
+}
+
+fieldset.fasf_fieldset_GRUPO_DATEXT textarea {
+    height: 40px !important;
+}
+
+div#submit_div {
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
+
+div#page-footer {
+    display: none !important;
+}
+
+   iframe[id^='tinypic_plugin_']{
+   display: none;
+   }
+   img#sf_img_hosting{
+   cursor: pointer;
+   }
+
+div#ui-datepicker-div {
+    width: 65vmin !important;
+}
+
+.ui-widget-content {
+    border: none !important;
+    background: rgba(var(--clr-10), 0.9) !important;
+    border-radius: 0 !important;
+}
+
+.ui-widget-header {
+    border: none !important;
+    background: rgba(var(--clr-acnt), 0.5) !important;
+    color: var(--clr-txt) !important;
+    font-family: var(--txt) !important;
+    text-transform: uppercase !important;
+letter-spacing: 0.2vmin;
+}
+
+.ui-datepicker .ui-datepicker-prev, .ui-datepicker .ui-datepicker-next, .ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+    color: var(--clr-txt) !important;
+    border-radius: 0 !important;
+}
+
+.ui-widget-header .ui-icon {
+    background: none;
+}
+
+.ui-widget-header .ui-icon:before {
+    content: "\F22F";
+    font-family: bootstrap-icons !important;
+    display: block;
+    color: var(--clr-txt);
+    text-indent: initial;
+}
+
+span.ui-icon.ui-icon-circle-triangle-e:before {
+    content: "\F233";
+}
+
+.ui-state-hover, .ui-state-focus {
+    background: none !important;
+    border: none !important;
+}
+
+.ui-state-hover span, .ui-state-focus span {
+    color: rgba(var(--clr-acnt), 1) !important;
+}
+
+.ui-datepicker table {
+    font-size: var(--txt-size-7);
+    text-transform: uppercase;
+}
+
+td.ui-datepicker-other-month.ui-datepicker-unselectable.ui-state-disabled,
+.ui-datepicker table td:nth-child(1),
+.ui-datepicker table td:nth-child(2) {
+    width: fit-content;
+    display: table-cell;
+}
+
+.ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default {
+    border: none !important;
+    background: none !important;
+    color: var(--clr-txt)!important;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 5px;
+}
+
+input[name="post"] {
+    margin-left: 1.5vmin;
+}
+
+img#sf_img_hosting {
+    display: none;
+}

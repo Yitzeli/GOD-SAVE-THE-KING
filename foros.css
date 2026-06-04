@@ -1,0 +1,644 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#foro-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vmin;
+  text-transform: uppercase;
+  font-size: 0;
+  letter-spacing: 0.2vmin;
+}
+
+#foro-menu a,
+#foro-menu a + a:before {
+  font-size: var(--txt-size-3);
+}
+
+#foro-menu a + a:before {
+  content: "-";
+  margin: 0 1vmin 0 0.3vmin;
+}
+
+.dat-foro,
+.pag-mps {
+  height: 4vmin;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+}
+
+.foro-vigilar {
+  display: inline-block;
+}
+
+form.sort-form label {
+  margin-right: 1vmin;
+}
+
+.pag-foro {
+  margin: 1.5vmin 0 9vmin 0;
+}
+
+a.foro-leidos,
+.foro-vigilar a {
+  font-size: 0;
+}
+
+a.foro-leidos:before,
+.foro-vigilar a:before {
+  content: "MARCAR TODO COMO LEIDO";
+  font-size: var(--txt-size-3);
+  margin-left: 1.5vmin;
+  width: fit-content;
+  display: block;
+}
+
+.foro-vigilar a:before {
+  content: "VIGILAR ESTE FORO";
+}
+
+form {
+  position: relative;
+}
+
+form#forum-search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form#forum-search div {
+  display: flex;
+  align-items: center;
+}
+
+input#search_keywords {
+  margin-right: 1vmin;
+}
+
+div#sort-box {
+  width: 40%;
+  display: flex;
+  justify-content: end;
+}
+
+select[name="sort_method"] {
+  width: 35%;
+}
+
+.logged-users {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: var(--txt-size-7);
+  letter-spacing: 0.3vmin;
+}
+
+.new-foro {
+  width: 100%;
+  height: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vmin 0;
+}
+
+.new-foro .buttons .post-icon a {
+  font-weight: 900 !important;
+  color: var(--clr-txt) !important;
+  font-family: var(--txt) !important;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 250ms;
+}
+
+.new-foro .buttons .post-icon a:hover {
+  color: rgba(var(--clr-acnt), 1) !important;
+  transition: all ease-in-out 250ms;
+}
+
+.new-foro .buttons .post-icon a:after {
+  content: "NUEVO TEMA";
+  font-weight: 900;
+}
+
+.new-foro .buttons .post-icon a:before {
+  content: "\F4FA";
+  font-family: bootstrap-icons !important;
+  font-size: var(--txt-size-2);
+  margin: 0 1vmin 0 0;
+}
+
+.table-title,
+.table-title h2 {
+  display: none !important;
+}
+
+.topiclist.forums {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vmin;
+}
+
+.topiclist.forums .row {
+  width: 25%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin-bottom: 3vmin;
+  padding: 0 1vmin;
+}
+
+.topiclist.forums.\<h2\>PAPELERA\<\/h2\> .row,
+.topiclist.forums.\<h2\>OXFORD.STREET\<\/h2\> .row{
+  width: 100% !important;
+}
+
+.topiclist.forums.\<h2\>EXPEDIENTES\<\/h2\> .row,
+.topiclist.forums.\<h2\>BÚSQUEDAS\<\/h2\> .row,
+.topiclist.forums.\<h2\>CONEXIÓN\<\/h2\> .row,
+.topiclist.forums.\<h2\>WORLD\<\/h2\> .row,
+.topiclist.forums.\<h2\>THE.SHARD\<\/h2\> .row,
+.topiclist.forums.\<h2\>CITY.OF.LONDON\<\/h2\> .row,
+.topiclist.forums.\<h2\>NEGOCIOS\<\/h2\> .row,
+.topiclist.forums.\<h2\>RESIDENCIAS\<\/h2\> .row,
+.topiclist.forums.\<h2\>UNITED.KINGDOM\<\/h2\> .row {
+  width: 33% !important;
+}
+
+.topiclist.forums.\<h2\>CITY.OF.LONDON\<\/h2\> .row:nth-child(7),
+.topiclist.forums.\<h2\>CITY.OF.LONDON\<\/h2\> .row:nth-child(8),
+.topiclist.forums.\<h2\>CITY.OF.LONDON\<\/h2\> .row:nth-child(9),
+.topiclist.forums.\<h2\>CITY.OF.LONDON\<\/h2\> .row:nth-child(10) {
+  width: 25% !important;
+}
+
+.topiclist.forums.\<h2\>PERSONAJES\<\/h2\> .row,
+.topiclist.forums.\<h2\>TRAMAS\<\/h2\> .row,
+.topiclist.forums.\<h2\>CHINATOWN\<\/h2\> .row,
+.topiclist.forums.\<h2\>UPTOWN.SOUTH\<\/h2\> .row,
+.topiclist.forums.\<h2\>UPTOWN.EAST\<\/h2\> .row,
+.topiclist.forums.\<h2\>HOLLAND.PARK\<\/h2\> .row,
+.topiclist.forums.\<h2\>CAFETERIA.CRANES.&.CREAMS\<\/h2\> .row {
+  width: 50% !important;
+}
+
+.foro-tit {
+  width: 100%;
+  height: 25vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: end;
+  align-items: center;
+  position: relative;
+  padding: 2vmin 0;
+}
+
+.foro-tit a {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+}
+
+.foro-tit.CURTIS\,.LOWELL.Y.ASOCIADOS.\(CL\&A\) a.forumtitle {
+  width: 65% !important;
+  top: 57% !important;
+  line-height: 3vmin;
+}
+
+.img-cat {
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(var(--clr-4), 0.5);
+  background-blend-mode: color-burn;
+  transition: all ease-in-out 500ms;
+  z-index: -2;
+}
+
+.usergroup-cel .img-cat {
+  background-blend-mode: luminosity !important;
+}
+
+.foro-tit:hover .img-cat {
+  background-color: rgba(var(--clr-acnt), 0.5);
+  transition: all ease-in-out 500ms;
+}
+
+.foro-tit a.forumtitle {
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  text-shadow: 2px 2px 2px solid rgba(var(--clr-10), 1);
+  position: relative;
+  top: 70%;
+}
+
+.foro-tit a.forumtitle:hover {
+  letter-spacing: 0.1vmin;
+}
+
+.foro-info {
+  display: flex !important;
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+}
+
+.topics-tit {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  letter-spacing: 0.5vmin;
+  font-weight: 600;
+  padding: 0 0 1.5vmin 0;
+}
+
+a.topictitle {
+  display: block;
+  width: 100%;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  letter-spacing: 0.1vmin;
+  text-transform: uppercase;
+  line-height: 120%;
+}
+
+.topiclist.topics.bg_none {
+  width: 100%;
+  margin: 0 0 3vmin;
+  border-top: 2px solid rgba(var(--clr-0), 1);
+  border-bottom: 2px solid rgba(var(--clr-0), 1);
+}
+
+.topiclist.topics.bg_none .row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.topiclist.topics.bg_none .row + .row {
+  border-top: 2px solid rgba(var(--clr-acnt), 0.3);
+}
+
+.topic-icon {
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dterm {
+  width: 50%;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.2vmin;
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  justify-content: center;
+  border-right: 2px solid rgba(var(--clr-acnt), 0.3);
+  padding: 3vmin 3vmin 3vmin 0;
+  position: relative;
+}
+
+.postprofile {
+  width: 40%;
+  padding: 3vmin 0 2.5vmin 3vmin;
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+  letter-spacing: 0.4vmin;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+span.post-views:before {
+  content: " — ";
+}
+
+.last-post-link a.last-post-icon {
+    width: 0 !important;
+    height: 0 !important;
+    padding: 0 !important;
+    background: none !important;
+    border: 0 !important;
+    font-size: var(--txt-size-3) !important;
+    position: relative ! important;
+    margin: 0 1vmin !important;
+}
+
+.post-rep-author {
+  display: flex;
+  align-items: center;
+}
+
+.post-rep-author strong {
+  margin-left: 3px;
+}
+
+.last-post-link a:before {
+  content: "\f470";
+  font-family: bootstrap-icons !important;
+  top: 1px;
+  right: 3px;
+  position: relative;
+}
+
+table.forumline {
+  background-color: rgba(var(--clr-10), 0.9);
+  outline: 1px solid rgba(var(--clr-0), 1);
+  padding: 1.5vmin 2vmin 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table.forumline td.row1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vmin;
+}
+
+table.forumline input.bginput {
+  margin-right: 1vmin;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.pagination a {
+  font-weight: 400;
+}
+
+.pagination span {
+  display: flex;
+  font-size: 0;
+}
+
+.pagination span strong,
+.pagination span a {
+  width: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: var(--txt-size-3);
+  background-color: rgba(var(--clr-0), 0.1);
+  border: 1px solid rgba(var(--clr-0), 0.5);
+  padding: 0.1vmin 0.5vmin 0.2vmin 0.7vmin;
+  margin: 0 0.2vmin;
+  transition: all 250ms ease-in-out;
+}
+
+.pagination span strong {
+  background-color: rgba(var(--clr-acnt), 0.4) !important;
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.pagination span a:hover {
+  color: var(--clr-txt);
+  background-color: rgba(var(--clr-acnt), 0.4);
+  border: 1px solid rgba(var(--clr-acnt), 1);
+  transition: all 250ms ease-in-out;
+}
+
+.pagination p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 250%;
+  font-size: var(--txt-size-3);
+}
+
+.box-page,
+.box-page .pagination,
+.box-page .pagination span {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    cursor: auto;
+    position: absolute;
+    right: 0.6vmin;
+    bottom: 0.5vmin;
+}
+
+.box-page .pagination span {
+    font-size: 2vmin;
+}
+
+.box-page .pagination span .page-sep {
+    font-size: 0 !important;
+}
+
+.box-page .pagination span a {
+    width: 3vmin;
+    margin: 0 0.5vmin !important;
+    font-size: clamp(0.4rem, 0.6vmax, 0.6rem);
+}
+
+.box-page .pagination span a:last-child {
+    margin: 0 0.5vmin 0 0 !important;
+}
+
+.box-page .pagination span a:nth-child(6) {
+    margin: 0 0.5vmin 0 0.2vmin !important;
+}
+
+a.pag-img.right:before,
+a.pag-img.left:before {
+  content: "\F231";
+  font-family: bootstrap-icons !important;
+}
+
+a.pag-img.left:before {
+  content: "\F22D" !important;
+}
+
+.footer-index {
+  display: none !important;
+}
+
+.forabg.\<h2\>CIUDADANOS\<\/h2\>,
+.forabg.\<h2\>SERVICIOS.PÚBLICOS\<\/h2\>,
+.forabg.\<h2\>LEY.Y.ORDEN\<\/h2\>,
+.forabg.\<h2\>CRIMINALES\<\/h2\>,
+.forabg.\<h2\>CELEBRIDADES\<\/h2\> {
+  margin-top: -6vmin;
+}
+
+.topiclist.forums.\<h2\>CIUDADANOS\<\/h2\>,
+.topiclist.forums.\<h2\>SERVICIOS.PÚBLICOS\<h2\>,
+.topiclist.forums.\<h2\>LEY.Y.ORDEN\<\/h2\>,
+.topiclist.forums.\<h2\>CRIMINALES\<\/h2\>,
+.topiclist.forums.\<h2\>CELEBRIDADES\<\/h2\> {
+  height: 7vmin;
+}
+
+.topiclist.forums.\<h2\>CIUDADANOS\<\/h2\> .row,
+.topiclist.forums.\<h2\>SERVICIOS.PÚBLICOS\<\/h2\> .row,
+.topiclist.forums.\<h2\>LEY.Y.ORDEN\<\/h2\> .row,
+.topiclist.forums.\<h2\>CRIMINALES\<\/h2\> .row,
+.topiclist.forums.\<h2\>CELEBRIDADES\<\/h2\> .row {
+  width: 100% !important;
+}
+
+.foro-tit.CIUDADANOS.SIN.COLOR,
+.foro-tit.SERVICIOS.PÚBLICOS.SIN.COLOR,
+.foro-tit.LEY.Y.ORDEN.SIN.COLOR,
+.foro-tit.CRIMINALES.SIN.COLOR,
+.foro-tit.CELEBRIDADES.SIN.COLOR {
+  height: 7vmin;
+  justify-content: space-between;
+  padding: 0;
+}
+
+.foro-tit.CIUDADANOS.SIN.COLOR a.forumtitle,
+.foro-tit.SERVICIOS.PÚBLICOS.SIN.COLOR a.forumtitle,
+.foro-tit.LEY.Y.ORDEN.SIN.COLOR a.forumtitle,
+.foro-tit.CRIMINALES.SIN.COLOR a.forumtitle,
+.foro-tit.CELEBRIDADES.SIN.COLOR a.forumtitle {
+  top: auto !important;
+}
+
+@media screen and (max-width: 999px) {
+  #foro-menu {
+    flex-direction: column;
+  }
+
+  #foro-menu a {
+    margin: 3vmin auto 0;
+  }
+
+  #foro-menu a span:before,
+  #foro-menu a span:after {
+    content: "-";
+    margin: 0 1vmin;
+  }
+
+  .pag-mps {
+    height: 8vmin;
+    margin-top: -2vmin;
+  }
+
+  #foro-menu a + a:before,
+  .search-box,
+  div#sort-box,
+  .posts:before,
+  span.post-views:before,
+  .last-post-link {
+    display: none !important;
+  }
+
+  .topiclist.topics.bg_none .row + .row {
+    border-top: 2px solid rgba(var(--clr-0), 1) !important;
+  }
+
+  .foro-tit a.forumtitle {
+    top: 20%;
+    line-height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .foro-tit.CURTIS\,.LOWELL.Y.ASOCIADOS.\(CL\&A\) a.forumtitle {
+    width: 100% !important;
+    top: 20% !important;
+    line-height: 100% !important;
+  }
+
+  .foro-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .topic-icon {
+    width: 15%;
+  }
+
+  .dterm {
+    width: 85%;
+    border-right: none;
+    padding: 2vmin 0;
+  }
+
+  a.topictitle {
+    font-size: var(--txt-size-1);
+  }
+
+  .postprofile {
+    width: 100%;
+    font-size: clamp(0.7rem, 0.8vmax, 0.8rem);
+    border-top: 2px solid rgba(var(--clr-acnt), 0.3);
+    padding: 2vmin 0;
+    flex-direction: row;
+  }
+
+  .postprofile div {
+    width: 30%;
+    text-align: center;
+  }
+
+  span.post-views,
+  .post-rep-author strong {
+    display: block;
+  }
+
+  .post-rep-author {
+    display: inline;
+  }
+
+  .post-replie,
+  .post-forum {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .pagination {
+    width: 100%;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .foro-tit a.forumtitle,
+    a.topictitle {
+      font-size: var(--txt-size-2);
+    }
+  }
+}

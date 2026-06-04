@@ -1,0 +1,140 @@
+.table_reg tr.cabecera,
+td[colspan="2"],
+.table_reg tr.fielRowData_1.fila,
+.table_reg tr.fielRowData_2.fila,
+.table_reg tr.fielRowData_6.fila,
+.table_reg tr.fielRowData_8.fila td.celdaTitulo.inGroup,
+.table_reg tr.fielRowData_10.fila td.celdaTitulo.inGroup,
+.busq-pj a,
+.table_regext tr.fielRowData_1.fila,
+.table_regext tr.fielRowData_2.fila,
+.table_regext tr.fielRowData_6.fila,
+.table_regext tr.fielRowData_7.fila,
+.table_regext tr.fielRowData_4.fila td.celdaTitulo.inGroup,
+.table_regtw tr.fielRowData_2.fila,
+.table_regtw tr.fielRowData_1.fila td.celdaTitulo.inGroup,
+.table_regtw tr.fielRowData_3.fila td.celdaTitulo.inGroup,
+.table_regtw tr.fielRowData_4.fila td.celdaTitulo.inGroup,
+.table_regtw tr.fielRowData_5.fila td.celdaTitulo.inGroup,
+table_regaus .cabecera,
+.table_regaus tr.fielRowData_1.fila td.celdaTitulo.inGroup,
+.table_regaus tr.fielRowData_2.fila,
+.table_regaus tr.fielRowData_3.fila,
+.table_regaus tr.fielRowData_4.fila,
+.table_temlibres tr.fielRowData_1.fila,
+.table_temlibres tr.fielRowData_2.fila,
+.table_temlibres tr.fielRowData_4.fila,
+.table_temlibres tr.fielRowData_5.fila,
+.table_temlibres tr.fielRowData_3.fila td.celdaTitulo.inGroup,
+.table_viv tr.fielRowData_1.fila td.celdaTitulo.inGroup,
+.table_viv tr.fielRowData_3.fila td.celdaTitulo,
+.table_viv tr.fielRowData_2.fila,
+.table_neg tr.fielRowData_2.fila,
+.table_neg tr.fielRowData_3.fila,
+.table_neg tr.fielRowData_4.fila,
+.table_neg tr.fielRowData_1.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_1.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_2.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_3.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_6.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_9.fila td.celdaTitulo.inGroup,
+.table_negact tr.fielRowData_2.fila td.celdaDato.inGroup,
+.table_negact tr.fielRowData_4.fila,
+.table_negact tr.fielRowData_5.fila,
+.table_negact tr.fielRowData_7.fila,
+.table_negact tr.fielRowData_8.fila,
+.table_negact tr.fielRowData_10.fila,
+.table_negact tr.fielRowData_11.fila {
+  display: none !important;
+}
+
+.table_regtw tr.fielRowData_1.fila {
+  display: flex !important;
+}
+
+.table_negact tr.cabecera + tr td[colspan="2"],
+.table_negact tr.fielRowData_1 + tr td[colspan="2"],
+.table_negact tr.fielRowData_2 + tr td[colspan="2"] {
+  display: block !important;
+  margin: 0 0 -2vmin;
+}
+.table_negact tr.fielRowData_1 + tr td[colspan="2"],
+.table_negact tr.fielRowData_2 + tr td[colspan="2"] {
+  display: block !important;
+  margin: 2vmin 0 -2vmin;
+}
+
+.table_reg,
+.table_regext,
+.table_regtw,
+.table_regaus,
+.table_temlibres,
+.table_viv,
+.table_neg,
+.table_negact {
+  width: clamp(395px, 90%, 800px);
+  margin: auto;
+}
+
+.fila {
+  width: clamp(395px, 90%, 800px);
+  display: flex;
+  flex-direction: column;
+  margin: 3vmin auto 0;
+}
+
+.table_reg tr.fielRowData_3.fila,
+.table_reg tr.fielRowData_8.fila,
+.table_reg tr.fielRowData_10.fila,
+.table_regext tr.fielRowData_3.fila,
+.table_regext tr.fielRowData_5.fila,
+.table_regtw tr.fielRowData_3.fila,
+.table_regtw tr.fielRowData_4.fila,
+.table_regtw tr.fielRowData_5.fila,
+.table_regaus tr.fielRowData_5.fila,
+.table_temlibres tr.fielRowData_3.fila,
+.table_viv tr.fielRowData_3.fila,
+.table_viv tr.fielRowData_4.fila {
+  margin: 0 auto;
+}
+
+td.celdaTitulo.inGroup,
+.zona-viv {
+  font-size: var(--txt-size-7);
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.2vmin;
+}
+
+.gruptw-pj,
+.grup-pj,
+.lug-trab,
+.zona-viv,
+.table_viv tr.fielRowData_4.fila,
+.table_negact tr.cabecera + tr td[colspan="2"],
+.table_negact tr.fielRowData_1 + tr td[colspan="2"],
+.table_negact tr.fielRowData_2 + tr td[colspan="2"] {
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.2vmin;
+}
+
+.busq-pj {
+    margin: -2vmin 0 0;
+}
+
+.table_viv tr.fielRowData_4.fila {
+    flex-direction: row;
+}
+
+.table_viv tr.fielRowData_4.fila td.celdaTitulo.inGroup {
+    margin-right: 1vmin;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    dt.spoiler_title {
+      font-size: var(--txt-size-3) !important;
+    }
+  }
+}

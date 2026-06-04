@@ -1,0 +1,68 @@
+fieldset:before {
+    display: none;
+}
+
+.mp-usersend,
+dl.mp-topictitle {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  padding: 3vmin 0 3vmin;
+  position: relative;
+  font-size: var(--txt-size-7);
+  text-transform: uppercase;
+}
+
+dl.mp-topictitle:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: rgba(var(--clr-acnt), 0.3);
+  margin-top: -2vmin;
+}
+
+dl.mp-username {
+  width: 60%;
+}
+
+dl.mp-username dd {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+dl.mp-username input.inputbox {
+  width: 100% !important;
+  margin: 0 0 1.5vmin 0;
+}
+
+input#username {
+  width: 100%;
+  display: inline;
+  position: relative;
+}
+
+input#find_user {
+  width: 100%;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .post.row2 {
+      margin-bottom: -3vmin;
+    }
+
+    h1.page-title {
+      margin-top: 6vmin;
+    }
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  #header-fix-user {
+    font-size: var(--txt-size-2) !important;
+  }
+}

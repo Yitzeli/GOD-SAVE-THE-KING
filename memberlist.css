@@ -1,0 +1,352 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+form[action="/memberlist"],
+.pagination {
+  height: 4vmin;
+  letter-spacing: 0.2vmin;
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+}
+
+form[action="/memberlist"] {
+  margin-top: 1.5vmin;
+}
+
+form[action="/memberlist"] .panel {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table#memberlist tbody tr td a img {
+  display: none;
+}
+
+input.inputbox.tiny,
+select {
+  width: 50%;
+  margin-left: 1vmin;
+}
+
+input.button2 {
+  margin-left: 1vmin;
+}
+
+.memberlist-pj,
+.memberlist-mode,
+.memberlist-order {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table1 {
+    border-spacing: 0;
+}
+
+table#memberlist tbody {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+table.table1 tr {
+  width: 33.33%;
+  height: 27vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4vmin 2vmin;
+  border-bottom: 2px solid rgba(var(--clr-acnt), 0.3);
+}
+
+@media screen and (max-width: 999px) {
+  table.table1 tr {
+    height: 20vmin;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+  table.table1 tr {
+    height: 27vmin;
+  }
+}
+}
+
+table.table1 tr + tr {
+  border-left: 2px solid rgba(var(--clr-acnt), 0.3);
+}
+
+@media screen and (min-width: 1000px) {
+  #memberlist tr:nth-child(4),
+  #memberlist tr:nth-child(7),
+  #memberlist tr:nth-child(10),
+  #memberlist tr:nth-child(13),
+  #memberlist tr:nth-child(16),
+  #memberlist tr:nth-child(19),
+  #memberlist tr:nth-child(22) {
+    border-left: none;
+  }
+}
+
+td.avatar-mini img {
+  width: 10vmax;
+  height: 10vmax;
+  object-fit: cover;
+  border-radius: 100%;
+}
+
+td.member-pj {
+  height: 60%;
+  letter-spacing: 0.1vmin;
+  font-size: var(--txt-size-3);
+  text-transform: uppercase;
+  padding: 0 0 0 1vmin;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+td.member-pj a {
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  display: block;
+  margin: 1vmin 0;
+}
+
+td.member-pj a span {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  line-height: 100%;
+}
+
+.group-desc {
+    text-transform: uppercase;
+    font-size: var(--txt-size-7);
+    padding: 3vmin 6vmin 1vmin;
+}
+
+.table-group {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.table-group tr {
+    width: 25% !important;
+    flex-direction: column;
+}
+
+.table-group td {
+    width: 100%;
+    text-align: center;
+    font-size: var(--txt-size-7);
+    letter-spacing: 0.1vmin;
+}
+
+.table-group td + td {
+    margin-top: 1.5vmin;
+    display: block;
+}
+
+.table-group td a {
+    font-family: var(--txt-2);
+    font-size: var(--txt-size-1);
+    text-transform: uppercase;
+    letter-spacing: 0.2vmin;
+    line-height: 100%;
+}
+
+@media screen and (min-width: 1000px) {
+  .table-group tr:nth-child(5),
+  .table-group tr:nth-child(9),
+  .table-group tr:nth-child(13),
+  .table-group tr:nth-child(17),
+  .table-group tr:nth-child(21),
+  .table-group tr:nth-child(25) {
+    border-left: none;
+  }
+}
+
+table.forumline {
+  background-color: rgba(var(--clr-10), 0.9);
+  outline: 1px solid rgba(var(--clr-0), 1);
+  padding: 1.5vmin 2vmin 2vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+table.forumline td.row1 {
+  display: flex;
+  justify-content: center;
+  margin-top: 1vmin;
+}
+
+table.forumline input.bginput {
+  margin-right: 1vmin;
+}
+
+.pagination {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+}
+
+.pagination a {
+  font-weight: 400;
+}
+
+.pagination span {
+  display: flex;
+  font-size: 0;
+}
+
+.pagination span strong,
+.pagination span a {
+  width: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  font-size: var(--txt-size-3);
+  background-color: rgba(var(--clr-0), 0.1);
+  border: 1px solid rgba(var(--clr-0), 0.5);
+  padding: 0.1vmin 0.5vmin 0.2vmin 0.7vmin;
+  margin: 0 0.2vmin;
+  transition: all 250ms ease-in-out;
+}
+
+.pagination span strong {
+  background-color: rgba(var(--clr-acnt), 0.4) !important;
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.pagination span a:hover {
+  color: var(--clr-txt);
+  background-color: rgba(var(--clr-acnt), 0.4);
+  border: 1px solid rgba(var(--clr-acnt), 1);
+  transition: all 250ms ease-in-out;
+}
+
+.pagination p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 250%;
+  font-size: var(--txt-size-3);
+}
+
+a.pag-img.right:before,
+a.pag-img.left:before {
+  content: "\F231";
+  font-family: bootstrap-icons !important;
+}
+
+a.pag-img.left:before {
+  content: "\F22D" !important;
+}
+
+p.left-box, p.right-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+p.right-box {
+    margin-top: 3vmin;
+}
+
+@media screen and (max-width: 999px) {
+  form[action="/memberlist"] {
+    height: fit-content;
+    margin-bottom: 3vmin;
+  }
+
+  form[action="/memberlist"] .panel {
+    flex-direction: column;
+  }
+
+  .memberlist-mode,
+  .memberlist-order {
+    margin-top: 1.5vmin;
+  }
+
+  .memberlist-pj,
+  .memberlist-mode,
+  .memberlist-order {
+    width: 100%;
+  }
+
+  table.table1 tr {
+    width: 50%;
+  }
+
+  table.table1 tr:nth-child(3),
+  table.table1 tr:nth-child(5),
+  table.table1 tr:nth-child(7),
+  table.table1 tr:nth-child(9),
+  table.table1 tr:nth-child(11),
+  table.table1 tr:nth-child(13),
+  table.table1 tr:nth-child(15),
+  table.table1 tr:nth-child(17),
+  table.table1 tr:nth-child(19) {
+    border-left: none;
+  }
+
+  table#memberlist td:nth-child(1) {
+    display: block;
+  }
+
+  td.member-pj {
+    padding: 0 0 0 4vmin;
+  }
+
+  .table-group tr {
+    width: 50% !important;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    table.table1 tr {
+      width: 100%;
+      justify-content: start;
+      padding: 4vmin 9vmin;
+    }
+
+    #memberlist tr + tr {
+      border-left: none;
+    }
+
+    td.member-pj {
+      width: 80%;
+    }
+
+    .memberlist-mode,
+    .memberlist-order {
+      margin-top: 3vmin;
+    }
+
+    .group-desc {
+      font-size: clamp(0.5rem, 0.7vmax, 0.75rem);
+      text-align: center;
+    }
+  }
+}

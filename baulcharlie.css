@@ -1,0 +1,110 @@
+.usergroup-ley,
+a .user-ley,
+a .user-ley strong,
+.user-ley {
+  --clr-acnt: 124, 144, 178 !important;
+}
+
+.post-content {
+  padding: 0 !important;
+  border: none !important;
+  background: none !important;
+}
+
+.gsdk-intro-img {
+  border-radius: unset;
+}
+
+.gsdk-intro-info {
+  border: none;
+  background: linear-gradient(
+    to right,
+    rgba(174, 68, 74, 0.4) 0%,
+    rgba(215, 182, 188, 0.08) 67%,
+    rgba(215, 182, 188, 0) 84%
+  );
+}
+
+.gsdk-intro-tit {
+  font-family: "Anton", sans-serif;
+  z-index: 1;
+}
+
+.gsdk-intro-tit a {
+  font-weight: 400;
+  font-size: 110%;
+  letter-spacing: 0.2vmin;
+}
+
+.gsdk-intro-link {
+  bottom: 3.5vmin;
+}
+
+.gsdk-intro-link {
+  background: rgba(124, 144, 178, 0.2);
+  bottom: 3.5vmin;
+  border: none;
+}
+
+.gsdk-crono-img1 {
+  border: 2px solid rgba(var(--clr-0), 1);
+}
+
+.gsdk-crono-tit,
+.relas-tit {
+  font-family: "Anton", sans-serif;
+  font-weight: 400;
+}
+
+.gsdk-crono-tit span {
+    font-size: 78%;
+}
+
+.gsdk-crono-cont {
+    background: linear-gradient( to top, rgba(174, 68, 74, 0.4) 0%, rgba(215, 182, 188, 0.08) 60%, rgba(215, 182, 188, 0) 90% );
+}
+
+.gsdk-relas-img1,
+.gsdk-relas-img2 {
+    border: 2px solid rgba(var(--clr-0), 1);
+}
+
+.gsdk-relas-tit {
+    border: none;
+    margin: 0;
+}
+
+.gsdk-relas-cont {
+    background: linear-gradient( to bottom, rgba(174, 68, 74, 0.4) 0%, rgba(215, 182, 188, 0.08) 60%, rgba(215, 182, 188, 0) 90% );
+    padding: 3vmin 0 0;
+}
+
+@media screen and (max-width: 999px) {
+.gsdk-intro-img {
+    top: 33px;
+}
+
+.gsdk-crono-tit span {
+    font-size: 100%;
+}
+}
+
+@media screen and (max-width: 999px) {
+@media screen and (max-aspect-ratio: 6 / 7) {
+.gsdk-intro-img {
+    top: 93px;
+}
+
+.gsdk-intro-link {
+    bottom: -0.5vmin;
+}
+
+.gsdk-crono-tit {
+    font-size: 165%;
+}
+
+.gsdk-relas-cont {
+    max-height: 125vmin;
+}
+}
+}

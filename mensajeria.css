@@ -1,0 +1,442 @@
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+#privmsgs-menu {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3vmin;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.2vmin;
+}
+
+#privmsgs-menu div + div:before {
+  content: "-";
+  margin: 0 1vmin;
+}
+
+.dat-mps,
+.pag-mps {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+}
+
+.pag-mps {
+  margin: 1.5vmin 0 9vmin 0;
+}
+
+.new-mps,
+.reply-mps {
+  width: 100%;
+  height: 3vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vmin 0;
+}
+
+.new-mps .buttons .post-icon a,
+.reply-mps .buttons .post-icon a {
+  font-weight: 900 !important;
+  color: var(--clr-txt) !important;
+  font-family: var(--txt) !important;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+  display: flex;
+  align-items: center;
+  transition: all ease-in-out 250ms;
+}
+
+.new-mps .buttons .post-icon a:hover, .reply-mps .buttons .post-icon a:hover {
+    color: rgba(var(--clr-acnt), 1) !important;
+  transition: all ease-in-out 250ms;
+}
+
+.new-mps .buttons .post-icon a:after {
+  content: "ENVIAR UN MP";
+  font-weight: 900;
+}
+
+.reply-mps .buttons .post-icon a:after {
+  content: "CONTESTAR AL MP";
+  font-weight: 900;
+}
+
+.new-mps .buttons .post-icon a:before, .reply-mps .buttons .post-icon a:before {
+  content: "\F4FA";
+  font-family: bootstrap-icons !important;
+  font-size: var(--txt-size-2);
+  margin: 0 1vmin 0 0;
+}
+
+.header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 0 0 1.5vmin 0;
+  border-bottom: 2px solid rgba(var(--clr-0), 1);
+}
+
+.header div {
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-1);
+  letter-spacing: 0.5vmin;
+  font-weight: 600;
+}
+
+.header .mark {
+  width: 20%;
+  font-family: var(--txt);
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+  font-weight: 400;
+}
+
+.topiclist.pmlist.bg_none {
+  position: relative;
+}
+
+.topiclist.pmlist.bg_none .row {
+  margin: 3vmin 0;
+}
+
+.pmlist.bg_none .row + .row:before {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: rgba(var(--clr-acnt), 0.3);
+  margin-top: -1.5vmin;
+}
+
+.pmlist.bg_none .row:first-child {
+  margin: 1.5vmin 0 3vmin !important;
+}
+
+.pmlist.bg_none .row:last-child {
+  margin: 3vmin 0 4.5vmin !important;
+}
+
+.pmlist.bg_none .row:last-child:after {
+  content: "";
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  display: block;
+  background: rgba(var(--clr-0), 1);
+  margin-top: 1.5vmin;
+}
+
+.row .icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.row .icon strong {
+    margin: 0 0 1.5vmin 0;
+}
+
+.icon div {
+  width: 60%;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.mps-icon.unread:before,
+.mps-icon.read:before {
+  display: none;
+}
+
+.mps-icon.unread,
+.mps-icon.read {
+  width: 20%;
+  height: 6vmin;
+  margin: 1vmin 0;
+  justify-content: center;
+  background-image: url(https://i.imgur.com/z8m2FNR.png) !important;
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  opacity: 0.8;
+}
+
+.mps-icon.read {
+  background-image: url(https://i.imgur.com/BmleVkT.png) !important;
+  opacity: 0.3;
+}
+
+.icon .mark {
+  width: 20%;
+  justify-content: center;
+  font-family: var(--txt);
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+  font-weight: 400;
+}
+
+.icon .mark:before {
+  content: "";
+  width: 2px;
+  height: calc(100% + 3vmin - 1px);
+  position: absolute;
+  display: block;
+  right: 20%;
+  background: rgba(var(--clr-acnt), 0.3);
+}
+
+a.topictitle {
+  display: block;
+  width: 100%;
+  font-weight: 550;
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-2);
+  letter-spacing: 0.1vmin;
+  text-transform: uppercase;
+}
+
+img.sprite-arrow_prosilver_right {
+  display: none;
+}
+
+.icon span {
+  margin: 0 !important;
+  text-transform: uppercase;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.3vmin;
+}
+
+.pagination p {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  line-height: 250%;
+  font-size: var(--txt-size-3);
+}
+
+.mp-quote a:before {
+    content: "\F6B0";
+    font-family: bootstrap-icons !important;
+    position: absolute;
+    font-size: var(--txt-size-4);
+    margin-top: -4vmin;
+}
+
+.mp-edit a:before {
+    content: "\F4CA";
+    font-family: bootstrap-icons !important;
+    position: absolute;
+        font-size: var(--txt-size-1);
+    margin-top: -3.5vmin;
+}
+
+.message-pj {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    position: relative;
+}
+
+.message-pj .content {
+    width: calc(100% - 150px);
+    padding: 3vmin 3vmin 3vmin 0;
+    -webkit-touch-callout: text;
+    -webkit-user-select: text;
+    -khtml-user-select: text;
+    -moz-user-select: text;
+    -ms-user-select: text;
+    user-select: text;
+}
+
+.message-pj dl.postprofile {
+    width: 150px;
+    position: sticky;
+    top: 0;
+    padding: 3vmin 0 0;
+}
+
+.message-pj dl.postprofile img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 100%;
+}
+
+.message-pj dt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.msj-from {
+    display: flex;
+    flex-direction: column;
+}
+
+.msj-from a + a {
+    display: none;
+}
+
+.message-pj span {
+    font-family: var(--txt-2);
+    text-transform: uppercase;
+    font-size: var(--txt-size-2);
+    margin-top: 1.5vmin;
+}
+
+.msj-from a:before {
+    content: "IR A PERFIL";
+    font-size: var(--txt-size-3);
+    letter-spacing: 0.2vmin;
+}
+
+.message-pj dt a img {
+    display: none;
+}
+
+.panel.row1.curr_privmsg {
+    margin: 0 0 6vmin 0;
+}
+
+dl.codebox dt {
+    text-align: left;
+}
+
+span.selectCode {
+    font-family: var(--txt) !important;
+    font-size: var(--txt-size-3);
+    margin-top: 0 !important;
+    text-transform: inherit;
+}
+
+.post-edit img {
+    display: none;
+}
+
+.post-edit:before {
+    content: "\F4CA";
+    font-family: bootstrap-icons !important;
+    font-size: var(--txt-size-2);
+    margin: 2px 3vmin;
+    display: block;
+    position: absolute;
+}
+
+.signature_div img {
+    max-width: 350px;
+    margin: auto;
+}
+
+@media screen and (max-width: 999px) {
+  #privmsgs-menu {
+    flex-direction: column;
+    line-height: 250%;
+  }
+
+  #privmsgs-menu div:before,
+  #privmsgs-menu div:after {
+    content: "-";
+    margin: 0 1vmin;
+  }
+
+  p.right-box {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .dat-mps {
+      flex-direction: column;
+      line-height: 300%;
+      margin-top: 6vmin;
+    }
+
+    .new-mps {
+      margin: 6vmin 0;
+    }
+    .header .mark {
+      width: 20%;
+      font-size: 50%;
+    }
+
+    .mps-icon.unread,
+    .mps-icon.read {
+      width: 12%;
+      height: 3.5vmin;
+    }
+
+    .icon div {
+      width: 68%;
+    }
+
+    .icon span {
+      font-size: clamp(0.8rem, 1vmax, 1rem);
+    }
+
+    input[type="checkbox"] {
+      width: 2vmin;
+      height: 2vmin;
+    }
+
+    .pagination p {
+      margin: 6vmin 0;
+      line-height: 400%;
+    }
+
+    .pagination p input {
+      font-size: 70% !important;
+      padding: 1rem 0.8rem;
+    }
+
+    .mp-quote a:before {
+      margin-top: -5vmin;
+    }
+
+    .message-pj {
+      flex-direction: column-reverse;
+    }
+
+    .message-pj .content {
+      width: 100%;
+      padding: 3vmin 0;
+    }
+
+    dl.postprofile {
+      width: 100% !important;
+    }
+
+    .message-pj dl.postprofile {
+      display: none !important;
+    }
+
+  }
+}

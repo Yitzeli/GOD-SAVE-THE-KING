@@ -1,0 +1,122 @@
+  :root {
+    --img-bg: url(https://i.ibb.co/z7HxKsm/Background-1.jpg);
+    --txt-1: "Tulpen One", cursive;
+    --txt-2: "Oswald", sans-serif;
+    --txt: "Montserrat", sans-serif;
+    --txt-size-1: clamp(1rem, 1.2vmax, 1.2rem);
+    --txt-size-2: clamp(0.8rem, 1vmax, 1rem);
+    --txt-size-3: clamp(0.6rem, 0.8vmax, 0.8rem);
+    --txt-size-4: clamp(1.6rem, 2vmax, 2rem);
+    --txt-size-5: clamp(2.4rem, 2.8vmax, 2.8rem);
+    --txt-size-6: clamp(2.8rem, 3vmax, 3rem);
+    --txt-size-7: clamp(0.7rem, 0.9vmax, 0.9rem);
+    --clr-txt: rgba(250, 250, 250, 1);
+    --clr-0: 250, 250, 250;
+    --clr-1: 245, 245, 245;
+    --clr-2: 238, 238, 238;
+    --clr-3: 224, 224, 224;
+    --clr-4: 189, 189, 189;
+    --clr-5: 158, 158, 158;
+    --clr-6: 117, 117, 117;
+    --clr-7: 97, 97, 97;
+    --clr-8: 66, 66, 66;
+    --clr-9: 33, 33, 33;
+    --clr-10: 0, 0, 0;
+    --clr-no: #0000;
+    --clr-acnt: 203, 160, 120;
+  }
+
+  /*ESTO SE VA A BORRAR PORQUE ES SOLO PARA QUE LO TENGAS DE REFERENCIA*/
+  body {
+    background: none !important;
+  }
+
+  .gsdk-subt {
+    margin: 3vmin 0 3vmin;
+  }
+
+  .gsdk-job-tit {
+    font-size: 0.6rem !important;
+    margin: 1vmin !important;
+    line-height: 2.5vmin !important;
+  }
+
+  label.gsdk-dat.selector {
+    font-size: 0.8rem !important;
+  }
+
+  .abc {
+    margin: 1vmin 0 -3vmin !important;
+  }
+
+  .content-registro.reg-iden .abc {
+    margin: 1vmin 0 -1vmin !important;
+  }
+
+  .gsdk-cont-txt {
+    font-size: 0.8rem !important;
+  }
+
+  .content-registro.reg-pb .gsdk-cont-txt span,
+  .content-registro.reg-grup .gsdk-cont-txt span,
+  .content-registro.reg-grup span,
+  .content-registro.reg-job .gsdk-cont-txt span,
+  .content-registro.reg-job span {
+    font-size: 0.5rem !important;
+  }
+
+  .content-registro.reg-pb .gsdk-cont-txt span,
+  .content-registro.reg-grup .gsdk-cont-txt span,
+  .content-registro.reg-grup span {
+    margin: 0.5vmin 0 -2vmin !important;
+  }
+
+  .content-registro.reg-job .gsdk-cont-txt span,
+  .content-registro.reg-job span {
+    margin: 0 0 -2.5vmin !important;
+  }
+
+  input:checked+.content-registro.reg-pb,
+  input:checked+.content-registro.reg-iden,
+  input:checked+.content-registro.reg-grup,
+  input:checked+.content-registro.reg-job {
+    height: 1700px;
+  }
+
+  .content-registro.reg-pb .gsdk-cont-txt {
+    height: 1330px !important;
+  }
+
+  .content-registro.reg-pb .content-dat:nth-child(3) .gsdk-cont-txt,
+  .content-registro.reg-pb .content-dat:nth-child(4) .gsdk-cont-txt {
+    height: 240px !important;
+  }
+
+  .content-registro.reg-iden .gsdk-cont-txt {
+    height: 1620px !important;
+  }
+
+  .content-registro.reg-grup .gsdk-cont-txt,
+  .content-registro.reg-job .gsdk-cont-txt {
+    margin-top: 0.5vmin !important;
+  }
+
+  .content-registro.reg-grup .gsdk-cont-txt {
+    height: 490px !important;
+  }
+
+  .content-registro.reg-job .gsdk-cont-txt {
+    height: 150px !important;
+  }
+
+  .content-registro.reg-job .content-dat {
+    height: 207px !important;
+}
+
+  @media screen and (max-width: 999px) {
+    @media screen and (max-aspect-ratio: 6 / 7) {
+      .gsdk-cont-sub {
+        line-height:  !important;
+      }
+    }
+  }

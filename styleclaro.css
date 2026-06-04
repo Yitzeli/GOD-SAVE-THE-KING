@@ -1,0 +1,1038 @@
+:root {
+  --img-bg: url("https://i.imgur.com/rXblq39.png") !important;
+  --backheader: url("https://i.imgur.com/Dvede35.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+  --clr-txt: rgba(0, 0, 0, 1) !important;
+  --clr-0: 33, 33, 33 !important;
+  --clr-1: 48, 48, 48 !important;
+  --clr-2: 66, 66, 66 !important;
+  --clr-3: 97, 97, 97 !important;
+  --clr-4: 117, 117, 117 !important;
+  --clr-5: 158, 158, 158 !important;
+  --clr-6: 189, 189, 189 !important;
+  --clr-7: 224, 224, 224 !important;
+  --clr-8: 238, 238, 238 !important;
+  --clr-9: 245, 245, 245 !important;
+  --clr-10: 250, 250, 250 !important;
+  --clr-acnt: 100, 75, 60 !important;
+  --clr-admin: 100, 75, 60 !important;
+  --clr-ley: 96, 40, 120 !important;
+  --clr-ciu: 30, 70, 121 !important;
+  --clr-ser: 17, 105, 41 !important;
+  --clr-cel: 128, 90, 20 !important;
+  --clr-cri: 121, 9, 9 !important;
+  --clr-red: 100, 75, 60 !important;
+}
+
+.usergroup-unknown,
+.usergroup-admin,
+a .user-admin,
+a .user-admin strong,
+.user-admin {
+  --clr-acnt: 100, 75, 60 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-ley,
+a .user-ley,
+a .user-ley strong,
+.user-ley,
+.postbody.pnj-ley {
+  --clr-acnt: 96, 40, 120 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-ciu,
+a .user-ciu,
+a .user-ciu strong,
+.user-ciu,
+.postbody.pnj-ciu {
+  --clr-acnt: 30, 70, 121 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-ser,
+a .user-ser,
+a .user-ser strong,
+.user-ser,
+.postbody.pnj-serv {
+  --clr-acnt: 17, 105, 41 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-cel,
+a .user-cel,
+a .user-cel strong,
+.user-cel,
+.postbody.pnj-cel {
+  --clr-acnt: 128, 90, 20 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-cri,
+a .user-cri,
+a .user-cri strong,
+.user-cri,
+.postbody.pnj-cri {
+  --clr-acnt: 121, 9, 9 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+}
+
+.usergroup-hia,
+a .user-hia,
+a .user-hia strong,
+.user-hia {
+  --clr-acnt: 195, 35, 135 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+  --img-bg: url(https://i.imgur.com/Qayhq3t.png) !important;
+}
+
+.usergroup-dif,
+a .user-dif,
+a .user-dif strong,
+.user-dif {
+  --clr-acnt: 100, 100, 100 !important;
+  --backheader: url("https://i.imgur.com/6Vt2oTs.png") !important;
+  --backheader2: url("https://i.imgur.com/GiafYN4.png") !important;
+  --img-bg: url(https://i.imgur.com/Qayhq3t.png) !important;
+}
+
+
+::-webkit-scrollbar-track {
+  background: rgba(var(--clr-0), 0.4) !important;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(var(--clr-0), 1) !important;
+}
+
+::-webkit-scrollbar-thumb:hover,
+::-webkit-scrollbar-thumb:active {
+  background: rgba(var(--clr-acnt), 1) !important;
+}
+
+div::-webkit-scrollbar-track {
+  background: rgba(var(--clr-10), 0) !important;
+}
+
+body {
+  background-color: rgba(var(--clr-acnt), 0.2) !important;
+  background-blend-mode: soft-light !important;
+}
+
+::selection {
+  background: rgba(var(--clr-acnt), 0.5) !important;
+  color: rgba(var(--clr-10), 1) !important;
+}
+
+.header-index-tit {
+  color: rgba(var(--clr-0), 1) !important;
+  text-shadow: 3px 3px 4px rgba(var(--clr-0), 0.6),
+    0px 0px 30px rgba(var(--clr-10), 1), 0px 0px 50px rgba(var(--clr-10), 0.5) !important;
+}
+
+.header-info {
+  text-shadow: 1px 1px 2px rgba(var(--clr-0), 0.3) !important;
+}
+
+.header-info:hover > a {
+  color: rgba(var(--clr-acnt), 1) !important;
+}
+
+#header-skin {
+  font-size: 1rem !important;
+  top: 0rem !important;
+}
+
+.header-admins-1,
+.header-admins-2,
+.header-admins-3,
+.header-admins-4 {
+  background-color: rgba(var(--clr-10), 1) !important;
+  mix-blend-mode: hard-light !important;
+}
+
+.header-admins-img::after {
+  background: rgba(var(--clr-10), 0.3) !important;
+  mix-blend-mode: screen !important;
+}
+
+.header-admins-img:hover::after,
+.header-admins-img:focus::after {
+  background: rgba(var(--clr-acnt), 0.7) !important;
+}
+
+form.header-search:hover,
+form.header-search:focus,
+form.header-search:active,
+form.header-search:hover input#fa_textarea,
+form.header-search:focus input#fa_textarea,
+form.header-search:active input#fa_textarea,
+input#fa_textarea:focus,
+input#fa_textarea:active {
+  background: rgba(var(--clr-9), 0.2) !important;
+}
+
+.header-nav1 #navlinks span,
+i.bi.bi-x-lg::before,
+p.copyright a,
+.tema-post a.post-cerrado:before,
+.post-thank a:before,
+.post-multi-quote a:before,
+.post-quote a:before,
+.post-edit a:before,
+.post-delete a:before,
+.post-ip a:before,
+.admin-tools a:before,
+a.contact-perfil:before,
+a.contact-mp:before,
+a.contact-exp:before,
+a.contact-baul:before,
+a.contact-tel:before,
+a.contact-tw:before,
+a.contact-tram:before,
+a.contact-pers:before,
+a.contact-neg:before,
+.play-bar-time:before {
+  font-weight: 900 !important;
+}
+
+strong,
+a#skinchanger .bi-moon::before,
+#fa_magnifier .bi-search::before,
+.nav-text a:hover,
+a#header-fix-user,
+#header-fix-user us,
+.arrowdown,
+a.msjs-topicsuser,
+a.msjs-topicsuser span,
+a.msjs-topicsuser span strong,
+.cuenta.loggedInCuenta h5,
+.notif-text .contentText.ellipsis a,
+#foro-menu a span,
+#foro-menu a span + a span:before,
+.last-post-link a:before. .pathname-box a.nav span {
+  font-weight: 800 !important;
+}
+
+.msjs-topicstit,
+.users-desconectados a,
+.users-conectados a,
+.users-desconectados a span,
+.users-conectados a span,
+.users-desconectados a span strong,
+.users-conectados a span strong,
+p.right-box input,
+.pagination p input,
+fieldset.submit-buttons input,
+input#find_user,
+input#search,
+input#jqmHide,
+input#use,
+input[type="reset"],
+input[name="post"],
+input.button,
+input.button1,
+input.button2,
+.cambio-cuenta button,
+.cuenta button:nth-child(2):before,
+.cuenta button:nth-child(3):before,
+.footer-index a,
+#main-content h1.page-title a,
+.foro-vigilar a:before,
+a.foro-leidos:before,
+.foro-vigilar a:before,
+.new-foro .buttons .post-icon a:before,
+span.post-views:before,
+a.gensmall.tooltipstered span strong,
+.logged-users,
+.tema-post a.post-cerrado:after,
+blockquote cite,
+dl.codebox dt,
+span.selectCode,
+select,
+.postprofile-field-mensajes span.postprofile-field-content,
+.postprofile-field-libras span.postprofile-field-content,
+h1.page-title,
+h1.page-title-admin,
+#privmsgs-menu div,
+.info-modperfil dd span,
+.perfil-ultvisita,
+.dadotext,
+.abc,
+.content-registro.reg-pb .gsdk-cont-txt span a,
+.post-coment,
+.post-time,
+.post-userorg:before,
+.play-bar-tit,
+.play-bar-artist,
+.play-bar-album,
+.play-bar-time,
+.play-rep-icons div:after {
+  font-weight: 700 !important;
+}
+
+i,
+u,
+.h3,
+.header-nav1 #navlinks a,
+#total_users,
+#total_posts,
+.header-info1 span,
+.cuentas-guardadas .cuenta h5,
+.useredit a,
+.usertemas a,
+.userextra a,
+.user-tit us,
+.nav-text a,
+.notif-text .contentText.ellipsis,
+.links-text a,
+.table-title h2,
+a.tit-chatbox-link,
+.tooltip-subtitle,
+.tooltip-counts li,
+.tooltip-counts li b,
+.post-url-date,
+.post-poster-rank,
+.fa_like_list a,
+.post-pnj .post-poster-rank:after,
+.fa_like_others:before,
+.post-content strike,
+.gsdk-dat,
+.gsdk-dat a,
+.gsdk-dat2 a,
+td.member-pj div,
+.perfil-links .perfil-topic a,
+.perfil-links .perfil-posts a,
+dl#field_id-6 dd.perfil-content div,
+dl#field_id-13 dd.perfil-content div,
+dl#field_id-6 .perfil-content .field_uneditable:after,
+dl#field_id-13 .perfil-content .field_uneditable:after,
+.content-registro.reg-pb .gsdk-cont-txt span,
+.gsdk-message,
+.dadotext.mensual.medalla span2,
+.gsdk-text-afi li,
+.cel-msj-fecha,
+.red-stats-post span,
+.red-stats-fllwr span,
+.red-stats-fllw span,
+.red-user,
+.play-tit-type,
+.cont-down-time1:after,
+.cont-down-time2 {
+  font-weight: 600 !important;
+}
+
+.header-info a,
+.gruptit,
+.msjs-topicstime,
+.foro-desc,
+.afi-cred-text,
+span.span-tab,
+span.post-replies,
+span.post-views,
+.post-rep-author,
+.post-forum,
+.gsdk-sub,
+.gsdk-sub-afi,
+.gsdk-subt,
+dl.codebox code,
+span.postprofile-field-content,
+.header .mark,
+.icon span em,
+.inner p,
+input,
+.table-group td + td,
+.memberlist-pj,
+.memberlist-mode,
+.memberlist-order,
+.field_uneditable,
+.perfil-content .field_uneditable:after,
+tr.fielRowData_4 .celdaDato,
+tr.fielRowData_4 .celdaDato strong,
+.table_exppnj tr.fielRowData_4 .celdaDato:after,
+tr.fielRowData_5 .celdaDato,
+tr.fielRowData_5 .celdaDato strong,
+.table_expexp tr.fielRowData_5 .celdaDato:after,
+tr.fielRowData_6 .celdaDato,
+tr.fielRowData_7 .celdaDato,
+tr.fielRowData_8 .celdaDato,
+tr.fielRowData_9 .celdaDato,
+.table_expexp tr.fielRowData_10 .celdaDato,
+.table_expexp tr.fielRowData_11 .celdaDato,
+.red-info-lug,
+.red-info-link,
+.red-info-fecha,
+a.red-link-pj,
+.post-hist-time,
+.post-userorg a,
+.fllwr-dat-time {
+  font-weight: 500 !important;
+}
+
+.header-nav1 #navlinks a {
+  text-shadow: 2px 1px 3px rgba(var(--clr-0), 0.4),
+    0px 0px 15px rgba(var(--clr-10), 1), 0px 0px 20px rgba(var(--clr-10), 1) !important;
+}
+
+.header-button,
+.nav-content .nav-button,
+.nav-content1 .nav-button,
+.grup-content1 .grup-button,
+.notif-button,
+.user-button,
+.cuenta-button,
+#header-fix-user::after {
+  background: rgba(var(--clr-10), 0.11) !important;
+}
+
+.header-info2 {
+  background: rgba(var(--clr-7), 0.6) !important;
+}
+
+.sabias-back {
+  background: rgba(var(--clr-9), 0.4) !important;
+}
+
+.nav-content .nav-button:hover::after {
+  background: rgba(var(--clr-8), 0.6) !important;
+}
+
+.foro-amb-links .links-close,
+.foro-anun-links .links-close,
+.foro-com-links .links-close,
+.foro-exp-links .links-close,
+.foro-reg-links .links-close,
+.foro-busq-links .links-close,
+.foro-conex-links .links-close,
+.foro-gal-links .links-close,
+.foro-off-links .links-close,
+.foro-afi-links .links-close,
+.foro-admin-links .links-close {
+  background: rgba(var(--clr-7), 0.6) !important;
+}
+
+.nov-dat spam1 {
+  background: rgba(var(--clr-6), 0.4) !important;
+  border: 2px solid rgba(var(--clr-4), 1) !important;
+}
+
+.cambio-cuenta,
+.nav-content,
+.nav-content1,
+.nav-content2,
+.grup-content1,
+.grup-content2,
+.notif-content,
+.notif-content2,
+.user-content,
+.user-content2 {
+  background: rgba(var(--clr-7), 0.9) !important;
+  box-shadow: 0px 0px 20px rgba(var(--clr-0), 0.5);
+}
+
+dl.mod-login dd {
+  text-shadow: 1px 1px 3px rgba(var(--clr-0), 0.9) !important;
+}
+
+.cuenta.loggedInCuenta + .cuenta {
+  border-top: none !important;
+}
+
+.userspacer {
+  background: rgba(var(--clr-acnt), 0.2) !important;
+}
+
+.links-text a::before {
+  background: rgba(var(--clr-acnt), 0.3) !important;
+  left: -2vmin !important;
+  width: calc(100% + 3.5vmin) !important;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .forumtitle {
+  text-shadow: 2px 1px 3px rgba(var(--clr-0), 0.3),
+    0px 0px 25px rgba(var(--clr-10), 0.5) !important;
+}
+
+.foro-exp-links-tit,
+.foro-reg-links-tit,
+.foro-busq-links-tit,
+.foro-conex-links-tit {
+  border: 2px solid rgba(var(--clr-0), 1) !important;
+}
+
+.foro-exp-links-tit .bi-link-45deg::before,
+.foro-reg-links-tit .bi-link-45deg::before,
+.foro-busq-links-tit .bi-link-45deg::before,
+.foro-conex-links-tit .bi-link-45deg::before {
+  color: var(--clr-txt) !important;
+}
+
+.foro-docu-tit {
+  color: rgba(var(--clr-acnt), 0.4) !important;
+}
+
+.docu-links-open {
+  height: 29vmin !important;
+}
+
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>DOCUMENTACIÓN\<\/h2\> .foro-tit:hover .foro-docu-tit,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-tit:hover,
+.topiclist.forums.\<h2\>ZONA.OFF-ROL\<\/h2\> .foro-tit:hover .foro-docu-tit {
+  color: rgba(var(--clr-8), 0.8) !important;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit {
+  background-color: rgba(var(--clr-10), 0.5) !important;
+  filter: contrast(1.8);
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0.4);
+}
+
+.usergroup-cel .inner .topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit,
+.usergroup-cel .inner .topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit,
+.usergroup-cel .inner .topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit,
+.usergroup-cel .foro-tit .img-cat {
+  background-blend-mode: color-burn !important;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .foro-tit:after,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .foro-tit:after,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .foro-tit:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(var(--clr-acnt), 0.3);
+  position: absolute;
+  z-index: 0;
+}
+
+.foro-deg1 {
+  height: 50% !important;
+  background: linear-gradient(
+    180deg,
+    rgba(var(--clr-8), 0.2) 0%,
+    rgba(var(--clr-8), 0) 100%
+  ) !important;
+  z-index: 1;
+}
+
+.foro-deg2 {
+  height: 50% !important;
+  background: linear-gradient(
+    0deg,
+    rgba(var(--clr-8), 0.3) 0%,
+    rgba(var(--clr-4), 0) 100%
+  ) !important;
+  z-index: 1;
+}
+
+.topiclist.forums.\<h2\>WELCOME.TO.LONDON\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>WIDER.WORLD\<\/h2\> .forumtitle,
+.topiclist.forums.\<h2\>MULTIVERSE\<\/h2\> .forumtitle {
+  text-shadow: 2px 1px 2px rgba(var(--clr-0), 0.2),
+    0px 0px 25px rgba(var(--clr-10), 0.3) !important;
+  z-index: 2 !important;
+}
+
+.foro-info.CITY.OF.LONDON,
+.foro-info.CITY.OF.WESTMINSTER,
+.foro-info.KENSINGTON.Y.CHELSEA,
+.foro-info.UNITED.KINGDOM,
+.foro-info.WORLD,
+.foro-info.ALTERNATIVE.UNIVERSE {
+  z-index: 1;
+}
+
+.topics,
+.posts,
+dfn {
+  font-weight: 600 !important;
+  text-shadow: 1px 1px 2px rgba(var(--clr-0), 0.3),
+    1px 1px 15px rgba(var(--clr-10), 0.4) !important;
+}
+
+.foro-tit .foro-tit .lastpost.CITY.OF.LONDON span,
+.foro-tit .foro-tit .lastpost.CITY.OF.WESTMINSTER span,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA span,
+.foro-tit .foro-tit .lastpost.UNITED.KINGDOM span,
+.foro-tit .lastpost.WORLD span,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE span,
+.foro-tit .lastpost.CITY.OF.LONDON span strong,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER span strong,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA span strong,
+.foro-tit .lastpost.UNITED.KINGDOM span strong,
+.foro-tit .lastpost.WORLD span strong,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE span strong,
+.foro-tit .lastpost.CITY.OF.LONDON a,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a,
+.foro-tit .lastpost.CITY.OF.LONDON a span,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a span,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a span,
+.foro-tit .lastpost.UNITED.KINGDOM a,
+.foro-tit .lastpost.WORLD a,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a,
+.foro-tit .lastpost.UNITED.KINGDOM a span,
+.foro-tit .lastpost.WORLD a span,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a span,
+.foro-tit .lastpost.CITY.OF.LONDON span strong,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER span strong,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA span strong,
+.foro-tit .lastpost.UNITED.KINGDOM span strong,
+.foro-tit .lastpost.WORLD span strong,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE span strong,
+.foro-tit .lastpost.CITY.OF.LONDON a span,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a span,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a span,
+.foro-tit .lastpost.CITY.OF.LONDON a span strong,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a span strong,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a span strong,
+.foro-tit .lastpost.UNITED.KINGDOM a span,
+.foro-tit .lastpost.WORLD a span,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a span,
+.foro-tit .lastpost.UNITED.KINGDOM a span strong,
+.foro-tit .lastpost.WORLD a span strong,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a span strong,
+.lastpost.CITY.OF.LONDON span,
+.lastpost.CITY.OF.WESTMINSTER span,
+.lastpost.KENSINGTON.Y.CHELSEA span,
+.lastpost.UNITED.KINGDOM span,
+.lastpost.WORLD span,
+.lastpost.ALTERNATIVE.UNIVERSE span,
+.lastpost.CITY.OF.LONDON span strong,
+.lastpost.CITY.OF.WESTMINSTER span strong,
+.lastpost.KENSINGTON.Y.CHELSEA span strong,
+.lastpost.UNITED.KINGDOM span strong,
+.lastpost.WORLD span strong,
+.lastpost.ALTERNATIVE.UNIVERSE span strong {
+  font-weight: 600 !important;
+  text-shadow: 1px 1px 1px rgba(var(--clr-0), 0.2),
+    1px 1px 10px rgba(var(--clr-10), 0.7) !important;
+}
+
+.lastpost.CITY.OF.LONDON,
+.lastpost.CITY.OF.WESTMINSTER,
+.lastpost.KENSINGTON.Y.CHELSEA,
+.lastpost.UNITED.KINGDOM,
+.lastpost.WORLD,
+.lastpost.ALTERNATIVE.UNIVERSE {
+  z-index: 2 !important;
+}
+
+.foro-tit .lastpost.CITY.OF.LONDON a,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a,
+.foro-tit .lastpost.CITY.OF.LONDON a span,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER a span,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA a span,
+.foro-tit .lastpost.UNITED.KINGDOM a,
+.foro-tit .lastpost.WORLD a,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a,
+.foro-tit .lastpost.UNITED.KINGDOM a span,
+.foro-tit .lastpost.WORLD a span,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE a span,
+.foro-tit .lastpost.CITY.OF.LONDON span strong,
+.foro-tit .lastpost.CITY.OF.WESTMINSTER span strong,
+.foro-tit .lastpost.KENSINGTON.Y.CHELSEA span strong,
+.foro-tit .lastpost.UNITED.KINGDOM span strong,
+.foro-tit .lastpost.WORLD span strong,
+.foro-tit .lastpost.ALTERNATIVE.UNIVERSE span strong {
+  font-weight: 800 !important;
+}
+
+.foro-tit .img-cat {
+  background-color: rgba(var(--clr-10), 0.6) !important;
+  filter: contrast(1);
+  box-shadow: 0px 0px 12px rgba(var(--clr-0), 0.4);
+}
+
+.foro-tit .img-cat:after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgba(var(--clr-acnt), 0.3);
+  position: absolute;
+  z-index: 0;
+  transition: all ease-in-out 500ms;
+}
+
+.foro-tit:hover .img-cat {
+  background-color: rgba(var(--clr-10), 0.5) !important;
+  filter: contrast(1.8);
+}
+
+.foro-tit:hover .img-cat:after {
+  opacity: 1;
+  transition: all ease-in-out 500ms;
+}
+
+.foro-tit a.forumtitle {
+  text-shadow: 2px 1px 2px rgba(var(--clr-0), 0.2),
+    0px 0px 25px rgba(var(--clr-10), 0.3) !important;
+}
+
+a.last-post-icon {
+  background-color: rgba(var(--clr-acnt), 0.1) !important;
+  border: 2px solid rgba(var(--clr-0), 1) !important;
+}
+
+a.last-post-icon:hover {
+  background-color: rgba(var(--clr-10), 0.7) !important;
+}
+
+.footer-index a,
+.afi-cred-text {
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.all-postprofile {
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0.4);
+}
+
+.postmsj .post-content {
+  background-color: rgba(var(--clr-7), 0.7) !important;
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0.4);
+}
+
+.post-content:before {
+  content: "";
+  background-color: rgba(var(--clr-acnt), 0.1) !important;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.gsdk-post,
+.gsdk-post-search,
+.gsdk-post-search2,
+.gsdk-post-admin,
+.gsdk-post-afi,
+.gsdk-post-reg,
+.gsdk-post-reg-ext {
+  border: 3px solid rgba(var(--clr-acnt), 0.4) !important;
+  border-top: none !important;
+}
+
+.gsdk-post-admin,
+.gsdk-post-search,
+.gsdk-post-search2 {
+  border-top: 3px solid rgba(var(--clr-acnt), 0.4) !important;
+}
+
+.gsdk-post:before,
+.gsdk-post:after,
+.gsdk-post-afi:before,
+.gsdk-post-afi:after,
+.gsdk-post-reg:before,
+.gsdk-post-reg:after,
+.gsdk-post-reg-ext:before,
+.gsdk-post-reg-ext:after {
+  background: rgba(var(--clr-acnt), 0.4) !important;
+}
+
+.gsdk-admin {
+    font-weight: 500 !important;
+}
+
+.fa_like_div {
+  color: rgba(var(--clr-acnt), 1) !important;
+}
+
+blockquote,
+dl.codebox {
+  background-color: rgba(var(--clr-acnt), 0.1) !important;
+}
+
+.poster-avatar a:after {
+  background: rgba(var(--clr-10), 0.7) !important;
+  mix-blend-mode: lighten !important;
+}
+
+.poster-postprofile > .poster-avatar a:before {
+  content: "";
+  width: 100%;
+  height: 400px;
+  background: rgba(var(--clr-acnt), 0.2);
+  mix-blend-mode: multiply;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: all 500ms ease-in-out;
+  z-index: 1;
+}
+
+.poster-postprofile:hover > .poster-avatar a:before {
+  opacity: 1;
+  transition: all 500ms ease-in-out;
+}
+
+.postprofile-field-contact a,
+.postprofile-field-contact a:hover {
+  color: rgba(var(--clr-acnt), 0.9) !important;
+}
+
+textarea.inputbox {
+  outline: 2px solid rgba(var(--clr-0), 1) !important;
+}
+
+.sceditor-container.ltr.sourceMode {
+  outline: 2px solid rgba(var(--clr-0), 1) !important;
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0.4);
+}
+
+.sceditor-container.ltr.sourceMode .sceditor-toolbar {
+  border-bottom: 2px solid rgba(var(--clr-0), 0.2) !important;
+}
+
+.icon .mps-icon.unread {
+  background-image: url(https://i.imgur.com/juaNHll.png) !important;
+}
+
+.icon .mps-icon.read {
+  background-image: url(https://i.imgur.com/78a54VB.png) !important;
+}
+
+.perfil-background,
+.exp-fond {
+  background-blend-mode: lighten !important;
+}
+
+.perfil-med-toggle {
+  background: rgba(var(--clr-6), 1) !important;
+}
+
+.dadotext span {
+  opacity: 0.12 !important;
+}
+
+.table_exppnj {
+  background-color: rgba(var(--clr-8), 0.5) !important;
+}
+
+div#\31 07 .post-content,
+div#\38 0 .post-content,
+div#\37 9 .post-content,
+div#\37 8 .post-content,
+div#\37 7 .post-content,
+div#\37 6 .post-content,
+div#\31 06 .post-content,
+.post-content.post-exp,
+div#\31 9795 .post-content,
+.post-content.post-conex {
+  background: none !important;
+  box-shadow: none !important;
+}
+
+div#\31 07 .post-content:before,
+div#\38 0 .post-content:before,
+div#\37 9 .post-content:before,
+div#\37 8 .post-content:before,
+div#\37 7 .post-content:before,
+div#\37 6 .post-content:before,
+div#\31 06 .post-content:before,
+.post-content.post-exp:before,
+div#\31 9795 .post-content:before,
+.post-content.post-conex:before {
+  background: none !important;
+}
+
+iframe#RegUniSuperForm,
+iframe#mySuperForm,
+iframe#RegSuperForm,
+iframe#RegNegActSuperForm {
+  background-color: rgba(var(--clr-2), 0.6) !important;
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0.4);
+  padding: 3vmin;
+  height: 2432px !important;
+}
+
+iframe#RegUniSuperForm {
+  border-top: none !important;
+  height: 1774px !important;
+}
+
+iframe#RegSuperForm,
+iframe#RegExtSuperForm {
+  background-color: rgba(var(--clr-2), 0.55) !important;
+  padding: 1vmin 3vmin;
+  height: 407px !important;
+}
+
+iframe#RegExtSuperForm {
+  height: 524px !important;
+}
+
+.gsdk-register-reg iframe#RegSuperForm {
+  margin-top: 2vmin;
+  height: 588px !important;
+}
+
+iframe#RegNegActSuperForm {
+  padding: 1vmin 3vmin;
+  height: 713px !important;
+}
+
+div#\39 9 iframe#RegSuperForm {
+  height: 275px !important;
+}
+
+div#\39 8 iframe#RegSuperForm {
+  height: 328px !important;
+}
+
+div#\35 55 iframe#RegSuperForm {
+  height: 278px !important;
+}
+
+.form-exp-admin + br + iframe#mySuperForm {
+  background-color: rgba(var(--clr-2), 0) !important;
+  box-shadow: 0px 0px 15px rgba(var(--clr-0), 0) !important;
+  padding: 0 !important;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    iframe#RegUniSuperForm {
+      border-top: none !important;
+      height: 1784px !important;
+    }
+
+    iframe#mySuperForm {
+      height: 2445px !important;
+    }
+
+    iframe#RegSuperForm {
+      height: 412px !important;
+    }
+
+    .gsdk-register-reg iframe#RegSuperForm {
+      height: 595px !important;
+    }
+
+    iframe#RegExtSuperForm {
+      height: 524px !important;
+    }
+
+    iframe#RegNegActSuperForm {
+      height: 718px !important;
+    }
+
+    div#\39 9 iframe#RegSuperForm {
+      height: 280px !important;
+    }
+
+    div#\39 8 iframe#RegSuperForm {
+      height: 333px !important;
+    }
+
+    div#\35 55 iframe#RegSuperForm {
+      height: 283px !important;
+    }
+  }
+}
+
+.cel-msj-cont {
+  background: rgba(var(--clr-acnt), 0.2) !important;
+}
+
+.msj-call-red,
+.msj-call-green {
+  color: rgba(var(--clr-10), 1) !important;
+}
+
+.audio-rep-line:before {
+  border: 3px solid rgba(var(--clr-7), 1) !important;
+}
+
+.cel-msj-cont-audio,
+.msj-audio-cont {
+  background: rgba(var(--clr-acnt), 0.1) !important;
+}
+
+.red-neg-info {
+  text-shadow: 2px 2px 3px rgba(var(--clr-0), 0.3) !important;
+}
+
+.gsdk-crono-tema:before {
+  background: rgba(var(--clr-6), 1) !important;
+}
+
+.img-c.active.positioned {
+  box-shadow: 5px 5px 10px rgba(var(--clr-0), 0.4) !important;
+}
+
+.post-message .gstk-red {
+  background: rgba(var(--clr-4), 0.3) !important;
+}
+
+.gstk-red-intro-dat {
+  background: rgba(var(--clr-8), 0.6) !important;
+}
+
+.playlist-slide.amarillo {
+  --clr-acnt: 228, 206, 185 !important;
+}
+
+.playlist-slide.aqua {
+  --clr-acnt: 170, 191, 193 !important;
+}
+
+.playlist-slide.azul {
+  --clr-acnt: 201, 207, 230 !important;
+}
+
+.playlist-slide.morado {
+  --clr-acnt: 228, 211, 235 !important;
+}
+
+.playlist-slide.naranja {
+  --clr-acnt: 245, 205, 190 !important;
+}
+
+.playlist-slide.rojo {
+  --clr-acnt: 250, 198, 197 !important;
+}
+
+.playlist-slide.rosa {
+  --clr-acnt: 212, 163, 177 !important;
+}
+
+.playlist-slide.verde {
+  --clr-acnt: 173, 177, 168 !important;
+}
+
+.playlist-cont-play-list .play-list-song:hover {
+  background-color: rgba(var(--clr-acnt), 0.4) !important;
+}
+
+.playlist-cont-play-list .play-list-song.song-active {
+  background-color: rgba(var(--clr-acnt), 0.7) !important;
+}
+
+.playlist-cont-play-list .play-list-song.song-active .song-tit {
+  color: rgba(var(--clr-0), 1) !important;
+}
+
+.playlist-cont-play-list .play-list-song.song-active:hover {
+  background-color: rgba(var(--clr-acnt), 0.9) !important;
+}
+
+.cont-up-shu:after,
+.cont-up-repi:after {
+  color: rgba(var(--clr-9), 1) !important;
+}
