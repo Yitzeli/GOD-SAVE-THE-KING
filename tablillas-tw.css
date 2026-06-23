@@ -18,7 +18,6 @@
   color: var(--clr-txt);
   display: flex;
   flex-direction: row;
-  overflow: hidden;
   position: relative;
 }
 
