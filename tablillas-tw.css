@@ -1,16 +1,14 @@
-/* TOKENS LOCALES */
 :root {
   --clr-tw: 203, 160, 120;
   --img-tw-pj: url(https://via.placeholder.com/200x200);
   --img-tw-fon: url(https://via.placeholder.com/600x300/333);
 }
 
-/* OCULTAR SALTOS DEL EDITOR */
 .gstk-tw br {
   display: none !important;
 }
 
-/* CONTENEDOR PRINCIPAL */
+
 .gstk-tw {
   width: 100%;
   height: 92vmin;
