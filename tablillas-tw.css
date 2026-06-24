@@ -1206,7 +1206,7 @@
 /* CONVERSACION COMO TARJETA (MISMO FORMATO QUE EL RESTO) */
 .gstk-tw-conv {
   width: calc(480px - 4vmin);
-  max-width: 80%;
+  max-width: 100%;
   height: auto;
   margin: 0 auto;
   padding: 2vmin;
@@ -1228,6 +1228,16 @@
 }
 
 .gstk-tw-conv .tw-tweet:last-child { border-bottom: none; }
+
+/* ESTADISTICAS DE CONVERSACION EN ANCHO REDUCIDO */
+.gstk-tw-conv .twcv-main-stats {
+  flex-wrap: wrap;
+  gap: 0.5vmin 2vmin;
+}
+
+.gstk-tw-conv .twcv-main-stats > span {
+  white-space: nowrap;
+}
 
 /* ETIQUETA DE REPOST SOBRE EL TWEET */
 .tw-repost-tag {
