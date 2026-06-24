@@ -712,8 +712,8 @@
 
 /* PERFIL */
 .gstk-tw-perfil {
-  width: 100%;
-  height: 92vmin;
+  width: 80%;
+  height: 100vmin;
   margin: 0 auto;
   background: rgba(var(--clr-10), 0.3) !important;
   border: 2px solid rgba(var(--clr-0), 1);
