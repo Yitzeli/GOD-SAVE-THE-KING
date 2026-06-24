@@ -1206,7 +1206,7 @@
 /* CONVERSACION COMO TARJETA (MISMO FORMATO QUE EL RESTO) */
 .gstk-tw-conv {
   width: calc(480px - 4vmin);
-  max-width: 100%;
+  max-width: 80%;
   height: auto;
   margin: 0 auto;
   padding: 2vmin;
