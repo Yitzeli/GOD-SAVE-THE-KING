@@ -4,10 +4,14 @@
   --img-tw-fon: url(https://via.placeholder.com/600x300/333);
 }
 
-.gstk-tw br {
+/* OCULTAR SALTOS DEL EDITOR */
+.gstk-tw br,
+.gstk-tw-perfil br,
+.gstk-tw-cita br,
+.gstk-tw-hilo br,
+.gstk-tw-conv br {
   display: none !important;
 }
-
 
 .gstk-tw {
   width: 80%;
