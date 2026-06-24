@@ -1202,3 +1202,29 @@
 }
 
 .twcv-reply-to span { color: rgba(var(--clr-tw), 1); }
+
+/* CONVERSACION COMO TARJETA (MISMO FORMATO QUE EL RESTO) */
+.gstk-tw-conv {
+  width: calc(480px - 4vmin);
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  padding: 2vmin;
+  background: rgba(var(--clr-tw), 0.18) !important;
+  border: 2px solid rgba(var(--clr-0), 1);
+  display: block;
+  overflow: visible;
+}
+
+.gstk-tw-conv .twcv-body { overflow: visible; }
+
+.gstk-tw-conv .twp-head { display: none; }
+
+.gstk-tw-conv .twcv-main,
+.gstk-tw-conv .twcv-replybox,
+.gstk-tw-conv .tw-tweet {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.gstk-tw-conv .tw-tweet:last-child { border-bottom: none; }
