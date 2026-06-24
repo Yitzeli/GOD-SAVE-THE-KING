@@ -1236,7 +1236,7 @@
   font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
   color: rgba(var(--clr-0), 0.5);
   font-weight: 700;
-  margin: 0 0 0.5vmin 5vmin;
+  margin: 1.5vmin 0 -1vmin 5vmin;
 }
 
 .tw-repost-tag:before {
@@ -1252,7 +1252,7 @@
   font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
   color: rgba(var(--clr-0), 0.5);
   font-weight: 700;
-  margin: 0 0 0.5vmin 5vmin;
+  margin: 1.5vmin 0 -1vmin 5vmin;
 }
 
 .tw-pin-tag:before {
