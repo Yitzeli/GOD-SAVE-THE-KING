@@ -1058,6 +1058,40 @@
   margin: 0.5vmin 0;
 }
 
+/* POST INDIVIDUAL */
+.gstk-tw-post {
+  width: calc(480px - 4vmin);
+  margin: 0 auto;
+  background: rgba(var(--clr-tw), 0.18);
+  border: 2px solid rgba(var(--clr-0), 1);
+  font-family: var(--txt);
+  color: var(--clr-txt);
+  padding: 2vmin;
+  display: flex;
+  flex-direction: row;
+}
+
+.gstk-tw-post br { display: none !important; }
+.gstk-tw-post br.esp { display: block !important; }
+
+/* GALERIA DE IMAGENES */
+.tw-tweet-imgs {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5vmin;
+  margin: 1vmin 0;
+  border-radius: 1.5vmin;
+  overflow: hidden;
+  border: 1px solid rgba(var(--clr-0), 0.2);
+}
+
+.tw-tweet-imgs img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+}
 /* TOKEN ADICIONAL */
 :root {
   --img-tw-ban: url(https://via.placeholder.com/600x200/333);
