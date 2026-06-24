@@ -583,6 +583,10 @@ img.img-dados,
   font-weight: 700;
 }
 
+.rep-button.fa_liked svg {
+  filter: drop-shadow(0 0 3px rgba(var(--clr-acnt), 0.6));
+}
+
 .rep-button.fa_liked svg path {
   fill: rgba(var(--clr-acnt), 1);
 }
