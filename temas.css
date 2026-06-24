@@ -576,7 +576,6 @@ img.img-dados,
   justify-content: center;
   align-items: end;
 }
-
 /* LIKE YA MARCADO */
 .rep-button.fa_liked {
   color: rgba(var(--clr-acnt), 1);
