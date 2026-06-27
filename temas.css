@@ -681,6 +681,7 @@ a.contact-mp:before,
 a.contact-exp:before,
 a.contact-baul:before,
 a.contact-tel:before,
+a.contact-ig:before,
 a.contact-tw:before,
 a.contact-tram:before,
 a.contact-pers:before,
@@ -708,6 +709,7 @@ a.contact-mp:before,
 a.contact-exp:before,
 a.contact-baul:before,
 a.contact-tel:before,
+a.contact-ig:before,
 a.contact-tw:before,
 a.contact-tram:before,
 a.contact-pers:before,
@@ -784,8 +786,12 @@ a.contact-tel:before {
   content: "\F4E2";
 }
 
+a.contact-ig:before {
+  content: "\F437"; 
+}
+
 a.contact-tw:before {
-  content: "\F437";
+  content: "\F5EF";
 }
 
 a.contact-tram:before {
@@ -1001,6 +1007,7 @@ a.pag-img.left:before {
   a.contact-exp:before,
   a.contact-baul:before,
   a.contact-tel:before,
+  a.contact-ig:before,
   a.contact-tw:before,
   a.contact-tram:before,
   a.contact-pers:before,
@@ -1146,6 +1153,7 @@ a.pag-img.left:before {
     a.contact-exp:before,
     a.contact-baul:before,
     a.contact-tel:before,
+    a.contact-ig:before,
     a.contact-tw:before,
     a.contact-tram:before,
     a.contact-pers:before,
