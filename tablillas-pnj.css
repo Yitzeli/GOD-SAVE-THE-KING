@@ -2,9 +2,9 @@
 
 /* CONTENEDOR */
 .pnj-baul {
-  width: 100%;
+  width: 80%;
   box-sizing: border-box;
-  margin: 7vmin 0 0;
+  margin: 7vmin auto 0;
   padding: 3vmin 4vmin 3vmin 3vmin;
   display: flex;
   flex-wrap: wrap;
