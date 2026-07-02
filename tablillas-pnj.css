@@ -95,26 +95,12 @@
 /* HISTORIA */
 .pnj-baul-hist {
   width: 100%;
-  max-height: 24vmin;
   margin-top: 2.5vmin;
   padding: 2vmin 2.5vmin;
-  overflow: auto;
   background: rgba(var(--clr-acnt), 0.12);
   border-left: 2px solid rgba(var(--clr-acnt), 0.5);
 }
-
-.pnj-baul-hist::-webkit-scrollbar {
-  width: 2px;
-}
-
-.pnj-baul-hist::-webkit-scrollbar-track {
-  background: rgba(var(--clr-10), 0);
-}
-
-.pnj-baul-hist::-webkit-scrollbar-thumb {
-  background: rgba(var(--clr-acnt), 0.3);
-}
-
+ 
 .pnj-baul-hist-tit {
   margin-bottom: 1vmin;
   font-family: var(--txt-2);
@@ -124,7 +110,7 @@
   text-transform: uppercase;
   color: rgba(var(--clr-acnt), 1);
 }
-
+ 
 .pnj-baul-hist-txt {
   font-size: var(--txt-size-3);
   line-height: 170%;
@@ -169,22 +155,23 @@
 @media screen and (max-width: 999px) {
   @media screen and (max-aspect-ratio: 6 / 7) {
     .pnj-baul {
+      width: 100%;
       flex-direction: column;
       align-items: center;
       padding: 3vmin;
     }
-
+ 
     .pnj-baul-img {
       margin-top: -8vmin;
     }
-
+ 
     .pnj-baul-info {
       padding-left: 0;
       margin-top: 2vmin;
       align-items: center;
       text-align: center;
     }
-
+ 
     .pnj-baul-dats {
       justify-content: center;
     }
