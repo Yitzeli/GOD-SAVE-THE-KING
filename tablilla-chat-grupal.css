@@ -180,3 +180,8 @@
   text-transform: uppercase;
   letter-spacing: 0.5px;
 }
+/* OCULTAR SALTOS DE LINEA AUTOMATICOS */
+
+.gstk-grupo-ficha br {
+  display: none !important;
+}
