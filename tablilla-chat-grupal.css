@@ -10,7 +10,11 @@
 /* TARJETA */
 
 .grupo-ficha-card {
-  width: 280px;
+  width: clamp(260px, 80%, 500px);
+  padding: 24px;
+  background: rgba(var(--clr-9), 0.4);
+  border: 1px solid rgba(var(--clr-acnt), 1);
+  border-radius: 14px;
   display: flex;
   flex-direction: column;
   align-items: center;
