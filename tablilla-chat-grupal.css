@@ -2,9 +2,9 @@
 
 .gstk-grupo-ficha {
   width: 70%;
+  margin: 0 auto 4vmin;
   display: flex;
   justify-content: center;
-  margin: 0 0 4vmin;
 }
 
 .gstk-grupo-ficha br {
@@ -208,4 +208,13 @@
   font-size: 11px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+}
+
+  /* ANULAR CONTENEDOR DEL MENSAJE */
+
+.postmsj:has(.gstk-grupo-ficha),
+.post-content:has(.gstk-grupo-ficha) {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
