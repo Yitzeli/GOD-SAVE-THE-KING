@@ -1,8 +1,16 @@
-/* ESTRUCTURA GENERAL */
+/* CONTENEDOR EXTERIOR */
 
 .gstk-grupo-ficha {
-  width: clamp(280px, 90%, 400px);
-  margin: 0 auto 4vmin;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 4vmin;
+}
+
+/* TARJETA */
+
+.grupo-ficha-card {
+  width: 280px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -11,51 +19,51 @@
 /* CIRCULO DE AVATARES */
 
 .grupo-ficha-avatares {
-  width: 260px;
-  height: 260px;
+  width: 160px;
+  height: 160px;
   position: relative;
-  margin-bottom: 2vmin;
+  margin-bottom: 12px;
 }
 
 .grupo-av-central {
-  width: 150px;
-  height: 150px;
+  width: 92px;
+  height: 92px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 55px;
-  left: 55px;
-  border: 3px solid rgba(var(--clr-acnt), 0.6);
+  top: 34px;
+  left: 34px;
+  border: 2px solid rgba(var(--clr-acnt), 0.6);
   z-index: 2;
 }
 
 .grupo-av-sat {
-  width: 50px;
-  height: 50px;
+  width: 31px;
+  height: 31px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
   position: absolute;
-  border: 3px solid rgba(var(--clr-9), 1);
+  border: 2px solid rgba(var(--clr-9), 1);
   z-index: 1;
 }
 
-.grupo-av-sat.gsat-1 { top: 10px; left: 105px; }
-.grupo-av-sat.gsat-2 { top: 57px; left: 187px; }
-.grupo-av-sat.gsat-3 { top: 153px; left: 187px; }
-.grupo-av-sat.gsat-4 { top: 200px; left: 105px; }
-.grupo-av-sat.gsat-5 { top: 153px; left: 23px; }
-.grupo-av-sat.gsat-6 { top: 57px; left: 23px; }
+.grupo-av-sat.gsat-1 { top: 6px; left: 65px; }
+.grupo-av-sat.gsat-2 { top: 35px; left: 115px; }
+.grupo-av-sat.gsat-3 { top: 94px; left: 115px; }
+.grupo-av-sat.gsat-4 { top: 123px; left: 65px; }
+.grupo-av-sat.gsat-5 { top: 94px; left: 14px; }
+.grupo-av-sat.gsat-6 { top: 35px; left: 14px; }
 
 /* NOMBRE DEL GRUPO */
 
 .grupo-ficha-nombre {
   font-family: var(--txt-1);
-  font-size: var(--txt-size-5);
+  font-size: 22px;
   color: rgba(var(--clr-acnt), 1);
   text-align: center;
-  letter-spacing: 0.2vmin;
+  letter-spacing: 0.5px;
 }
 
 /* BOTONES DE ACCION */
@@ -64,33 +72,44 @@
   width: 100%;
   display: flex;
   justify-content: center;
-  gap: 3vmin;
-  margin: 3vmin 0;
+  gap: 8px;
+  margin: 12px 0;
 }
 
 .grupo-accion {
-  width: 90px;
-  height: 70px;
+  width: 62px;
+  height: 58px;
   background: rgba(var(--clr-acnt), 0.1);
   border: 1px solid rgba(var(--clr-acnt), 0.4);
-  border-radius: 2vmin;
+  border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 1vmin;
+  gap: 4px;
   color: rgba(var(--clr-acnt), 1);
 }
 
 .grupo-accion i {
-  font-size: var(--txt-size-4);
+  font-size: 16px;
 }
 
 .grupo-accion span {
   font-family: var(--txt-2);
-  font-size: var(--txt-size-3);
+  font-size: 8px;
   text-transform: uppercase;
-  letter-spacing: 0.2vmin;
+  letter-spacing: 0.3px;
+}
+
+/* DESCRIPCION DEL GRUPO */
+
+.grupo-ficha-desc {
+  width: 100%;
+  text-align: center;
+  font-family: var(--txt-2);
+  font-size: 12px;
+  color: rgba(var(--clr-acnt), 0.7);
+  margin-bottom: 12px;
 }
 
 /* PANEL DE MIEMBROS */
@@ -99,16 +118,16 @@
   width: 100%;
   background: rgba(var(--clr-9), 0.6);
   border: 1px solid rgba(var(--clr-acnt), 0.3);
-  border-radius: 3vmin;
+  border-radius: 14px;
   overflow: hidden;
 }
 
 .grupo-miembro {
   width: 100%;
-  padding: 2.5vmin 3vmin;
+  padding: 10px 14px;
   display: flex;
   align-items: center;
-  gap: 2.5vmin;
+  gap: 12px;
   border-bottom: 1px solid rgba(var(--clr-acnt), 0.15);
 }
 
@@ -117,8 +136,8 @@
 }
 
 .grupo-miembro-av {
-  width: 45px;
-  height: 45px;
+  width: 34px;
+  height: 34px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
@@ -127,37 +146,37 @@
 
 .grupo-miembro-nombre {
   font-family: var(--txt-2);
-  font-size: var(--txt-size-2);
+  font-size: 12px;
   color: rgba(var(--clr-0), 1);
-  letter-spacing: 0.1vmin;
+  letter-spacing: 0.2px;
 }
 
 /* AGREGAR MIEMBRO */
 
 .grupo-agregar {
   width: 100%;
-  padding: 2.5vmin 3vmin;
+  padding: 10px 14px;
   display: flex;
   align-items: center;
-  gap: 2.5vmin;
+  gap: 12px;
   color: rgba(var(--clr-acnt), 1);
 }
 
 .grupo-agregar-icono {
-  width: 45px;
-  height: 45px;
+  width: 34px;
+  height: 34px;
   border-radius: 100%;
   border: 1px solid rgba(var(--clr-acnt), 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: var(--txt-size-2);
+  font-size: 14px;
   flex-shrink: 0;
 }
 
 .grupo-agregar-texto {
   font-family: var(--txt-2);
-  font-size: var(--txt-size-2);
+  font-size: 12px;
   text-transform: uppercase;
-  letter-spacing: 0.2vmin;
+  letter-spacing: 0.5px;
 }
