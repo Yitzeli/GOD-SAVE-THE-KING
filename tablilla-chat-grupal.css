@@ -185,3 +185,8 @@
 .gstk-grupo-ficha br {
   display: none !important;
 }
+/* CORREGIR ITALICA GLOBAL EN ICONOS */
+
+.gstk-grupo-ficha i {
+  font-style: normal !important;
+}
