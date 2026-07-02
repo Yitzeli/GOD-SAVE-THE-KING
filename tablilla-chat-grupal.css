@@ -7,11 +7,19 @@
   margin: 0 0 4vmin;
 }
 
+.gstk-grupo-ficha br {
+  display: none !important;
+}
+
+.gstk-grupo-ficha i {
+  font-style: normal !important;
+}
+
 /* TARJETA */
 
 .grupo-ficha-card {
-  width: clamp(260px, 80%, 500px);
-  padding: 24px;
+  width: 320px;
+  padding: 20px;
   background: rgba(var(--clr-9), 0.4);
   border: 1px solid rgba(var(--clr-acnt), 1);
   border-radius: 14px;
@@ -23,28 +31,28 @@
 /* CIRCULO DE AVATARES */
 
 .grupo-ficha-avatares {
-  width: 160px;
-  height: 160px;
+  width: 140px;
+  height: 140px;
   position: relative;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .grupo-av-central {
-  width: 92px;
-  height: 92px;
+  width: 80px;
+  height: 80px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
   position: absolute;
-  top: 34px;
-  left: 34px;
+  top: 30px;
+  left: 30px;
   border: 2px solid rgba(var(--clr-acnt), 0.6);
   z-index: 2;
 }
 
 .grupo-av-sat {
-  width: 31px;
-  height: 31px;
+  width: 27px;
+  height: 27px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
@@ -53,21 +61,22 @@
   z-index: 1;
 }
 
-.grupo-av-sat.gsat-1 { top: 6px; left: 65px; }
-.grupo-av-sat.gsat-2 { top: 35px; left: 115px; }
-.grupo-av-sat.gsat-3 { top: 94px; left: 115px; }
-.grupo-av-sat.gsat-4 { top: 123px; left: 65px; }
-.grupo-av-sat.gsat-5 { top: 94px; left: 14px; }
-.grupo-av-sat.gsat-6 { top: 35px; left: 14px; }
+.grupo-av-sat.gsat-1 { top: 5px; left: 57px; }
+.grupo-av-sat.gsat-2 { top: 31px; left: 101px; }
+.grupo-av-sat.gsat-3 { top: 82px; left: 101px; }
+.grupo-av-sat.gsat-4 { top: 108px; left: 57px; }
+.grupo-av-sat.gsat-5 { top: 82px; left: 12px; }
+.grupo-av-sat.gsat-6 { top: 31px; left: 12px; }
 
 /* NOMBRE DEL GRUPO */
 
 .grupo-ficha-nombre {
   font-family: var(--txt-1);
-  font-size: 22px;
+  font-size: 20px;
   color: rgba(var(--clr-acnt), 1);
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: 0.4px;
+  margin-bottom: 14px;
 }
 
 /* BOTONES DE ACCION */
@@ -77,12 +86,12 @@
   display: flex;
   justify-content: center;
   gap: 8px;
-  margin: 12px 0;
+  margin-bottom: 12px;
 }
 
 .grupo-accion {
-  width: 62px;
-  height: 58px;
+  width: 60px;
+  height: 54px;
   background: rgba(var(--clr-acnt), 0.1);
   border: 1px solid rgba(var(--clr-acnt), 0.4);
   border-radius: 10px;
@@ -95,7 +104,7 @@
 }
 
 .grupo-accion i {
-  font-size: 16px;
+  font-size: 15px;
 }
 
 .grupo-accion span {
@@ -111,27 +120,27 @@
   width: 100%;
   text-align: center;
   font-family: var(--txt-2);
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(var(--clr-acnt), 0.7);
-  margin-bottom: 12px;
+  margin-bottom: 14px;
 }
 
 /* PANEL DE MIEMBROS */
 
 .grupo-ficha-miembros {
   width: 100%;
-  background: rgba(var(--clr-9), 0.6);
+  background: rgba(var(--clr-10), 0.4);
   border: 1px solid rgba(var(--clr-acnt), 0.3);
-  border-radius: 14px;
+  border-radius: 10px;
   overflow: hidden;
 }
 
 .grupo-miembro {
   width: 100%;
-  padding: 10px 14px;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   border-bottom: 1px solid rgba(var(--clr-acnt), 0.15);
 }
 
@@ -140,8 +149,8 @@
 }
 
 .grupo-miembro-av {
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
   border-radius: 100%;
   background-size: cover;
   background-position: center;
@@ -150,47 +159,37 @@
 
 .grupo-miembro-nombre {
   font-family: var(--txt-2);
-  font-size: 12px;
+  font-size: 11px;
   color: rgba(var(--clr-0), 1);
-  letter-spacing: 0.2px;
+  letter-spacing: 0.1px;
 }
 
 /* AGREGAR MIEMBRO */
 
 .grupo-agregar {
   width: 100%;
-  padding: 10px 14px;
+  padding: 8px 12px;
   display: flex;
   align-items: center;
-  gap: 12px;
+  gap: 10px;
   color: rgba(var(--clr-acnt), 1);
 }
 
 .grupo-agregar-icono {
-  width: 34px;
-  height: 34px;
+  width: 28px;
+  height: 28px;
   border-radius: 100%;
   border: 1px solid rgba(var(--clr-acnt), 0.5);
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 14px;
+  font-size: 12px;
   flex-shrink: 0;
 }
 
 .grupo-agregar-texto {
   font-family: var(--txt-2);
-  font-size: 12px;
+  font-size: 11px;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-}
-/* OCULTAR SALTOS DE LINEA AUTOMATICOS */
-
-.gstk-grupo-ficha br {
-  display: none !important;
-}
-/* CORREGIR ITALICA GLOBAL EN ICONOS */
-
-.gstk-grupo-ficha i {
-  font-style: normal !important;
+  letter-spacing: 0.3px;
 }
