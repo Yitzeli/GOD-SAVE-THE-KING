@@ -241,4 +241,5 @@
 .noposter .post-content:has(.gstk-grupo-ficha) {
   border: none !important;
   padding: 0 !important;
+  background: none !important;
 }
