@@ -1,8 +1,8 @@
 /* CONTENEDOR EXTERIOR */
 
 .gstk-grupo-ficha {
-  --grupo-acnt: var(--clr-acnt); /* COLOR DE ACENTO PERSONALIZABLE */
-  --grupo-fondo: 28, 28, 30; /* FONDO GRIS iOS */
+  --grupo-acnt: var(--clr-acnt); /* ACENTO PERSONALIZABLE */
+  --grupo-fondo: 28, 28, 30; /* FONDO GRIS OSCURO */
   --grupo-panel: 44, 44, 46; /* PANELES */
   width: 70%;
   margin: 0 auto 4vmin;
@@ -72,6 +72,25 @@
 .grupo-av-sat.gsat-5 { width: 26px; height: 26px; top: 0px; left: 88px; }
 .grupo-av-sat.gsat-6 { width: 22px; height: 22px; top: 96px; left: 60px; }
 
+/* INSIGNIA DE GRUPO */
+
+.grupo-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background: rgba(var(--grupo-acnt), 1);
+  color: rgba(var(--grupo-fondo), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  top: 82px;
+  left: 100px;
+  border: 2px solid rgba(var(--grupo-fondo), 1);
+  z-index: 3;
+}
+
 /* NOMBRE DEL GRUPO */
 
 .grupo-ficha-nombre {
@@ -85,14 +104,15 @@
   flex-shrink: 0;
 }
 
-/* SUBTITULO CAMBIAR */
+/* CONTADOR DE MIEMBROS */
 
-.grupo-ficha-sub {
+.grupo-ficha-meta {
   width: 100%;
   text-align: center;
   font-family: var(--txt-2);
   font-size: 11px;
   color: rgba(var(--grupo-acnt), 1);
+  letter-spacing: 0.3px;
   margin-bottom: 14px;
   flex-shrink: 0;
 }
@@ -140,6 +160,7 @@
   border-radius: 12px;
   overflow-y: auto;
   flex-grow: 1;
+  padding: 4px 0;
 }
 
 .grupo-ficha-miembros::-webkit-scrollbar {
@@ -154,6 +175,7 @@
   width: 100%;
   padding: 10px 14px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
@@ -185,6 +207,7 @@
   width: 100%;
   padding: 10px 14px;
   display: flex;
+  flex-direction: row;
   align-items: center;
   gap: 12px;
   color: rgba(var(--grupo-acnt), 1);
@@ -206,4 +229,14 @@
   font-family: var(--txt-2);
   font-size: 12px;
   letter-spacing: 0.2px;
+}
+
+/* ANULAR CONTENEDOR DEL MENSAJE */
+
+.postmsj:has(.gstk-grupo-ficha),
+.post-content:has(.gstk-grupo-ficha),
+.post-entry:has(.gstk-grupo-ficha) {
+  background: none !important;
+  border: none !important;
+  box-shadow: none !important;
 }
