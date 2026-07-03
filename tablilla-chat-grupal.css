@@ -96,9 +96,9 @@
 
 .grupo-ficha-nombre {
   width: 100%;
-    font-family: var(--grupo-font);
+  font-family: var(--txt-1);
   font-weight: 600;
-  font-size: 26px;
+  font-size: 37px;
   color: rgba(var(--clr-0), 1);
   text-align: center;
   letter-spacing: 0.4px;
