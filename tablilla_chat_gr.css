@@ -1,0 +1,178 @@
+/* CONTENEDOR EXTERIOR */
+
+.gstk-grupo-ficha {
+  --grupo-acnt: var(--clr-acnt); /* ACENTO PERSONALIZABLE */
+  --grupo-fondo: 28, 28, 30; /* FONDO GRIS OSCURO */
+  --grupo-panel: 44, 44, 46; /* PANELES */
+  width: 70%;
+  margin: 0 auto 4vmin;
+  display: flex;
+  justify-content: center;
+}
+
+.gstk-grupo-ficha br {
+  display: none !important;
+}
+
+.gstk-grupo-ficha i {
+  font-style: normal !important;
+}
+
+/* TARJETA */
+
+.grupo-ficha-card {
+  width: 320px;
+  height: 500px;
+  padding: 20px 16px;
+  background: rgba(var(--grupo-fondo), 1);
+  border-radius: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* CIRCULO DE AVATARES */
+
+.grupo-ficha-avatares {
+  width: 180px;
+  height: 130px;
+  position: relative;
+  margin-bottom: 6px;
+  flex-shrink: 0;
+}
+
+.grupo-av-central {
+  width: 90px;
+  height: 90px;
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  top: 20px;
+  left: 45px;
+  z-index: 1;
+}
+
+/* BURBUJAS SATELITE */
+
+.grupo-av-sat {
+  border-radius: 100%;
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  border: 2px solid rgba(var(--grupo-fondo), 1);
+  z-index: 2;
+}
+
+.grupo-av-sat.gsat-1 { width: 34px; height: 34px; top: 8px; left: 30px; }
+.grupo-av-sat.gsat-2 { width: 44px; height: 44px; top: 62px; left: 8px; }
+.grupo-av-sat.gsat-3 { width: 40px; height: 40px; top: 22px; left: 138px; }
+.grupo-av-sat.gsat-4 { width: 30px; height: 30px; top: 80px; left: 140px; }
+.grupo-av-sat.gsat-5 { width: 26px; height: 26px; top: 0px; left: 88px; }
+.grupo-av-sat.gsat-6 { width: 22px; height: 22px; top: 96px; left: 60px; }
+
+/* INSIGNIA DE GRUPO */
+
+.grupo-badge {
+  width: 28px;
+  height: 28px;
+  border-radius: 100%;
+  background: rgba(var(--grupo-acnt), 1);
+  color: rgba(var(--grupo-fondo), 1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  position: absolute;
+  top: 82px;
+  left: 100px;
+  border: 2px solid rgba(var(--grupo-fondo), 1);
+  z-index: 3;
+}
+
+/* NOMBRE DEL GRUPO */
+
+.grupo-ficha-nombre {
+  width: 100%;
+  font-family: var(--txt-1);
+  font-size: 22px;
+  color: rgba(var(--clr-0), 1);
+  text-align: center;
+  letter-spacing: 0.4px;
+  margin-bottom: 4px;
+  flex-shrink: 0;
+}
+
+/* CONTADOR DE MIEMBROS */
+
+.grupo-ficha-meta {
+  width: 100%;
+  text-align: center;
+  font-family: var(--txt-2);
+  font-size: 11px;
+  color: rgba(var(--grupo-acnt), 1);
+  letter-spacing: 0.3px;
+  margin-bottom: 14px;
+  flex-shrink: 0;
+}
+
+/* BOTONES DE ACCION */
+
+.grupo-ficha-acciones {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-bottom: 16px;
+  flex-shrink: 0;
+}
+
+.grupo-accion {
+  width: 62px;
+  height: 52px;
+  background: rgba(var(--grupo-panel), 1);
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  color: rgba(var(--grupo-acnt), 1);
+}
+
+.grupo-accion i {
+  font-size: 16px;
+}
+
+.grupo-accion span {
+  font-family: var(--txt-2);
+  font-size: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+}
+
+/* PANEL DE MIEMBROS */
+
+.grupo-ficha-miembros {
+  width: 100%;
+  background: rgba(var(--grupo-panel), 1);
+  border-radius: 12px;
+  overflow-y: auto;
+  flex-grow: 1;
+}
+
+.grupo-ficha-miembros::-webkit-scrollbar {
+  width: 4px;
+}
+
+.grupo-ficha-miembros::-webkit-scrollbar-thumb {
+  background: rgba(var(--grupo-acnt), 0.5);
+}
+
+.grupo-miembro {
+  width: 100%;
+  padding: 10px 14px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
