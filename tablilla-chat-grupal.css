@@ -43,6 +43,8 @@
   flex-shrink: 0;
 }
 
+/* AVATAR CENTRAL */
+
 .grupo-av-central {
   width: 90px;
   height: 90px;
@@ -53,6 +55,18 @@
   top: 20px;
   left: 45px;
   z-index: 1;
+  overflow: hidden;
+}
+
+.grupo-av-central::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* FILTRO OSCURO */
+  border-radius: 100%;
 }
 
 /* BURBUJAS SATELITE */
