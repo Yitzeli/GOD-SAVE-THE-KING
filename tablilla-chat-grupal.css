@@ -2,8 +2,6 @@
 
 .gstk-grupo-ficha {
   --grupo-acnt: var(--clr-acnt); /* ACENTO PERSONALIZABLE */
-  --grupo-fondo: 28, 28, 30; /* FONDO GRIS OSCURO */
-  --grupo-panel: 44, 44, 46; /* PANELES */
   width: 70%;
   margin: 0 auto 4vmin;
   display: flex;
@@ -16,6 +14,7 @@
 
 .gstk-grupo-ficha i {
   font-style: normal !important;
+  line-height: 1 !important;
 }
 
 /* TARJETA */
@@ -24,7 +23,8 @@
   width: 320px;
   height: 500px;
   padding: 20px 16px;
-  background: rgba(var(--grupo-fondo), 1);
+  background: rgba(var(--clr-9), 1);
+  border: 1px solid rgba(var(--clr-0), 0.15);
   border-radius: 18px;
   display: flex;
   flex-direction: column;
@@ -61,7 +61,7 @@
   background-size: cover;
   background-position: center;
   position: absolute;
-  border: 2px solid rgba(var(--grupo-fondo), 1);
+  border: 2px solid rgba(var(--clr-9), 1);
   z-index: 2;
 }
 
@@ -79,7 +79,7 @@
   height: 28px;
   border-radius: 100%;
   background: rgba(var(--grupo-acnt), 1);
-  color: rgba(var(--grupo-fondo), 1);
+  color: rgba(var(--clr-9), 1);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -87,7 +87,7 @@
   position: absolute;
   top: 82px;
   left: 100px;
-  border: 2px solid rgba(var(--grupo-fondo), 1);
+  border: 2px solid rgba(var(--clr-9), 1);
   z-index: 3;
 }
 
@@ -111,7 +111,7 @@
   text-align: center;
   font-family: var(--txt-2);
   font-size: 11px;
-  color: rgba(var(--grupo-acnt), 0.8);
+  color: rgba(var(--grupo-acnt), 1);
   letter-spacing: 0.3px;
   margin-bottom: 14px;
   flex-shrink: 0;
@@ -131,7 +131,7 @@
 .grupo-accion {
   width: 62px;
   height: 52px;
-  background: rgba(var(--grupo-panel), 1);
+  background: rgba(var(--clr-0), 0.08);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -143,6 +143,9 @@
 
 .grupo-accion i {
   font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .grupo-accion span {
@@ -150,13 +153,14 @@
   font-size: 8px;
   text-transform: uppercase;
   letter-spacing: 0.3px;
+  text-align: center;
 }
 
 /* PANEL DE MIEMBROS */
 
 .grupo-ficha-miembros {
   width: 100%;
-  background: rgba(var(--grupo-panel), 1);
+  background: rgba(var(--clr-0), 0.06);
   border-radius: 12px;
   overflow-y: auto;
   flex-grow: 1;
@@ -178,7 +182,7 @@
   flex-direction: row;
   align-items: center;
   gap: 12px;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(var(--clr-0), 0.08);
 }
 
 .grupo-miembro:last-of-type {
@@ -233,10 +237,8 @@
 
 /* ANULAR CONTENEDOR DEL MENSAJE */
 
-.postmsj:has(.gstk-grupo-ficha),
-.post-content:has(.gstk-grupo-ficha),
-.post-entry:has(.gstk-grupo-ficha) {
-  background: none !important;
+.noposterreg .post-content:has(.gstk-grupo-ficha),
+.noposter .post-content:has(.gstk-grupo-ficha) {
   border: none !important;
-  box-shadow: none !important;
+  padding: 0 !important;
 }
