@@ -2331,7 +2331,7 @@ img[alt="cita"] {
 }
 
 /* ===================================================== */
-/* QUITAR EL MARCO DEL POST EN TABLILLAS DE NEGOCIO */
+/* QUITAR MARCO Y FONDO DEL POST EN TABLILLAS DE NEGOCIO */
 /* ===================================================== */
 .noposter .post-content:has(.gstk-negsoc),
 .noposter .post-content:has(.gstk-resena),
@@ -2339,4 +2339,5 @@ img[alt="cita"] {
 .noposterreg .post-content:has(.gstk-resena) {
   border: none;
   padding: 0;
+  background: transparent !important;
 }
