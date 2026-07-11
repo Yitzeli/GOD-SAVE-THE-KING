@@ -2159,6 +2159,31 @@ img[alt="cita"] {
   line-height: 150%;
 }
 
+/* IMAGENES EN LA RESENA DEL FEED */
+.negsoc-rev-imgs {
+  margin-top: 1.5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmin;
+}
+
+.negsoc-rev-imgs div {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(var(--clr-0), 0.4);
+  flex-shrink: 0;
+}
+
+@media screen and (max-width: 999px) {
+  @media screen and (max-aspect-ratio: 6/7) {
+    .negsoc-rev-imgs div {
+      width: 55px;
+      height: 55px;
+    }
+  }
+}
 /* BARRA DE ACCIONES INFERIOR */
 .negsoc-bar {
   border-top: 2px solid rgba(var(--clr-0), 0.3);
