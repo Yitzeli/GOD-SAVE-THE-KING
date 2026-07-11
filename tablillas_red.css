@@ -2329,3 +2329,14 @@ img[alt="cita"] {
     }
   }
 }
+
+/* ===================================================== */
+/* QUITAR EL MARCO DEL POST EN TABLILLAS DE NEGOCIO */
+/* ===================================================== */
+.noposter .post-content:has(.gstk-negsoc),
+.noposter .post-content:has(.gstk-resena),
+.noposterreg .post-content:has(.gstk-negsoc),
+.noposterreg .post-content:has(.gstk-resena) {
+  border: none;
+  padding: 0;
+}
