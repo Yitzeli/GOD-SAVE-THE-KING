@@ -1962,6 +1962,7 @@ img[alt="cita"] {
 /* CUERPO EN DOS COLUMNAS */
 .negsoc-body {
   display: flex;
+  align-items: stretch;
 }
 
 /* COLUMNA IZQUIERDA - FICHA */
@@ -2076,6 +2077,9 @@ img[alt="cita"] {
 .negsoc-right {
   width: 62%;
   padding: 3vmin;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .negsoc-subtit {
@@ -2088,7 +2092,8 @@ img[alt="cita"] {
 }
 
 .negsoc-feed {
-  max-height: 40vmin;
+  flex: 1;
+  min-height: 0;
   overflow: auto;
   padding-right: 1vmin;
 }
