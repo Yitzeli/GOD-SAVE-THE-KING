@@ -2378,3 +2378,70 @@ img[alt="cita"] {
   padding: 0 !important;
   background: transparent !important;
 }
+
+/* ===================================================== */
+/* QUITAR MARCO Y FONDO DEL POST */
+/* ===================================================== */
+.post-content:has(.gstk-sinmarco) {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
+
+/* FLLWR EN POST INDIVIDUAL */
+.gstk-fllwr.gstk-sinmarco,
+.gstk-fllwr-coment.gstk-sinmarco,
+.gstk-fllwr-like.gstk-sinmarco {
+  margin: 0 auto;
+}
+
+/* AMENIDADES DE TEXTO LARGO */
+.negsoc-amen .ame-dat {
+  height: auto;
+  min-height: 3.5vmin;
+  align-items: flex-start;
+  margin-bottom: 0.8vmin;
+}
+
+.negsoc-amen .ame-dat i {
+  flex-shrink: 0;
+  margin-top: 0.3vmin;
+}
+
+/* FEED SIN ESPACIO SOBRANTE */
+.negsoc-body {
+  align-items: stretch;
+}
+
+.negsoc-right {
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
+}
+
+.negsoc-feed {
+  flex: 1;
+  min-height: 0;
+  max-height: 60vmin;
+}
+
+.negsoc-rev-post:last-child {
+  border-bottom: none;
+}
+
+/* IMAGENES EN LA RESENA DEL FEED */
+.negsoc-rev-imgs {
+  margin-top: 1.5vmin;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1vmin;
+}
+
+.negsoc-rev-imgs div {
+  width: 70px;
+  height: 70px;
+  background-size: cover;
+  background-position: center;
+  border: 1px solid rgba(var(--clr-0), 0.4);
+  flex-shrink: 0;
+}
