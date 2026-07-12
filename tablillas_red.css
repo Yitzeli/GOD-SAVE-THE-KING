@@ -2078,6 +2078,9 @@ img[alt="cita"] {
 .negsoc-right {
  width: 62%;
   padding: 3vmin;
+  display: flex;
+  flex-direction: column;
+  min-height: 0;
 }
 
 .negsoc-subtit {
@@ -2090,8 +2093,10 @@ img[alt="cita"] {
 }
 
 .negsoc-feed {
-  max-height: 55vmin;
-  overflow: auto;
+  flex: 1;
+  min-height: 0;
+  max-height: 60vmin;
+  overflow-y: auto;
   padding-right: 1vmin;
 }
 
