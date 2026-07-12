@@ -2371,3 +2371,10 @@ img[alt="cita"] {
   padding: 0;
   background: transparent !important;
 }
+
+/* QUITAR MARCO Y FONDO DEL POST */
+.post-content:has(.gstk-sinmarco) {
+  border: none !important;
+  padding: 0 !important;
+  background: transparent !important;
+}
