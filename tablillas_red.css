@@ -1963,6 +1963,7 @@ img[alt="cita"] {
 .negsoc-body {
   display: flex;
   align-items: stretch;
+  border-bottom: none;
 }
 
 /* COLUMNA IZQUIERDA - FICHA */
@@ -2075,11 +2076,8 @@ img[alt="cita"] {
 
 /* COLUMNA DERECHA - FEED DE RESENAS */
 .negsoc-right {
-  width: 62%;
+ width: 62%;
   padding: 3vmin;
-  display: flex;
-  flex-direction: column;
-  min-height: 0;
 }
 
 .negsoc-subtit {
@@ -2092,8 +2090,7 @@ img[alt="cita"] {
 }
 
 .negsoc-feed {
-  flex: 1;
-  min-height: 0;
+  max-height: 55vmin;
   overflow: auto;
   padding-right: 1vmin;
 }
