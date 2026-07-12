@@ -2362,13 +2362,11 @@ img[alt="cita"] {
   }
 }
 
-/* ===================================================== */
 /* QUITAR MARCO Y FONDO DEL POST EN TABLILLAS DE NEGOCIO */
-/* ===================================================== */
-.noposter .post-content:has(.gstk-negsoc),
-.noposter .post-content:has(.gstk-resena),
-.noposterreg .post-content:has(.gstk-negsoc),
-.noposterreg .post-content:has(.gstk-resena) {
+.noposterreg .post-content:has(> .post-message > .gstk-negsoc),
+.noposterreg .post-content:has(> .post-message > .gstk-resena),
+.noposter .post-content:has(> .post-message > .gstk-negsoc),
+.noposter .post-content:has(> .post-message > .gstk-resena) {
   border: none;
   padding: 0;
   background: transparent !important;
