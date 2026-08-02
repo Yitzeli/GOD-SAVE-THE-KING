@@ -1858,3 +1858,74 @@ span.tooltip-title {
 .postbody.user-admin.noposter + .tema-pag-bottom {
     border: none !important;
 }
+
+/* MEJORA PANEL CAMBIO DE CUENTA */
+/* archivo para sumar via link despues de stylebase.css */
+/* no modifica clases existentes, solo agrega jerarquia y el boton de recuperar contrasena */
+
+/* BOTON RECUPERAR CONTRASENA */
+a.acc-pass {
+  display: block;
+  width: fit-content;
+  margin: 2vmin auto 0;
+  padding: 0.5rem 1.4rem;
+  border: 1px solid rgba(var(--clr-0), 0.4);
+  border-radius: 2px;
+  background: rgba(var(--clr-0), 0.05);
+  text-align: center;
+  transition: all ease-in-out 250ms;
+}
+
+a.acc-pass:hover {
+  border-color: rgba(var(--clr-acnt), 1);
+  background: rgba(var(--clr-acnt), 0.15);
+  color: rgba(var(--clr-acnt), 1);
+}
+
+/* SUBTITULO EXPLICATIVO EN MIS CUENTAS */
+.tab.cuentas-guardadas h4 {
+  padding-bottom: 0.8vmin;
+}
+
+.tab.cuentas-guardadas h4::after {
+  content: "TOCA UNA CUENTA PARA CAMBIAR DE SESION";
+  display: block;
+  margin-top: 0.8vmin;
+  font-size: var(--txt-size-3);
+  font-weight: 400;
+  letter-spacing: 0.15vmin;
+  color: rgba(var(--clr-0), 0.55);
+}
+
+/* ETIQUETA CLARA PARA LA CUENTA ACTIVA */
+.cuenta.loggedInCuenta {
+  padding: 2.2vmin 1vmin;
+}
+
+.cuenta.loggedInCuenta::before {
+  content: "SESION ACTIVA";
+  display: block;
+  width: fit-content;
+  margin: 0 auto 1vmin;
+  padding: 0.15rem 0.9rem;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.2vmin;
+  color: rgba(var(--clr-10), 1);
+  background: rgba(var(--clr-acnt), 1);
+  border-radius: 2px;
+}
+
+.cuenta.loggedInCuenta h5 {
+  color: rgba(var(--clr-acnt), 1);
+}
+
+/* BOTON INICIAR SESION MAS VISIBLE POR CUENTA */
+.cuenta button:nth-child(2) {
+  background: rgba(var(--clr-acnt), 0.15) !important;
+  border: 1px solid rgba(var(--clr-acnt), 0.6) !important;
+}
+
+.cuenta button:nth-child(2):hover {
+  background: rgba(var(--clr-acnt), 0.3) !important;
+  border-color: rgba(var(--clr-acnt), 1) !important;
+}
