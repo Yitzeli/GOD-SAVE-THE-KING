@@ -24,6 +24,16 @@
     --clr-10: 0, 0, 0;
     --clr-no: #0000;
     --clr-acnt: 203, 160, 120;
+
+/* COLORES DE LOS GRUPOS DEL FORO */
+--clr-admin: 176, 132, 94;
+--clr-ley: 158, 108, 196;
+--clr-ciu: 108, 178, 214;
+--clr-ser: 120, 168, 130;
+--clr-cel: 214, 186, 108;
+--clr-cri: 198, 74, 74;
+--clr-mem: 158, 158, 158;
+}
   }
 
   /*ESTO SE VA A BORRAR PORQUE ES SOLO PARA QUE LO TENGAS DE REFERENCIA*/
