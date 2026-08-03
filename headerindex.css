@@ -1524,3 +1524,150 @@ dl.mod-login dd span {
     display: none;
   }
 }
+
+/* TARJETAS DE BUSQUEDA Y PROMOCION MENSUAL EN EL LUGAR DE CONECTADOS/DESCONECTADOS */
+
+.header-stats-off.v4,
+.header-stats-on.v4 {
+  background: rgba(var(--clr-0), 0.04);
+  border: 1px solid rgba(var(--clr-0), 0.15);
+  display: flex;
+  flex-direction: column;
+  font-size: initial;
+  text-align: initial;
+  overflow: hidden;
+}
+
+.header-stats-on.v4 {
+  text-align: initial;
+}
+
+.v4 .eyebrow {
+  display: inline-block;
+  align-self: flex-start;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.2vh;
+  text-transform: uppercase;
+  color: rgba(var(--clr-10), 1);
+  background: rgba(var(--clr-acnt), 1);
+  padding: 0.3vh 1.5vh;
+  margin: 1.5vh;
+}
+
+/* TARJETA DE BUSQUEDA, CON IMAGEN */
+
+.v4 .busca-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+.v4 .img-fake {
+  width: 100%;
+  height: 11vh;
+  background-size: cover;
+  background-position: center;
+  background-color: rgba(var(--clr-10), 0.6);
+}
+
+.v4 .txt {
+  padding: 1.5vh;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.v4 .tit {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1vh;
+  font-size: var(--txt-size-3);
+  margin-bottom: 0.8vh;
+  color: rgba(var(--clr-0), 1);
+}
+
+.v4 .txt-p {
+  font-size: var(--txt-size-7);
+  font-weight: 300;
+  color: rgba(var(--clr-0), 0.7);
+  line-height: 140%;
+  margin-bottom: 1.2vh;
+  flex: 1;
+}
+
+.v4 .indicadores {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.v4 .puntos {
+  display: flex;
+  gap: 0.6vh;
+}
+
+.v4 .punto {
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: rgba(var(--clr-0), 0.3);
+}
+
+.v4 .punto.activo {
+  background: rgba(var(--clr-acnt), 1);
+}
+
+.v4 .flechas-grupo {
+  display: flex;
+  gap: 1.2vh;
+}
+
+.v4 .flecha {
+  background: none;
+  border: none;
+  color: rgba(var(--clr-acnt), 1);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+}
+
+.v4 .flecha:hover {
+  color: rgba(var(--clr-0), 1);
+}
+
+/* TARJETA DE PROMOCION MENSUAL, SIN IMAGEN, VARIOS GRUPOS */
+
+.v4-lista {
+  padding: 1.5vh;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2vh;
+  overflow-y: auto;
+}
+
+.promo-mes-header {
+  background: rgba(var(--clr-acnt), 0.25);
+  border-left: 3px solid rgba(var(--clr-acnt), 1);
+  padding: 0.6vh 1.2vh;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: var(--txt-size-7);
+  letter-spacing: 0.05vh;
+  color: rgba(var(--clr-0), 1);
+}
+
+.promo-mes-body {
+  display: flex;
+  gap: 0.8vh;
+  padding: 0.8vh 1.2vh 0;
+  font-size: var(--txt-size-7);
+  font-weight: 300;
+  color: rgba(var(--clr-0), 0.75);
+  line-height: 140%;
+}
+
+.promo-mes-icon {
+  color: rgba(var(--clr-acnt), 1);
+  font-weight: 700;
+  flex-shrink: 0;
+}
