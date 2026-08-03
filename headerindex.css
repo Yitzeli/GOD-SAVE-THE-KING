@@ -1674,14 +1674,16 @@ dl.mod-login dd span {
 .header-stats-off.v4,
 .header-stats-on.v4 {
   position: absolute;
-  top: 57vh;
+ top: 60vh;
   width: 21vw;
+  background: rgba(var(--clr-10), 0.5);
 }
 
+
 .header-stats-off.v4 {
-  left: 64%;
+  left: 69%;
 }
 
 .header-stats-on.v4 {
-  left: calc(64% + 23vw);
+  left: calc(69% + 23vw);
 }
