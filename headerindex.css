@@ -1364,7 +1364,7 @@ dl.mod-login dd span {
 }
 /* CONTENEDOR DEL PIE DE CONECTADOS */
 .footer-online {
-  max-width: 900px;
+  width: clamp(75%, 600px, 1000px);
   margin: 6vmin auto;
   padding: 0 4vmin;
 }
