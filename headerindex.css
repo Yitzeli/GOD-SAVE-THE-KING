@@ -1731,3 +1731,9 @@ dl.mod-login dd span {
     height: 28vh;
   }
 }
+/* IGUALAR TAMANO DE TEXTO DESCRIPTIVO DE SABIAS QUE, BUSQUEDA ACTIVA Y PROMOCION MENSUAL CON AMBIENTACION */
+.header-stats-off.v4 .busca-slide .txt-p,
+.promo-mes-body,
+.sab-user-dat {
+  font-size: var(--txt-size-3);
+}
