@@ -1715,3 +1715,19 @@ dl.mod-login dd span {
 .header-stats-off.v4 .busca-slide .txt-p {
   scrollbar-color: rgba(var(--clr-0), 0.5) transparent;
 }
+
+/* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
+@media screen and (min-width: 1000px) {
+  .sabiasque {
+    top: 3vh;
+  }
+}
+
+/* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
+@media screen and (min-width: 1000px) {
+  .header-stats-off.v4,
+  .header-stats-on.v4,
+  .header-sabias {
+    height: 28vh;
+  }
+}
