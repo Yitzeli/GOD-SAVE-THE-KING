@@ -943,8 +943,8 @@ span.new-message {
   display: flex;
   justify-content: end;
   align-items: center;
-  flex-wrap: wrap;       
-  gap: 0.5vh; 
+  flex-wrap: wrap;
+  gap: 0.5vh;
   margin-top: -1vh;
   margin-bottom: 2vh;
   position: relative;
@@ -977,7 +977,7 @@ span.new-message {
 }
 
 .contentText.ellipsis {
-  max-width: 90%; 
+  max-width: 90%;
   margin-right: 3vh;
 }
 
@@ -1205,12 +1205,12 @@ dl.mod-login dd span {
 @media screen and (min-width: 1000px) {
   .header-sabias {
     width: 34vh;
-    height: 34vh;
+    height: 32vh;
     position: absolute;
     top: 60vh;
     left: 53%;
     right: auto;
-    padding: 1.5vh;
+    padding: 3vh;
     display: block;
   }
 
@@ -1226,7 +1226,7 @@ dl.mod-login dd span {
 
   .header-sabias .header-subtit {
     position: relative;
-    top: 0vh;
+    top: 5vh;
   }
 
   .sabiasque {
@@ -1599,6 +1599,7 @@ dl.mod-login dd span {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  padding: 0 1.5vh 1.5vh;
 }
 
 .v4 .puntos {
@@ -1611,6 +1612,12 @@ dl.mod-login dd span {
   height: 5px;
   border-radius: 50%;
   background: rgba(var(--clr-0), 0.3);
+  cursor: pointer;
+  transition: background ease-in-out 250ms;
+}
+
+.v4 .punto:hover {
+  background: rgba(var(--clr-acnt), 0.6);
 }
 
 .v4 .punto.activo {
@@ -1687,42 +1694,36 @@ dl.mod-login dd span {
 .header-stats-on.v4 {
   left: calc(69% + 23vw);
 }
+
 /* OVERLAY OSCURO SOBRE LA IMAGEN DE BUSQUEDA ACTIVA */
 .header-stats-off.v4 .img-fake {
   position: relative;
 }
-
 .header-stats-off.v4 .img-fake::after {
   content: "";
   position: absolute;
   inset: 0;
   background: rgba(var(--clr-10), 0.45);
 }
-
 /* SCROLL FINO PARA EL TEXTO DE BUSQUEDA ACTIVA */
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar {
   width: 2px;
 }
-
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-track {
   background: rgba(var(--clr-10), 0);
 }
-
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-thumb {
   background: rgba(var(--clr-0), 0.5);
 }
-
 .header-stats-off.v4 .busca-slide .txt-p {
   scrollbar-color: rgba(var(--clr-0), 0.5) transparent;
 }
-
 /* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
 @media screen and (min-width: 1000px) {
   .sabiasque {
     top: 3vh;
   }
 }
-
 /* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
 @media screen and (min-width: 1000px) {
   .header-stats-off.v4,
