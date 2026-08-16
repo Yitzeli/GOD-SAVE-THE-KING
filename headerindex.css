@@ -1598,7 +1598,6 @@ dl.mod-login dd span {
   font-weight: 300;
   color: rgba(var(--clr-0), 0.7);
   line-height: 140%;
-  margin-bottom: 1.2vh;
   flex: 1;
 }
 
