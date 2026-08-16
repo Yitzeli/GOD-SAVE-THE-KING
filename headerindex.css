@@ -1715,19 +1715,26 @@ dl.mod-login dd span {
 /* AGRANDAR CAJA DE TEXTO DE BUSQUEDA ACTIVA HASTA CASI TOCAR FLECHAS Y PUNTOS */
 .header-stats-off.v4 .busca-slide .txt-p {
   max-height: none !important;
+  flex: 1 1 0% !important;
 }
-/* SCROLL DEL TEXTO DE BUSQUEDA ACTIVA IGUAL AL DE AMBIENTACION */
+/* SCROLL DEL TEXTO DE BUSQUEDA ACTIVA IGUAL AL DE AMBIENTACION (LINEA FINA, SIN FLECHAS) */
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar {
-  width: 2px;
+  width: 2px !important;
 }
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-track {
-  background: rgba(var(--clr-10), 0);
+  background: rgba(var(--clr-10), 0) !important;
 }
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-thumb {
-  background: rgba(var(--clr-0), 1);
+  background: rgba(var(--clr-0), 1) !important;
+}
+.header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-button {
+  display: none !important;
+  width: 0 !important;
+  height: 0 !important;
 }
 .header-stats-off.v4 .busca-slide .txt-p {
-  scrollbar-color: rgba(var(--clr-0), 1) transparent;
+  scrollbar-color: rgba(var(--clr-0), 1) transparent !important;
+  scrollbar-width: thin !important;
 }
 /* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
 @media screen and (min-width: 1000px) {
