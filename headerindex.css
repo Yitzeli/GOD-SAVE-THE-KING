@@ -1208,17 +1208,20 @@ dl.mod-login dd span {
 }
 
 @media screen and (min-width: 1000px) {
+  /* ANCHO ATADO AL HUECO REAL ENTRE LEFT Y BUSQUEDA ACTIVA, NO A VH */
   .header-sabias {
-    width: 34vh;
+    width: auto;
     height: 32vh;
     position: absolute;
     top: 60vh;
     left: 53%;
-    right: auto;
+    right: 33%;
     padding: 3vh;
-    display: block;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
   }
-
+ 
   .sabias-back {
     width: 100%;
     height: 100%;
@@ -1228,43 +1231,56 @@ dl.mod-login dd span {
     margin-left: -3vh;
     z-index: -99;
   }
-
+ 
+  /* TITULO EN FLUJO NORMAL: SIEMPRE POR ENCIMA DEL NOMBRE DEL PJ */
   .header-sabias .header-subtit {
-    position: relative;
-    top: 5vh;
+    position: static;
+    top: auto;
+    flex: 0 0 auto;
+    margin-bottom: 1vh;
   }
-
+ 
+  /* CONTENIDO EN FLUJO NORMAL, DEBAJO DEL TITULO */
   .sabiasque {
-    position: absolute;
-    top: 10vh;
+    position: static;
+    top: auto;
+    flex: 1 1 auto;
+    min-height: 0;
   }
-
+ 
   .sab-user-tit {
     font-family: var(--txt-2);
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 0.2vh;
   }
-
+ 
   .sab-user-text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    top: 2vh;
+    align-items: flex-start;
+    top: 1vh;
     position: relative;
+    overflow: hidden;
   }
-
+ 
+  /* TEXTO RECORTADO PARA QUE NO DESBORDE SOBRE BUSQUEDA ACTIVA */
   .sab-user-dat {
     width: 65%;
     text-align: right;
     line-height: 125%;
-    display: flex;
+    display: -webkit-box;
+    -webkit-line-clamp: 5;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
     font-size: 1.5vmin;
   }
-
+ 
   .sab-user-img {
     width: 10vh;
     height: 10vh;
+    flex: 0 0 auto;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -1272,6 +1288,7 @@ dl.mod-login dd span {
     background-size: cover;
   }
 }
+ 
 
 .users-desconectados a,
 .users-conectados a,
