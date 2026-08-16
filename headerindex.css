@@ -2,8 +2,6 @@
   display: none !important;
 }
 
-/* EL HEADER Y EL CONTENIDO DEL FORO SE SUPERPONEN UNOS PX ABAJO (LA FORMA CIRCULAR) */
-/* SIN Z-INDEX, EL CONTENIDO TAPABA LOS CLICS DE LAS FLECHAS DE BUSQUEDA ACTIVA */
 .header-index-back {
   position: relative;
   z-index: 1;
@@ -1369,14 +1367,13 @@ dl.mod-login dd span {
     border-top: 2px solid rgba(var(--clr-0), 1);
     padding-top: 3vmin;
 }
-/* CONTENEDOR DEL PIE DE CONECTADOS */
+/* CONTENEDOR DE CONECTADOS*/
 .footer-online {
   width: clamp(75%, 600px, 1000px);
   margin: 6vmin auto;
   padding: 0 4vmin;
 }
 
-/* PILDORAS DE ESTADISTICAS */
 .footer-online-pildoras {
   display: flex;
   justify-content: center;
@@ -1403,7 +1400,6 @@ dl.mod-login dd span {
   margin-right: 0.7vmin;
 }
 
-/* PANEL CON MARCO */
 .footer-online-panel {
   padding: 4vmin 5vmin;
   background: rgba(var(--clr-10), 0.25);
@@ -1649,7 +1645,7 @@ dl.mod-login dd span {
   color: rgba(var(--clr-0), 1);
 }
 
-/* TARJETA DE PROMOCION MENSUAL, SIN IMAGEN, VARIOS GRUPOS */
+/* PROMOCIÓN MENSUAL */
 
 .v4-lista {
   padding: 1.5vh;
@@ -1702,7 +1698,6 @@ dl.mod-login dd span {
   left: calc(69% + 23vw);
 }
 
-/* OVERLAY OSCURO SOBRE LA IMAGEN DE BUSQUEDA ACTIVA */
 .header-stats-off.v4 .img-fake {
   position: relative;
 }
@@ -1712,12 +1707,12 @@ dl.mod-login dd span {
   inset: 0;
   background: rgba(var(--clr-10), 0.45);
 }
-/* AGRANDAR CAJA DE TEXTO DE BUSQUEDA ACTIVA HASTA CASI TOCAR FLECHAS Y PUNTOS */
+
 .header-stats-off.v4 .busca-slide .txt-p {
   max-height: none !important;
   flex: 1 1 0% !important;
 }
-/* SCROLL DEL TEXTO DE BUSQUEDA ACTIVA IGUAL AL DE AMBIENTACION (LINEA FINA, SIN FLECHAS) */
+
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar {
   width: 2px !important;
 }
@@ -1736,13 +1731,13 @@ dl.mod-login dd span {
   scrollbar-color: rgba(var(--clr-0), 1) transparent !important;
   scrollbar-width: thin !important;
 }
-/* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
+
 @media screen and (min-width: 1000px) {
   .sabiasque {
     top: 3vh;
   }
 }
-/* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
+
 @media screen and (min-width: 1000px) {
   .header-stats-off.v4,
   .header-stats-on.v4,
@@ -1750,7 +1745,7 @@ dl.mod-login dd span {
     height: 28vh;
   }
 }
-/* IGUALAR TAMANO DE TEXTO DESCRIPTIVO DE SABIAS QUE, BUSQUEDA ACTIVA Y PROMOCION MENSUAL CON AMBIENTACION */
+
 .header-stats-off.v4 .busca-slide .txt-p,
 .promo-mes-body,
 .sab-user-dat {
