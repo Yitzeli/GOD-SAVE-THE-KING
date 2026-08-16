@@ -2,6 +2,8 @@
   display: none !important;
 }
 
+/* EL HEADER Y EL CONTENIDO DEL FORO SE SUPERPONEN UNOS PX ABAJO (LA FORMA CIRCULAR) */
+/* SIN Z-INDEX, EL CONTENIDO TAPABA LOS CLICS DE LAS FLECHAS DE BUSQUEDA ACTIVA */
 .header-index-back {
   position: relative;
   z-index: 1;
@@ -1208,20 +1210,17 @@ dl.mod-login dd span {
 }
 
 @media screen and (min-width: 1000px) {
-  /* ANCHO ATADO AL HUECO REAL ENTRE LEFT Y BUSQUEDA ACTIVA, NO A VH */
   .header-sabias {
-    width: auto;
+    width: 34vh;
     height: 32vh;
     position: absolute;
     top: 60vh;
     left: 53%;
-    right: 33%;
+    right: auto;
     padding: 3vh;
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    display: block;
   }
- 
+
   .sabias-back {
     width: 100%;
     height: 100%;
@@ -1231,56 +1230,43 @@ dl.mod-login dd span {
     margin-left: -3vh;
     z-index: -99;
   }
- 
-  /* TITULO EN FLUJO NORMAL: SIEMPRE POR ENCIMA DEL NOMBRE DEL PJ */
+
   .header-sabias .header-subtit {
-    position: static;
-    top: auto;
-    flex: 0 0 auto;
-    margin-bottom: 1vh;
+    position: relative;
+    top: 5vh;
   }
- 
-  /* CONTENIDO EN FLUJO NORMAL, DEBAJO DEL TITULO */
+
   .sabiasque {
-    position: static;
-    top: auto;
-    flex: 1 1 auto;
-    min-height: 0;
+    position: absolute;
+    top: 10vh;
   }
- 
+
   .sab-user-tit {
     font-family: var(--txt-2);
     text-transform: uppercase;
     font-size: 1rem;
     letter-spacing: 0.2vh;
   }
- 
+
   .sab-user-text {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    align-items: flex-start;
-    top: 1vh;
+    top: 2vh;
     position: relative;
-    overflow: hidden;
   }
- 
-  /* TEXTO RECORTADO PARA QUE NO DESBORDE SOBRE BUSQUEDA ACTIVA */
+
   .sab-user-dat {
     width: 65%;
     text-align: right;
     line-height: 125%;
-    display: -webkit-box;
-    -webkit-line-clamp: 5;
-    -webkit-box-orient: vertical;
-    overflow: hidden;
+    display: flex;
     font-size: 1.5vmin;
   }
- 
+
   .sab-user-img {
     width: 10vh;
     height: 10vh;
-    flex: 0 0 auto;
     object-fit: cover;
     object-position: center;
     border-radius: 50%;
@@ -1288,7 +1274,6 @@ dl.mod-login dd span {
     background-size: cover;
   }
 }
- 
 
 .users-desconectados a,
 .users-conectados a,
@@ -1743,10 +1728,27 @@ dl.mod-login dd span {
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-thumb {
   background: rgba(var(--clr-0), 1) !important;
 }
-/* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
+/* SABIAS QUE: EL TITULO Y LA FICHA DEL PERSONAJE ESTABAN POSICIONADOS EN ABSOLUTO Y SE PISABAN ENTRE SI */
+/* AL PASARLOS A FLUJO NORMAL, UNO QUEDA DEBAJO DEL OTRO SIN SUPERPONERSE */
 @media screen and (min-width: 1000px) {
+  .header-sabias .header-subtit {
+    position: static !important;
+  }
   .sabiasque {
-    top: 3vh;
+    position: static !important;
+    top: auto !important;
+    margin-top: 1vh;
+  }
+}
+/* SABIAS QUE: CUADRO DE FONDO CUADRADO IGUAL AL DE BUSQUEDA ACTIVA Y PROMOCION MENSUAL, EN VEZ DE FORMA DE CONO */
+@media screen and (min-width: 1000px) {
+  .header-sabias {
+    width: 21vw !important;
+    height: 34vh !important;
+    background: rgba(var(--clr-10), 0.5) !important;
+  }
+  .sabias-back {
+    display: none !important;
   }
 }
 /* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
