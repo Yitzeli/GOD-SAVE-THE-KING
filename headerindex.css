@@ -2,6 +2,8 @@
   display: none !important;
 }
 
+/* EL HEADER Y EL CONTENIDO DEL FORO SE SUPERPONEN UNOS PX ABAJO (LA FORMA CIRCULAR) */
+/* SIN Z-INDEX, EL CONTENIDO TAPABA LOS CLICS DE LAS FLECHAS DE BUSQUEDA ACTIVA */
 .header-index-back {
   position: relative;
   z-index: 1;
@@ -1710,7 +1712,11 @@ dl.mod-login dd span {
   inset: 0;
   background: rgba(var(--clr-10), 0.45);
 }
-/* SCROLL FINO PARA EL TEXTO DE BUSQUEDA ACTIVA */
+/* AGRANDAR CAJA DE TEXTO DE BUSQUEDA ACTIVA HASTA CASI TOCAR FLECHAS Y PUNTOS */
+.header-stats-off.v4 .busca-slide .txt-p {
+  max-height: none !important;
+}
+/* SCROLL DEL TEXTO DE BUSQUEDA ACTIVA IGUAL AL DE AMBIENTACION */
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar {
   width: 2px;
 }
@@ -1718,10 +1724,10 @@ dl.mod-login dd span {
   background: rgba(var(--clr-10), 0);
 }
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-thumb {
-  background: rgba(var(--clr-0), 0.5);
+  background: rgba(var(--clr-0), 1);
 }
 .header-stats-off.v4 .busca-slide .txt-p {
-  scrollbar-color: rgba(var(--clr-0), 0.5) transparent;
+  scrollbar-color: rgba(var(--clr-0), 1) transparent;
 }
 /* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
 @media screen and (min-width: 1000px) {
