@@ -1367,13 +1367,14 @@ dl.mod-login dd span {
     border-top: 2px solid rgba(var(--clr-0), 1);
     padding-top: 3vmin;
 }
-/* CONTENEDOR DE CONECTADOS*/
+/* CONTENEDOR DEL PIE DE CONECTADOS */
 .footer-online {
   width: clamp(75%, 600px, 1000px);
   margin: 6vmin auto;
   padding: 0 4vmin;
 }
 
+/* PILDORAS DE ESTADISTICAS */
 .footer-online-pildoras {
   display: flex;
   justify-content: center;
@@ -1400,6 +1401,7 @@ dl.mod-login dd span {
   margin-right: 0.7vmin;
 }
 
+/* PANEL CON MARCO */
 .footer-online-panel {
   padding: 4vmin 5vmin;
   background: rgba(var(--clr-10), 0.25);
@@ -1645,7 +1647,7 @@ dl.mod-login dd span {
   color: rgba(var(--clr-0), 1);
 }
 
-/* PROMOCIÓN MENSUAL */
+/* TARJETA DE PROMOCION MENSUAL, SIN IMAGEN, VARIOS GRUPOS */
 
 .v4-lista {
   padding: 1.5vh;
@@ -1698,6 +1700,7 @@ dl.mod-login dd span {
   left: calc(69% + 23vw);
 }
 
+/* OVERLAY OSCURO SOBRE LA IMAGEN DE BUSQUEDA ACTIVA */
 .header-stats-off.v4 .img-fake {
   position: relative;
 }
@@ -1707,12 +1710,13 @@ dl.mod-login dd span {
   inset: 0;
   background: rgba(var(--clr-10), 0.45);
 }
-
+/* AGRANDAR CAJA DE TEXTO DE BUSQUEDA ACTIVA HASTA CASI TOCAR FLECHAS Y PUNTOS */
 .header-stats-off.v4 .busca-slide .txt-p {
   max-height: none !important;
   flex: 1 1 0% !important;
 }
-
+/* SCROLL DEL TEXTO DE BUSQUEDA ACTIVA IGUAL AL DE AMBIENTACION (LINEA FINA, SIN FLECHAS) */
+/* SIN scrollbar-width NI scrollbar-color: ESAS PROPIEDADES FUERZAN EL SCROLL NATIVO DE CHROME Y ANULAN ESTOS ESTILOS */
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar {
   width: 2px !important;
 }
@@ -1722,22 +1726,13 @@ dl.mod-login dd span {
 .header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-thumb {
   background: rgba(var(--clr-0), 1) !important;
 }
-.header-stats-off.v4 .busca-slide .txt-p::-webkit-scrollbar-button {
-  display: none !important;
-  width: 0 !important;
-  height: 0 !important;
-}
-.header-stats-off.v4 .busca-slide .txt-p {
-  scrollbar-color: rgba(var(--clr-0), 1) transparent !important;
-  scrollbar-width: thin !important;
-}
-
+/* SUBIR TEXTO DE SABIAS QUE PARA QUE ARRANQUE A LA ALTURA DE LA IMAGEN */
 @media screen and (min-width: 1000px) {
   .sabiasque {
     top: 3vh;
   }
 }
-
+/* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
 @media screen and (min-width: 1000px) {
   .header-stats-off.v4,
   .header-stats-on.v4,
@@ -1745,7 +1740,7 @@ dl.mod-login dd span {
     height: 28vh;
   }
 }
-
+/* IGUALAR TAMANO DE TEXTO DESCRIPTIVO DE SABIAS QUE, BUSQUEDA ACTIVA Y PROMOCION MENSUAL CON AMBIENTACION */
 .header-stats-off.v4 .busca-slide .txt-p,
 .promo-mes-body,
 .sab-user-dat {
