@@ -2,6 +2,11 @@
   display: none !important;
 }
 
+.header-index-back {
+  position: relative;
+  z-index: 1;
+}
+
 #header-index {
   height: 100vh !important;
   display: flex !important;
