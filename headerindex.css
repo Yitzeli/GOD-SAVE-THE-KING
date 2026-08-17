@@ -2,8 +2,6 @@
   display: none !important;
 }
 
-/* EL HEADER Y EL CONTENIDO DEL FORO SE SUPERPONEN UNOS PX ABAJO (LA FORMA CIRCULAR) */
-/* SIN Z-INDEX, EL CONTENIDO TAPABA LOS CLICS DE LAS FLECHAS DE BUSQUEDA ACTIVA */
 .header-index-back {
   position: relative;
   z-index: 1;
@@ -1211,11 +1209,11 @@ dl.mod-login dd span {
 
 @media screen and (min-width: 1000px) {
   .header-sabias {
-    width: 34vh;
-    height: 32vh;
+   width: 18.5vw;
+  height: 34vh;
     position: absolute;
     top: 60vh;
-    left: 53%;
+left: calc(50% + 1.5vw);
     right: auto;
     padding: 3vh;
     display: block;
