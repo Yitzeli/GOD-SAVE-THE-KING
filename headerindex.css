@@ -1743,25 +1743,22 @@ left: calc(50% + 1.5vw);
     margin-top: 1vh;
   }
 }
-/* SABIAS QUE: MISMO ANCHO Y ALTO QUE BUSQUEDA ACTIVA Y PROMOCION MENSUAL, CONSERVANDO LA FORMA DE CONO */
+
 @media screen and (min-width: 1000px) {
-  /* LEFT 50% ES EL BORDE IZQUIERDO DE LA COLUMNA, ASI QUEDA ALINEADA CON ULTIMOS MENSAJES */
-  /* MAS A LA IZQUIERDA NO SE PUEDE: EL CONTENEDOR RECORTA Y SE CORTARIA EL TEXTO */
   .header-sabias {
     width: 20vw !important;
     height: 34vh !important;
     left: 50% !important;
   }
-  /* INSET 0 HACE QUE EL CONO OCUPE EXACTAMENTE LA CAJA, SIN SOBRAR NI FALTAR POR ABAJO */
   .sabias-back {
     inset: 0 !important;
     width: auto !important;
     height: auto !important;
     margin-left: 0 !important;
     border-radius: 0 50vw 0 0;
+    inset: 0 0 0 2.5vw !important;
   }
 }
-/* ACHICAR LAS TRES CAJAS PARA QUE NO PISEN MENSAJES Y MIEMBROS */
 @media screen and (min-width: 1000px) {
   .header-stats-off.v4,
   .header-stats-on.v4,
@@ -1769,7 +1766,6 @@ left: calc(50% + 1.5vw);
     height: 28vh;
   }
 }
-/* IGUALAR TAMANO DE TEXTO DESCRIPTIVO DE SABIAS QUE, BUSQUEDA ACTIVA Y PROMOCION MENSUAL CON AMBIENTACION */
 .header-stats-off.v4 .busca-slide .txt-p,
 .promo-mes-body,
 .sab-user-dat {
