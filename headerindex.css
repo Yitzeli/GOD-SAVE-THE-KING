@@ -1818,3 +1818,10 @@ left: calc(50% + 1.5vw);
 .sab-user-dat {
   font-size: var(--txt-size-3);
 }
+
+@media screen and (min-width: 1000px) and (min-height: 1600px) {
+  .header-accesos {
+    --acc-size: min(4.2vh, calc((40.5vh - 1.2vh - 7vmax - clamp(2.2rem, 1.8vw, 2.4rem) - 4 * var(--acc-gap)) / 5));
+    bottom: calc(7vmax + clamp(2.2rem, 1.8vw, 2.4rem) + 1.2vh);
+  }
+}
