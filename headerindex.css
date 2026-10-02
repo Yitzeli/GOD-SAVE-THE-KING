@@ -1770,3 +1770,70 @@ left: calc(50% + 1.5vw);
 .sab-user-dat {
   font-size: var(--txt-size-3);
 }
+
+/* ACCESOS RAPIDOS --- botones*/
+
+.header-accesos {
+  display: none;
+}
+
+@media screen and (min-width: 1000px) {
+  .header-accesos {
+    position: absolute;
+    top: 60vh;
+    left: calc(69% + 46vw);
+    height: 28vh;
+    display: grid;
+    grid-template-columns: repeat(2, 4.6vh);
+    grid-auto-rows: 4.6vh;
+    align-content: center;
+    gap: 1.1vh 1.1vh;
+    z-index: 5;
+  }
+
+  .acceso-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(var(--clr-10), 0.6);
+    border: 1px solid rgba(var(--clr-0), 0.15);
+    border-radius: 0.8vh;
+    color: rgba(var(--clr-acnt), 1) !important;
+    font-size: 2.2vh;
+    text-decoration: none;
+    transition: all 250ms ease-in-out;
+  }
+
+  .acceso-btn:hover,
+  .acceso-btn:focus {
+    background: rgba(var(--clr-acnt), 0.11);
+    border-color: rgba(var(--clr-acnt), 1);
+    outline: none;
+  }
+
+  .acceso-lbl {
+    position: absolute;
+    top: calc(100% + 0.6vh);
+    right: 0;
+    white-space: nowrap;
+    background: rgba(var(--clr-10), 0.95);
+    border: 1px solid rgba(var(--clr-acnt), 1);
+    color: rgba(var(--clr-acnt), 1);
+    font-family: var(--txt);
+    font-size: var(--txt-size-7);
+    font-weight: 700;
+    letter-spacing: 0.1vh;
+    text-transform: uppercase;
+    padding: 0.6vh 1.2vh;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 250ms ease-in-out;
+    z-index: 10;
+  }
+
+  .acceso-btn:hover .acceso-lbl,
+  .acceso-btn:focus .acceso-lbl {
+    opacity: 1;
+  }
+}
