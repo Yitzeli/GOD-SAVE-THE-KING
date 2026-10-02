@@ -1771,18 +1771,25 @@ left: calc(50% + 1.5vw);
   font-size: var(--txt-size-3);
 }
 
-/* ACCESOS RAPIDOS --- botones*/
+/* ACCESOS RAPIDOS: 10 BOTONES EN DOS COLUMNAS AL LADO DE LA PROMOCION MENSUAL */
+/* VAN DENTRO DE LA TARJETA DE PROMOCION Y SE UBICAN A SU DERECHA, ASI SIEMPRE QUEDAN ALINEADOS CON ELLA */
+/* EL COLOR SALE DE --clr-acnt, ASI QUE CAMBIA SOLO SEGUN EL GRUPO IGUAL QUE EL RESTO DEL TABLON */
 
 .header-accesos {
   display: none;
 }
 
 @media screen and (min-width: 1000px) {
+  /* LA TARJETA DE PROMOCION DEJA VER LOS BOTONES QUE SALEN POR SU COSTADO */
+  .header-stats-on.v4 {
+    overflow: visible;
+  }
+
   .header-accesos {
     position: absolute;
-    top: 60vh;
-    left: calc(69% + 46vw);
-    height: 28vh;
+    top: 0;
+    left: calc(100% + 2vw);
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(2, 4.6vh);
     grid-auto-rows: 4.6vh;
