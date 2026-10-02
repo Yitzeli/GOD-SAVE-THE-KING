@@ -712,7 +712,7 @@ span.new-message {
 
 @media screen and (min-width: 1000px) {
   .header-admins {
-    width: 9vh;
+    width: 12vh;
     height: 40vh;
     position: absolute;
     top: 17vh;
