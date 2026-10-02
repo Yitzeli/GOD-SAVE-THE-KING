@@ -1816,3 +1816,144 @@ left: calc(50% + 1.5vw);
   font-size: var(--txt-size-3);
 }
 
+/* ¿SABÍAS QUÉ? — VERSIÓN CITA (COMILLAS DE FONDO EN TRANSPARENCIA) */
+@media screen and (min-width: 1000px) {
+  .header-sabias {
+    top: 58vh !important;
+    left: calc(50% + 2vw) !important;
+    width: calc(14% - 4vw) !important;
+    height: 34vh !important;
+    padding: 1.5vh !important;
+    box-sizing: border-box;
+    display: flex !important;
+    flex-direction: column;
+    background: rgba(var(--clr-10), 0.5);
+    overflow: hidden;
+    text-align: left;
+  }
+
+  .header-sabias .sabias-back {
+    display: none !important;
+  }
+
+  /* COMILLAS GRANDES DETRÁS DEL TEXTO */
+  .header-sabias::before {
+    content: "";
+    position: absolute;
+    top: 3.5vh;
+    left: 0.5vh;
+    width: 17vh;
+    height: 17vh;
+    background: rgba(var(--clr-acnt), 0.25); /* TRANSPARENCIA DE LAS COMILLAS */
+    -webkit-mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4.58 17.32C3.55 16.23 3 15 3 13.01c0-3.5 2.46-6.64 6.03-8.19l.9 1.38c-3.34 1.8-3.99 4.15-4.25 5.62.54-.28 1.24-.38 1.93-.31 1.8.17 3.23 1.65 3.23 3.49a3.5 3.5 0 0 1-3.5 3.5c-1.07 0-2.1-.49-2.76-1.18zm10 0C13.55 16.23 13 15 13 13.01c0-3.5 2.46-6.64 6.03-8.19l.9 1.38c-3.34 1.8-3.99 4.15-4.25 5.62.54-.28 1.24-.38 1.93-.31 1.8.17 3.23 1.65 3.23 3.49a3.5 3.5 0 0 1-3.5 3.5c-1.07 0-2.1-.49-2.76-1.18z'/></svg>") no-repeat center / contain;
+    mask: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'><path d='M4.58 17.32C3.55 16.23 3 15 3 13.01c0-3.5 2.46-6.64 6.03-8.19l.9 1.38c-3.34 1.8-3.99 4.15-4.25 5.62.54-.28 1.24-.38 1.93-.31 1.8.17 3.23 1.65 3.23 3.49a3.5 3.5 0 0 1-3.5 3.5c-1.07 0-2.1-.49-2.76-1.18zm10 0C13.55 16.23 13 15 13 13.01c0-3.5 2.46-6.64 6.03-8.19l.9 1.38c-3.34 1.8-3.99 4.15-4.25 5.62.54-.28 1.24-.38 1.93-.31 1.8.17 3.23 1.65 3.23 3.49a3.5 3.5 0 0 1-3.5 3.5c-1.07 0-2.1-.49-2.76-1.18z'/></svg>") no-repeat center / contain;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  .header-sabias .header-subtit {
+    position: relative !important;
+    top: auto !important;
+    z-index: 1;
+    margin: 0 0 1.2vh 0;
+    font-size: 1rem;
+  }
+
+  /* TEXTO ARRIBA, FIRMA (FOTO + NOMBRE) ABAJO */
+  .header-sabias .sabiasque {
+    position: relative !important;
+    top: auto !important;
+    z-index: 1;
+    margin: 0 !important;
+    flex: 1 1 auto;
+    min-height: 0;
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: 1fr auto;
+    grid-template-areas:
+      "dat dat"
+      "img tit";
+    column-gap: 1.2vh;
+  }
+
+  .header-sabias .sab-user-text {
+    display: contents !important;
+  }
+
+  .header-sabias .sab-user-dat {
+    grid-area: dat;
+    display: block !important;
+    width: auto !important;
+    min-height: 0;
+    overflow: hidden auto;
+    padding: 1.5vh 0.6vh 1.2vh 0;
+    border-bottom: 1px solid rgba(var(--clr-0), 0.15);
+    text-align: left !important;
+    font-style: italic;
+    font-size: var(--txt-size-7) !important;
+    font-weight: 300;
+    line-height: 145% !important;
+    color: rgba(var(--clr-0), 0.85);
+  }
+
+  .header-sabias .sab-user-img {
+    grid-area: img;
+    align-self: center;
+    width: 5vh;
+    height: 5vh;
+    margin: 1.2vh 0 0 0 !important;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .header-sabias .sab-user-tit {
+    grid-area: tit;
+    align-self: center;
+    margin-top: 1.2vh;
+    font-family: var(--txt-2);
+    text-transform: uppercase;
+    font-size: 0.95rem;
+    letter-spacing: 0.15vh;
+    line-height: 1.15;
+    color: rgba(var(--clr-0), 1);
+  }
+
+  .header-sabias .sab-user-tit::after {
+    content: "Dato del personaje";
+    display: block;
+    font-family: var(--txt);
+    font-size: 0.6rem;
+    letter-spacing: 0.15vh;
+    color: rgba(var(--clr-acnt), 1);
+  }
+
+  .header-sabias .sab-user-dat::-webkit-scrollbar {
+    width: 2px;
+  }
+  .header-sabias .sab-user-dat::-webkit-scrollbar-track {
+    background: rgba(var(--clr-10), 0);
+  }
+  .header-sabias .sab-user-dat::-webkit-scrollbar-thumb {
+    background: rgba(var(--clr-0), 1);
+  }
+}
+
+/* TUMBLR — SOLO LA "t", SIN CÍRCULO */
+.header-links-tu a {
+  display: inline-flex;
+  align-items: center;
+  color: rgba(var(--clr-0), 1);
+  transition: color ease-in-out 250ms;
+}
+
+.header-links-tu a svg {
+  width: 1.3rem;
+  height: 1.3rem;
+  fill: currentColor;
+}
+
+.header-links .header-links-tu a:hover {
+  letter-spacing: normal;
+  color: rgba(var(--clr-acnt), 1);
+}
