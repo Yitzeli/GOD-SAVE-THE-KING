@@ -241,9 +241,9 @@
 }
 
 @media screen and (min-width: 1000px) {
-  .header-accesos {
-    --acc-gap: 1vh;
-    --acc-size: min(calc((34vh - 4 * var(--acc-gap)) / 5), 3.1vw);
+   .header-accesos {
+    --acc-gap: 0.9vh;
+    --acc-size: min(calc((34vh - 4 * var(--acc-gap)) / 5), 3vw);
     position: absolute;
     top: 58vh;
     height: 34vh;
@@ -251,8 +251,8 @@
     display: grid;
     grid-template-columns: repeat(2, var(--acc-size));
     grid-auto-rows: var(--acc-size);
-    column-gap: var(--acc-gap);
-    align-content: space-between;
+    gap: var(--acc-gap);
+    align-content: center;
     z-index: 5;
   }
 
@@ -262,17 +262,18 @@
     align-items: center;
     justify-content: center;
     background: rgba(var(--clr-10), 0.5);
-    border: 1px solid rgba(var(--clr-0), 0.15);
+    border: 1px solid rgba(var(--clr-0), 0.08);
+    border-radius: 22%;
     color: rgba(var(--clr-acnt), 1) !important;
-    font-size: calc(var(--acc-size) * 0.4);
+    font-size: calc(var(--acc-size) * 0.42);
     text-decoration: none;
     transition: all 250ms ease-in-out;
   }
 
   .acceso-btn:hover,
   .acceso-btn:focus {
-    background: rgba(var(--clr-acnt), 0.11);
-    border-color: rgba(var(--clr-acnt), 1);
+    background: rgba(var(--clr-acnt), 0.12);
+    border-color: rgba(var(--clr-acnt), 0.6);
     outline: none;
   }
 
