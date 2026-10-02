@@ -232,31 +232,28 @@
   transition: left ease-in-out 1000ms 1000ms;
 }
 
+/* ACCESOS RAPIDOS: 10 BOTONES EN DOS COLUMNAS, AL LADO DE LA PROMOCION MENSUAL */
+/* VAN DENTRO DE .header-extra, ASI SE DESLIZAN JUNTO CON EL RESTO DEL TABLON */
+/* MISMA ALTURA Y MISMO TOP QUE BUSQUEDA Y PROMOCION (58vh / 34vh) */
+
 .header-accesos {
   display: none;
 }
 
 @media screen and (min-width: 1000px) {
   .header-accesos {
-    --acc-gap: 0.6vh;
-    --acc-size: min(4.2vh, calc((40.5vh - 1.2vh - 6vmax - clamp(2.2rem, 1.8vw, 2.4rem) - 4 * var(--acc-gap)) / 5));
+    --acc-gap: 1vh;
+    --acc-size: min(calc((34vh - 4 * var(--acc-gap)) / 5), 3.1vw);
     position: absolute;
-    right: 0;
-    bottom: calc(6vmax + clamp(2.2rem, 1.8vw, 2.4rem) + 1.2vh);
+    top: 58vh;
+    height: 34vh;
+    left: calc(64% + 45vw);
     display: grid;
     grid-template-columns: repeat(2, var(--acc-size));
     grid-auto-rows: var(--acc-size);
-    gap: var(--acc-gap);
-    z-index: 998;
-    opacity: 0;
-    pointer-events: none;
-    transition: opacity 400ms ease-in-out;
-  }
-
-  .header-slide2 ~ .header-accesos {
-    opacity: 1;
-    pointer-events: auto;
-    transition-delay: 300ms;
+    column-gap: var(--acc-gap);
+    align-content: space-between;
+    z-index: 5;
   }
 
   .acceso-btn {
@@ -264,11 +261,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background: rgba(var(--clr-10), 0.6);
+    background: rgba(var(--clr-10), 0.5);
     border: 1px solid rgba(var(--clr-0), 0.15);
-    border-radius: 0.6vh;
     color: rgba(var(--clr-acnt), 1) !important;
-    font-size: calc(var(--acc-size) * 0.45);
+    font-size: calc(var(--acc-size) * 0.4);
     text-decoration: none;
     transition: all 250ms ease-in-out;
   }
@@ -280,7 +276,7 @@
     outline: none;
   }
 
-  /* LA ETIQUETA APARECE A LA IZQUIERDA DEL BOTON PARA NO TAPAR LA X */
+  /* LA ETIQUETA APARECE A LA IZQUIERDA DEL BOTON */
   .acceso-lbl {
     position: absolute;
     top: 50%;
@@ -1819,9 +1815,3 @@ left: calc(50% + 1.5vw);
   font-size: var(--txt-size-3);
 }
 
-@media screen and (min-width: 1000px) and (min-height: 1600px) {
-  .header-accesos {
-    --acc-size: min(4.2vh, calc((40.5vh - 1.2vh - 7vmax - clamp(2.2rem, 1.8vw, 2.4rem) - 4 * var(--acc-gap)) / 5));
-    bottom: calc(7vmax + clamp(2.2rem, 1.8vw, 2.4rem) + 1.2vh);
-  }
-}
