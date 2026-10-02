@@ -1844,3 +1844,6 @@ left: calc(50% + 1.5vw);
     opacity: 1;
   }
 }
+
+.header-stats-off.v4, .header-stats-on.v4 { height: 34vh !important; overflow: visible !important; }
+.header-stats-off.v4 .v4-lista, .header-stats-on.v4 .v4-lista { overflow: hidden; }
