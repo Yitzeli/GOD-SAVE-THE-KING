@@ -1945,3 +1945,7 @@ left: calc(50% + 1.5vw);
   letter-spacing: normal;
   color: rgba(var(--clr-acnt), 1);
 }
+
+.header-index-back:has(.notif-content2, .nav-content2, .grup-content2, .user-content2) {
+  z-index: 2147483000;
+}
