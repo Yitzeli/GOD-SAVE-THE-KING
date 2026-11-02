@@ -2126,3 +2126,117 @@ a.contact-neg:before {
   left: 0 !important;
   padding: 0 !important;
 }
+
+.fam-fotos { position: relative; margin-bottom: 6px; }
+.fam-fotos .fam-img { margin-bottom: 0; }
+
+.fam-img-pareja {
+  position: absolute;
+  right: -14px;
+  bottom: -4px;
+  width: 34px;
+  height: 34px;
+  border-radius: 100%;
+  border: 2px solid rgba(var(--clr-0), 1);
+  background-size: cover;
+  background-position: center;
+}
+
+.fam-img-pareja.muerto { filter: grayscale(1); border-style: dashed; }
+
+/* Tipo de vínculo: = casados · -- en pareja · // separados · = gris viudo/a */
+.fam-vinc {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-size: clamp(0.5rem, 0.55vmax, 0.55rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1vmin;
+  line-height: 1.3;
+}
+
+.fam-vinc:before { content: ""; width: 14px; flex: none; }
+.fam-vinc.casado:before { height: 6px; border-top: 2px solid rgba(var(--clr-acnt), 1); border-bottom: 2px solid rgba(var(--clr-acnt), 1); }
+.fam-vinc.pareja:before { height: 0; border-top: 2px dashed rgba(var(--clr-acnt), 1); }
+.fam-vinc.separado:before { content: "//"; width: auto; font-weight: 700; color: rgba(var(--clr-acnt), 1); }
+.fam-vinc.viudo:before { height: 6px; border-top: 2px solid rgba(var(--clr-0), 0.45); border-bottom: 2px solid rgba(var(--clr-0), 0.45); }
+
+/* Hijos de un hermano (o del personaje) */
+.fam-desc {
+  width: 100%;
+  display: flex;
+  position: relative;
+  margin-top: 12px;
+  padding-top: 30px;
+}
+
+.fam-desc:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 16px;
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-desc:after {
+  content: "";
+  position: absolute;
+  top: 16px;
+  height: 2px;
+  left: calc(50% / var(--n, 2));
+  right: calc(50% / var(--n, 2));
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-mini {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  position: relative;
+  padding: 0 3px;
+}
+
+.fam-mini:before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: calc(50% - 1px);
+  width: 2px;
+  height: 14px;
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-mini .fam-img { width: 38px; height: 38px; margin-bottom: 2px; }
+
+.fam-mini-nom {
+  font-family: var(--txt-2);
+  font-size: clamp(0.6rem, 0.7vmax, 0.7rem);
+  text-transform: uppercase;
+  line-height: 1.15;
+  overflow-wrap: anywhere;
+}
+
+.fam-mini-dat {
+  font-size: clamp(0.45rem, 0.5vmax, 0.5rem);
+  letter-spacing: 0.15vmin;
+  text-transform: uppercase;
+  opacity: 0.75;
+}
+
+/* Estados extra */
+.fam-mini.muerto .fam-img { filter: grayscale(1); border-style: dashed; opacity: 0.7; }
+.fam-hijos .fam-nodo.adop:before,
+.fam-mini.adop:before { background: none; width: 0; border-left: 2px dashed rgba(var(--clr-0), 1); }
+.fam-nodo.lejos .fam-img { opacity: 0.45; }
+
+@container (max-width: 640px) {
+  .fam-img-pareja { width: 26px; height: 26px; right: -10px; }
+  .fam-mini .fam-img { width: 30px; height: 30px; }
+  .fam-mini-dat { display: none; }
+}
