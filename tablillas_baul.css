@@ -1837,6 +1837,7 @@ a.contact-neg:before {
   .lon-parada > * { grid-column: 2; }
 }
 
+/* Post sin perfil del autor (igual que sinposter.css) */
 .post:has(.gsdk-londres):before,
 .post:has(.gsdk-londres):after,
 .post:has(.gsdk-londres) .postprofile,
@@ -1856,5 +1857,12 @@ a.contact-neg:before {
 .post:has(.gsdk-londres) .post-datos {
   height: 5vmin !important;
   justify-content: end !important;
+  padding: 0 !important;
+}
+
+/* Anula el corrimiento de 150px que el foro deja para el avatar */
+.post:has(.gsdk-londres) .post-content {
+  width: 100% !important;
+  left: 0 !important;
   padding: 0 !important;
 }
