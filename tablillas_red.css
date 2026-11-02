@@ -2347,7 +2347,6 @@ img[alt="cita"] {
   border: 1px solid rgba(var(--clr-0), 0.4);
 }
 
-/* RESPONSIVE */
 @media screen and (max-width: 999px) {
   @media screen and (max-aspect-ratio: 6/7) {
     .gstk-resena {
@@ -2362,7 +2361,6 @@ img[alt="cita"] {
   }
 }
 
-/* QUITAR MARCO Y FONDO DEL POST EN TABLILLAS DE NEGOCIO */
 .noposterreg .post-content:has(> .post-message > .gstk-negsoc),
 .noposterreg .post-content:has(> .post-message > .gstk-resena),
 .noposter .post-content:has(> .post-message > .gstk-negsoc),
@@ -2372,30 +2370,24 @@ img[alt="cita"] {
   background: transparent !important;
 }
 
-/* QUITAR MARCO Y FONDO DEL POST */
 .post-content:has(.gstk-sinmarco) {
   border: none !important;
   padding: 0 !important;
   background: transparent !important;
 }
 
-/* ===================================================== */
-/* QUITAR MARCO Y FONDO DEL POST */
-/* ===================================================== */
 .post-content:has(.gstk-sinmarco) {
   border: none !important;
   padding: 0 !important;
   background: transparent !important;
 }
 
-/* FLLWR EN POST INDIVIDUAL */
 .gstk-fllwr.gstk-sinmarco,
 .gstk-fllwr-coment.gstk-sinmarco,
 .gstk-fllwr-like.gstk-sinmarco {
   margin: 0 auto;
 }
 
-/* AMENIDADES DE TEXTO LARGO */
 .negsoc-amen .ame-dat {
   height: auto;
   min-height: 3.5vmin;
@@ -2408,7 +2400,6 @@ img[alt="cita"] {
   margin-top: 0.3vmin;
 }
 
-/* FEED SIN ESPACIO SOBRANTE */
 .negsoc-body {
   align-items: stretch;
 }
@@ -2429,7 +2420,6 @@ img[alt="cita"] {
   border-bottom: none;
 }
 
-/* IMAGENES EN LA RESENA DEL FEED */
 .negsoc-rev-imgs {
   margin-top: 1.5vmin;
   display: flex;
@@ -2444,4 +2434,43 @@ img[alt="cita"] {
   background-position: center;
   border: 1px solid rgba(var(--clr-0), 0.4);
   flex-shrink: 0;
+}
+
+.post-archivada .post-img img,
+.post-archivada .post-img video {
+  filter: grayscale(100%) brightness(0.45);
+}
+
+.post-archivada .post-img:before,
+.post-archivada .post-img:after {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  pointer-events: none;
+  text-shadow: 1px 1px 3px rgba(var(--clr-10), 0.6);
+  white-space: nowrap;
+  z-index: 1;
+}
+
+.post-archivada .post-img:before {
+  content: "\F10C";
+  font-family: bootstrap-icons !important;
+  font-size: var(--txt-size-1);
+  transform: translate(-50%, -110%);
+}
+
+.post-archivada .post-img:after {
+  content: "ARCHIVADA";
+  font-size: var(--txt-size-3);
+  font-weight: 700;
+  letter-spacing: 0.5vmin;
+  transform: translate(-50%, 30%);
+  padding: 0.5vmin 2vmin;
+  border: 1px solid rgba(var(--clr-0), 1);
+  background: rgba(var(--clr-10), 0.4);
+}
+
+.post-archivada .post-time:after {
+  content: " · ARCHIVADA";
+  font-weight: 700;
 }
