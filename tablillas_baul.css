@@ -1836,3 +1836,25 @@ a.contact-neg:before {
   .lon-parada:before { grid-row: 1 / span 5; margin: 0; }
   .lon-parada > * { grid-column: 2; }
 }
+
+.post:has(.gsdk-londres):before,
+.post:has(.gsdk-londres):after,
+.post:has(.gsdk-londres) .postprofile,
+.post:has(.gsdk-londres) .post-poster,
+.post:has(.gsdk-londres) .fa_like_div,
+.post:has(.gsdk-londres) .signature_div,
+.post:has(.gsdk-londres) .postmsj:before,
+.post:has(.gsdk-londres) .postmsj:after,
+.post:has(.gsdk-londres) .post-datos:after {
+  display: none !important;
+}
+
+.post:has(.gsdk-londres) .postbody {
+  background: none !important;
+}
+
+.post:has(.gsdk-londres) .post-datos {
+  height: 5vmin !important;
+  justify-content: end !important;
+  padding: 0 !important;
+}
