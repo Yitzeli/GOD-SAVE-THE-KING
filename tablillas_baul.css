@@ -1860,8 +1860,268 @@ a.contact-neg:before {
   padding: 0 !important;
 }
 
-/* Anula el corrimiento de 150px que el foro deja para el avatar */
 .post:has(.gsdk-londres) .post-content {
+  width: 100% !important;
+  left: 0 !important;
+  padding: 0 !important;
+}
+
+/* ==========================================================
+   CARTAS SIN ENVIAR · TIPOLOGÍA · FAMILIA
+   ========================================================== */
+.gsdk-cartas, .gsdk-psico5, .gsdk-familia {
+  height: auto !important;
+  padding-bottom: 0 !important;
+  margin-top: 0 !important;
+  justify-content: start;
+  container-type: inline-size;
+}
+
+.gsdk-cartas .bx-bajada, .gsdk-psico5 .bx-bajada, .gsdk-familia .bx-bajada {
+  font-family: var(--txt);
+  font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
+  font-weight: 700;
+  letter-spacing: 0.4vmin;
+  line-height: 1.4;
+  margin-top: 1.2vmin;
+  color: rgba(var(--clr-acnt), 1);
+}
+
+.gsdk-cartas .bx-lab, .gsdk-psico5 .bx-lab, .gsdk-familia .bx-lab {
+  display: block;
+  font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
+  font-weight: 700;
+  letter-spacing: 0.3vmin;
+  text-transform: uppercase;
+  color: rgba(var(--clr-acnt), 1);
+  margin-bottom: 4px;
+}
+
+/* ---------- CARTAS SIN ENVIAR ---------- */
+.carta-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 3vmin;
+  text-align: left;
+}
+
+.carta { border: 2px solid rgba(var(--clr-0), 1); display: flex; flex-direction: column; }
+.carta:last-child:nth-child(odd) { grid-column: 1 / -1; }
+
+.carta-cab {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 6px 12px;
+  padding: 10px 14px;
+  border-bottom: 2px solid rgba(var(--clr-0), 1);
+  background: rgba(var(--clr-acnt), 0.2);
+  font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
+  font-weight: 700;
+  letter-spacing: 0.25vmin;
+  text-transform: uppercase;
+}
+
+.carta-txt {
+  flex: 1;
+  padding: 16px 18px;
+  max-height: 230px;
+  overflow: auto;
+  font-size: var(--txt-size-7);
+  line-height: 1.75;
+  font-style: italic;
+}
+
+.carta-txt::-webkit-scrollbar { width: 2px; }
+.carta-txt::-webkit-scrollbar-track { background: rgba(var(--clr-10), 0); }
+.carta-txt::-webkit-scrollbar-thumb { background: rgba(var(--clr-acnt), 0.2); }
+
+.carta-pie {
+  padding: 8px 14px;
+  border-top: 1px solid rgba(var(--clr-acnt), 0.3);
+  font-size: clamp(0.5rem, 0.6vmax, 0.6rem);
+  letter-spacing: 0.1vmin;
+  text-transform: uppercase;
+}
+
+/* ---------- PSICOLÓGICO · TIPOLOGÍA ---------- */
+.psi5-grid {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 16px;
+  margin-top: 3vmin;
+  text-align: left;
+}
+
+.psi5-card {
+  border: 2px solid rgba(var(--clr-0), 1);
+  padding: 14px 16px 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.psi5-cod { font-family: var(--txt-1); font-size: 3.4rem; line-height: 0.9; text-transform: uppercase; }
+
+.psi5-nom {
+  font-family: var(--txt-2);
+  font-size: var(--txt-size-2);
+  text-transform: uppercase;
+  padding-bottom: 8px;
+  border-bottom: 1px solid rgba(var(--clr-acnt), 0.4);
+}
+
+.psi5-desc { font-size: var(--txt-size-7); line-height: 1.55; }
+
+.psi5-pie { width: 100%; display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-top: 16px; text-align: left; }
+
+.psi5-pie > div {
+  padding: 12px 16px;
+  background: rgba(var(--clr-acnt), 0.2);
+  border: 1px solid rgba(var(--clr-0), 0.6);
+  font-size: var(--txt-size-7);
+  line-height: 1.55;
+}
+
+/* ---------- FAMILIA ---------- */
+.fam-arbol { width: 100%; display: flex; flex-direction: column; align-items: center; margin-top: 4vmin; }
+
+.fam-pareja { display: flex; gap: 70px; position: relative; padding-bottom: 32px; }
+
+.fam-pareja:before {
+  content: "";
+  position: absolute;
+  top: 34px;
+  left: calc(50% - 35px - 4.5rem + 34px);
+  width: calc(70px + 9rem - 68px);
+  height: 2px;
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-pareja:after {
+  content: "";
+  position: absolute;
+  top: 34px;
+  bottom: 0;
+  left: 50%;
+  width: 2px;
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-pareja.solo:before { display: none; }
+.fam-pareja.solo:after { top: 70px; }
+
+.fam-hijos { width: 100%; display: flex; position: relative; padding-top: 22px; }
+
+.fam-hijos:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  height: 2px;
+  left: calc(50% / var(--n, 3));
+  right: calc(50% / var(--n, 3));
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-nodo {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  text-align: center;
+  position: relative;
+  padding: 0 6px;
+}
+
+.fam-hijos .fam-nodo:before {
+  content: "";
+  position: absolute;
+  top: -22px;
+  left: 50%;
+  width: 2px;
+  height: 22px;
+  background: rgba(var(--clr-0), 1);
+}
+
+.fam-pareja .fam-nodo { flex: none; width: 9rem; }
+
+.fam-img {
+  width: 68px;
+  height: 68px;
+  border-radius: 100%;
+  border: 2px solid rgba(var(--clr-0), 1);
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 6px;
+}
+
+.fam-nodo.muerto .fam-img { filter: grayscale(1); border-style: dashed; opacity: 0.7; }
+.fam-nodo.pj .fam-img { outline: 2px solid rgba(var(--clr-acnt), 1); outline-offset: 3px; }
+
+.fam-nom { font-family: var(--txt-2); font-size: var(--txt-size-2); text-transform: uppercase; line-height: 1.2; }
+
+.fam-rel {
+  font-size: clamp(0.5rem, 0.55vmax, 0.55rem);
+  font-weight: 700;
+  letter-spacing: 0.25vmin;
+  text-transform: uppercase;
+  color: rgba(var(--clr-acnt), 1);
+}
+
+.fam-est {
+  font-size: clamp(0.5rem, 0.55vmax, 0.55rem);
+  text-transform: uppercase;
+  letter-spacing: 0.1vmin;
+  padding: 2px 6px;
+  border: 1px solid rgba(var(--clr-0), 0.7);
+}
+
+.fam-est.busca { background: rgba(var(--clr-acnt), 0.4); border-color: rgba(var(--clr-0), 1); }
+.fam-nota { font-size: var(--txt-size-7); line-height: 1.45; margin-top: 2px; }
+
+@container (max-width: 640px) {
+  .gsdk-cartas .gale-tit, .gsdk-psico5 .gale-tit, .gsdk-familia .gale-tit {
+    width: 100%; height: auto; min-height: 90px; line-height: 0.95; text-align: center;
+  }
+  .carta-grid, .psi5-pie { grid-template-columns: 1fr; }
+  .psi5-grid { grid-template-columns: 1fr 1fr; }
+  .fam-pareja { gap: 30px; }
+  .fam-pareja:before { top: 26px; left: calc(50% - 15px - 3.75rem + 26px); width: calc(30px + 7.5rem - 52px); }
+  .fam-pareja:after { top: 26px; }
+  .fam-pareja.solo:after { top: 54px; }
+  .fam-pareja .fam-nodo { width: 7.5rem; }
+  .fam-img { width: 52px; height: 52px; }
+  .fam-nota { display: none; }
+}
+
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia):before,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia):after,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .postprofile,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .post-poster,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .fa_like_div,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .signature_div,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .postmsj:before,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .postmsj:after,
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .post-datos:after {
+  display: none !important;
+}
+
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .postbody {
+  background: none !important;
+}
+
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .post-datos {
+  height: 5vmin !important;
+  justify-content: end !important;
+  padding: 0 !important;
+}
+
+.post:has(.gsdk-cartas, .gsdk-psico5, .gsdk-familia) .post-content {
   width: 100% !important;
   left: 0 !important;
   padding: 0 !important;
