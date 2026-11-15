@@ -1,6 +1,3 @@
-/* TABLILLAS PNJ - BAÚL */
-
-/* CONTENEDOR */
 .pnj-baul {
   width: 80%;
   box-sizing: border-box;
@@ -15,7 +12,6 @@
   border-top: 2px solid rgba(var(--clr-0), 1);
 }
 
-/* RETRATO */
 .pnj-baul-img {
   width: 140px;
   min-width: 140px;
@@ -27,7 +23,6 @@
   background-position: center;
 }
 
-/* INFO */
 .pnj-baul-info {
   flex: 1;
   padding-left: 3vmin;
@@ -54,7 +49,6 @@
   color: rgba(var(--clr-0), 1);
 }
 
-/* DATOS */
 .pnj-baul-dats {
   display: flex;
   flex-wrap: wrap;
@@ -80,7 +74,6 @@
   content: " años";
 }
 
-/* DATOS EXTRA */
 .pnj-baul-extra {
   width: 100%;
   margin-top: 2.5vmin;
@@ -92,7 +85,6 @@
   gap: 2vmin 4vmin;
 }
 
-/* HISTORIA */
 .pnj-baul-hist {
   width: 100%;
   margin-top: 2.5vmin;
@@ -138,7 +130,6 @@
   --clr-acnt: 210, 77, 87;
 }
 
-/* RESPONSIVE */
 @media screen and (max-width: 999px) {
   .pnj-baul {
     padding: 3vmin 3vmin 3vmin 2.5vmin;
@@ -177,3 +168,135 @@
     }
   }
 }
+
+/* ==========================================================
+   PNJ · FICHA COMPACTA
+   ========================================================== */
+.pnj-grid {
+  width: 90%;
+  margin: 5vmin auto 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(400px, 100%), 1fr));
+  gap: 3vmin;
+  align-items: start;
+}
+
+.pnj-grid br { display: none; }
+.pnj-grid .pnj-mini-hist br { display: inline; }
+
+.pnj-mini {
+  --pc: rgb(var(--clr-acnt));
+  --pc-lab: color-mix(in srgb, var(--pc) 60%, rgb(var(--clr-0)));
+  min-width: 0;
+  display: grid;
+  grid-template-columns: 78px minmax(0, 1fr);
+  column-gap: 16px;
+  padding: 16px 18px 18px;
+  background: color-mix(in srgb, var(--pc) 15%, transparent);
+  border-left: 2px solid rgba(var(--clr-0), 1);
+  border-top: 2px solid rgba(var(--clr-0), 1);
+}
+
+.pnj-mini-img {
+  grid-row: 1 / 3;
+  width: 78px;
+  height: 104px;
+  border: 2px solid rgba(var(--clr-0), 1);
+  background-size: cover;
+  background-position: center;
+}
+
+.pnj-mini-nom {
+  align-self: end;
+  font-family: var(--txt-1);
+  font-size: 2.6rem;
+  line-height: 0.95;
+  text-transform: uppercase;
+  color: rgba(var(--clr-0), 1);
+  overflow-wrap: anywhere;
+}
+
+.pnj-mini-nom:before {
+  content: "Personaje no jugable";
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--txt-2);
+  font-size: clamp(0.55rem, 0.65vmax, 0.65rem);
+  font-weight: 700;
+  letter-spacing: 0.25vmin;
+  line-height: 1.3;
+  color: var(--pc-lab);
+}
+
+.pnj-mini-sub {
+  align-self: start;
+  margin-top: 5px;
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.1vmin;
+  text-transform: uppercase;
+}
+
+.pnj-mini-datos {
+  grid-column: 1 / -1;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 6px 14px;
+  margin-top: 14px;
+  padding-top: 12px;
+  border-top: 1px solid color-mix(in srgb, var(--pc) 35%, transparent);
+  align-items: baseline;
+}
+
+.pnj-mini-datos b {
+  font-family: var(--txt-2);
+  font-size: clamp(0.55rem, 0.65vmax, 0.65rem);
+  font-weight: 700;
+  letter-spacing: 0.25vmin;
+  text-transform: uppercase;
+  color: var(--pc-lab);
+}
+
+.pnj-mini-datos span {
+  font-size: var(--txt-size-3);
+  letter-spacing: 0.1vmin;
+  text-transform: uppercase;
+}
+
+.pnj-mini-datos .pnj-color:before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 6px;
+  border: 1px solid rgba(var(--clr-0), 1);
+  background: var(--pc);
+  vertical-align: -1px;
+}
+
+.pnj-mini-hist {
+  grid-column: 1 / -1;
+  margin-top: 14px;
+  padding: 10px 12px;
+  max-height: 10.5em;
+  overflow-y: auto;
+  background: color-mix(in srgb, var(--pc) 12%, transparent);
+  border-left: 2px solid color-mix(in srgb, var(--pc) 60%, transparent);
+  font-size: var(--txt-size-3);
+  line-height: 160%;
+}
+
+.pnj-mini-hist:before {
+  content: "Curiosidades";
+  display: block;
+  margin-bottom: 4px;
+  font-family: var(--txt-2);
+  font-size: clamp(0.55rem, 0.65vmax, 0.65rem);
+  font-weight: 700;
+  letter-spacing: 0.3vmin;
+  text-transform: uppercase;
+  color: var(--pc-lab);
+}
+
+.pnj-mini-hist::-webkit-scrollbar { width: 2px; }
+.pnj-mini-hist::-webkit-scrollbar-track { background: transparent; }
+.pnj-mini-hist::-webkit-scrollbar-thumb { background: color-mix(in srgb, var(--pc) 50%, transparent); }
